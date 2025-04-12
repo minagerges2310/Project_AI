@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition System</title>
+</head>
+<body>
+    <h1>Live Camera Feed with Face Recognition</h1>
+    <label for="target-name">Enter the name to zoom in on:</label>
+    <input type="text" id="target-name" placeholder="Target Name">
+    <button onclick="updateVideoFeed()">Update</button>
+    <br><br>
+    <img id="video-feed" src="" alt="Live Video Feed">
+
+    <script>
+        function updateVideoFeed() {
+            const targetName = document.getElementById('target-name').value;
+            const videoFeed = document.getElementById('video-feed');
+            videoFeed.src = `http://127.0.0.1:5000/video_feed?target_name=${encodeURIComponent(targetName)}`;
+        }
+
+        // Load the default video feed on page load
+        window.onload = () => {
+            updateVideoFeed();
+        };
+    </script>
+</body>
+</html>
