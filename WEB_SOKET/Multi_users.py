@@ -1,67 +1,35 @@
-"""
-Facenet.py
-This script implements a face recognition system using MediaPipe for face detection 
-and FaceNet for face recognition. The system connects to a MongoDB database to load 
-known face embeddings and uses OpenCV for video capture and display. The main features 
-include real-time face detection, recognition, and zooming in on a target face.
-Classes:
-    FaceData: A data structure to store face embeddings and associated names.
-    FaceRecognitionSystem: The main class that handles face detection, recognition, 
-                           video processing, and database interaction.
-Functions:
-    main(): Entry point of the application. Initializes the FaceRecognitionSystem 
-            with a target name and starts the processing loop.
-Key Features:
-    - Connects to MongoDB to load known face embeddings.
-    - Uses MediaPipe for face detection and FaceNet for face recognition.
-    - Processes video frames from an RTSP stream or a default webcam.
-    - Identifies faces in real-time and zooms in on a specified target face.
-    - Logs system events and errors to a file and console.
-Dependencies:
-    - OpenCV (cv2)
-    - MediaPipe (mediapipe)
-    - NumPy (numpy)
-    - PyTorch (torch)
-    - FaceNet-PyTorch (facenet_pytorch)
-    - PyMongo (pymongo)
-    - Dataclasses (dataclasses)
-    - Logging (logging)
-    - System utilities (sys, datetime, typing)
-Usage:
-    Run the script and provide a target name when prompted. The system will attempt 
-    to recognize the target face in the video stream and zoom in on it.
-Example:
-    $ python Facenet.py
-    Enter the name to zoom in on: John Doe"""
-    
 import cv2
 import mediapipe as mp
 import numpy as np
 from pymongo import MongoClient, errors
 from facenet_pytorch import InceptionResnetV1
 import torch
-from typing import List, Tuple, Optional
+from typing import List, Tuple
 from dataclasses import dataclass
 import logging
 import sys
 from datetime import datetime
+from flask import Flask, Response, request
 from HLS import generate_hls_url
-
+stream_name = 'Camer_121' 
 # Hardcoded configuration
-
-#stream =generate_hls_url('Camera_121') #This will generate the HLS URL for the Kinesis Video Stream named 'Camera_121'
-RTSP_URL = "rtsp://admin:admin@192.168.43.224:1935"
+RTSP_URL = generate_hls_url(stream_name)
+##RTSP_URL = "rtsp://admin:admin@192.168.1.4:1935"
 MONGO_URI = "mongodb+srv://mina23:01555758130@cluster0.22ogf.mongodb.net/?retryWrites=true&w=majority"
-FRAME_WIDTH = 1080 # Width of the video frame
-FRAME_HEIGHT = 720 # Height of the video frame
-DETECTION_CONFIDENCE = 0.5 # Confidence threshold for face detection
+FRAME_WIDTH = 640
+FRAME_HEIGHT = 480
+DETECTION_CONFIDENCE = 0.5
 ZOOM_SIZE = 150  # Size of the zoomed-in face area within the main window
+
+# Flask app
+app = Flask(__name__)
 
 # Face data structure
 @dataclass
 class FaceData:
     embedding: np.ndarray
     name: str
+
 
 class FaceRecognitionSystem:
     def __init__(self, target_name: str):
@@ -73,12 +41,18 @@ class FaceRecognitionSystem:
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         self.facenet = self.facenet.to(self.device)
         logging.info(f"FaceNet running on {self.device}")
-        
         self.cap = None
         self.collection = None
         self.known_faces: List[FaceData] = []
         self.target_name = target_name.lower()  # Case-insensitive matching
         self.setup_logging()
+        
+        # Attempt to connect to MongoDB during initialization
+        if self.connect_to_mongodb():
+            self.load_face_data()
+        else:
+            logging.warning("Proceeding without MongoDB data")
+
 
     def setup_logging(self):
         """Configure logging with immediate flush"""
@@ -117,7 +91,6 @@ class FaceRecognitionSystem:
         if self.collection is None:
             logging.error("No MongoDB collection available")
             return False
-            
         try:
             data = list(self.collection.find({}, {"embedding": 1, "name": 1, "_id": 0}))
             self.known_faces = [FaceData(np.array(d["embedding"]), d["name"]) for d in data]
@@ -138,12 +111,10 @@ class FaceRecognitionSystem:
                 if not self.cap.isOpened():
                     logging.error("Default webcam failed - exiting")
                     return False
-                
             self.cap.set(cv2.CAP_PROP_FPS, 30)
             self.cap.set(cv2.CAP_PROP_BUFFERSIZE, 2)
             self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, FRAME_WIDTH)
             self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, FRAME_HEIGHT)
-            
             ret, frame = self.cap.read()
             if not ret:
                 logging.error("Failed to read first frame from video source")
@@ -161,18 +132,14 @@ class FaceRecognitionSystem:
             if frame is None or frame.size == 0:
                 logging.error("Received invalid frame")
                 return [], []
-                
             rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             results = self.face_detection.process(rgb_frame)
-            
             if not results.detections:
                 logging.debug("No faces detected in frame")
                 return [], []
-
             face_locations = []
             face_names = []
             THRESHOLD = 1.2
-            
             for detection in results.detections:
                 bbox = detection.location_data.relative_bounding_box
                 h, w = frame.shape[:2]
@@ -182,22 +149,17 @@ class FaceRecognitionSystem:
                 height = int(bbox.height * h)
                 right = min(w, left + width)
                 bottom = min(h, top + height)
-                
                 face_locations.append((top, right, bottom, left))
-                
                 face_crop = frame[top:bottom, left:right]
                 if face_crop.size > 0:
                     face_resized = cv2.resize(face_crop, (160, 160))
                     face_tensor = torch.tensor(face_resized.transpose(2, 0, 1)).float() / 255.0
                     face_tensor = face_tensor.unsqueeze(0).to(self.device)
-                    
                     with torch.no_grad():
                         embedding = self.facenet(face_tensor).cpu().numpy()[0]
-                    
                     name = "Unknown"
                     min_distance = float('inf')
                     closest_name = None
-                    
                     if self.known_faces:
                         for known_face in self.known_faces:
                             distance = np.linalg.norm(embedding - known_face.embedding)
@@ -207,56 +169,34 @@ class FaceRecognitionSystem:
                                 closest_name = known_face.name
                         if min_distance < THRESHOLD:
                             name = closest_name
-                    
                     face_names.append(name)
                     logging.debug(f"Assigned name: {name} (min_distance: {min_distance})")
-                    
                     # Zoom in if the name matches the target_name
                     if name.lower() == self.target_name:
-                        # Add padding to the crop for better visibility
                         padding = int((right - left) * 0.5)  # 50% padding around face
                         zoom_left = max(0, left - padding)
                         zoom_right = min(w, right + padding)
                         zoom_top = max(0, top - padding)
                         zoom_bottom = min(h, bottom + padding)
-                        
                         zoomed_face = frame[zoom_top:zoom_bottom, zoom_left:zoom_right]
                         if zoomed_face.size > 0:
-                            # Resize to fit the zoom area (top-right corner)
                             zoomed_face = cv2.resize(zoomed_face, (ZOOM_SIZE, ZOOM_SIZE))
-                            # Place zoomed face in the top-right corner of the main frame
                             frame[0:ZOOM_SIZE, FRAME_WIDTH-ZOOM_SIZE:FRAME_WIDTH] = zoomed_face
-                            # Add a label above the zoomed area
                             cv2.putText(frame, f"Zoom: {name}", 
                                         (FRAME_WIDTH-ZOOM_SIZE, 20), 
                                         cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
-
             logging.debug(f"Detected {len(face_locations)} faces")
             return face_locations, face_names
         except Exception as e:
             logging.error(f"Frame processing error: {e}")
             return [], []
 
-    def run(self):
-        """Main processing loop - synchronous"""
-        logging.info(f"Starting face recognition system with target name: {self.target_name}")
-        
-        try:
-            if self.connect_to_mongodb():
-                self.load_face_data()
-            else:
-                logging.warning("Proceeding without MongoDB data")
-        except Exception as e:
-            logging.error(f"MongoDB setup failed: {e}")
-            logging.warning("Continuing without MongoDB data")
-
+    def generate_frames(self):
+        """Generate processed video frames as an MJPEG stream"""
         if not self.initialize_video():
             logging.error("Failed to initialize video - exiting")
             return
-
-        frame_count = 0
         try:
-            logging.info("Entering main video processing loop")
             while True:
                 ret, frame = self.cap.read()
                 if not ret:
@@ -266,24 +206,16 @@ class FaceRecognitionSystem:
                         logging.error("Reconnection failed - exiting")
                         break
                     continue
-
-                frame_count += 1
-                if frame_count % 30 == 0:
-                    logging.debug(f"Processing frame {frame_count}")
-
                 face_locations, face_names = self.process_frame(frame)
-                
                 for (top, right, bottom, left), name in zip(face_locations, face_names):
                     cv2.rectangle(frame, (left, top), (right, bottom), (0, 255, 0), 2)
                     cv2.putText(frame, name, (left, bottom + 20), 
                               cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
-
-                cv2.imshow('Face Recognition', frame)
-                key = cv2.waitKey(1) & 0xFF
-                if key == ord('q'):
-                    logging.info("User requested shutdown")
-                    break
-
+                # Encode the frame as JPEG
+                _, buffer = cv2.imencode('.jpg', frame)
+                frame_bytes = buffer.tobytes()
+                yield (b'--frame\r\n'
+                       b'Content-Type: image/jpeg\r\n\r\n' + frame_bytes + b'\r\n')
         except Exception as e:
             logging.error(f"Runtime error: {e}")
         finally:
@@ -299,16 +231,15 @@ class FaceRecognitionSystem:
         for handler in logging.getLogger().handlers:
             handler.flush()
 
-def main():
-    try:
-        # Get target name from user input
-        target_name = input("Enter the name to zoom in on: ").strip()
-        logging.info(f"Starting application with target name: {target_name}")
-        system = FaceRecognitionSystem(target_name)
-        system.run()
-    except Exception as e:
-        logging.error(f"Main function error: {e}")
-        sys.exit(1)
+
+@app.route('/video_feed')
+def video_feed():
+    target_name = request.args.get('target_name', 'Unknown')  # Default to 'Unknown' if not provided
+    logging.info(f"Starting face recognition system with target name: {target_name}")
+    system = FaceRecognitionSystem(target_name)
+    return Response(system.generate_frames(),
+                    mimetype='multipart/x-mixed-replace; boundary=frame')
+
 
 if __name__ == "__main__":
-    main()
+    app.run(host='0.0.0.0', port=5000)

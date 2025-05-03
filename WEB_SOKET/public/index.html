@@ -17,7 +17,7 @@
         function updateVideoFeed() {
             const targetName = document.getElementById('target-name').value;
             const videoFeed = document.getElementById('video-feed');
-            videoFeed.src = `http://127.0.0.1:5000/video_feed?target_name=${encodeURIComponent(targetName)}`;
+            videoFeed.src = ` http://127.0.0.1:5000/video_feed?target_name=${encodeURIComponent(targetName)}`;
         }
 
         // Load the default video feed on page load

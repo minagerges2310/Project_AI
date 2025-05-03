@@ -45,6 +45,7 @@ from HLS import generate_hls_url
 
 # Hardcoded configuration
 RTSP_URL = "rtsp://admin:admin@192.168.1.4:1935"
+#RTSP_URL = generate_hls_url('Camera_121')
 MONGO_URI = "mongodb+srv://mina23:01555758130@cluster0.22ogf.mongodb.net/?retryWrites=true&w=majority"
 FRAME_WIDTH = 640
 FRAME_HEIGHT = 480

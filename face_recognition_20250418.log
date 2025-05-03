@@ -1,0 +1,1171 @@
+2025-04-18 16:04:03,115 - DEBUG - Distance to Mariam: 1.395165308361425
+2025-04-18 16:04:03,115 - DEBUG - Distance to Mina: 1.090095747876864
+2025-04-18 16:04:03,116 - DEBUG - Distance to Motasem: 1.0847591549702629
+2025-04-18 16:04:03,116 - DEBUG - Distance to Shymaa: 1.221521021703132
+2025-04-18 16:04:03,117 - DEBUG - Distance to Mari: 1.4486759894600012
+2025-04-18 16:04:03,117 - DEBUG - Distance to mariam: 1.4273632080526422
+2025-04-18 16:04:03,117 - DEBUG - Distance to kola: 1.4588250184903184
+2025-04-18 16:04:03,118 - DEBUG - Distance to test: 1.3664482830584468
+2025-04-18 16:04:03,118 - DEBUG - Distance to test: 1.3664482830584468
+2025-04-18 16:04:03,118 - DEBUG - Distance to test4: 1.3022133236012634
+2025-04-18 16:04:03,119 - DEBUG - Distance to ahmedyasser: 1.3826561906372712
+2025-04-18 16:04:03,119 - DEBUG - Assigned name: Motasem (min_distance: 1.0847591549702629)
+2025-04-18 16:04:03,119 - DEBUG - Detected 1 faces
+2025-04-18 16:04:03,122 - DEBUG - Processing new frame
+2025-04-18 16:04:03,186 - DEBUG - Distance to Mariam: 1.3872628834996308
+2025-04-18 16:04:03,187 - DEBUG - Distance to Mina: 1.1873958516200165
+2025-04-18 16:04:03,187 - DEBUG - Distance to Motasem: 1.2739960925438762
+2025-04-18 16:04:03,188 - DEBUG - Distance to Shymaa: 1.200268446564944
+2025-04-18 16:04:03,188 - DEBUG - Distance to Mari: 1.4372085650949156
+2025-04-18 16:04:03,189 - DEBUG - Distance to mariam: 1.4134704141135135
+2025-04-18 16:04:03,189 - DEBUG - Distance to kola: 1.4343072169261117
+2025-04-18 16:04:03,189 - DEBUG - Distance to test: 1.4231350662150968
+2025-04-18 16:04:03,189 - DEBUG - Distance to test: 1.4231350662150968
+2025-04-18 16:04:03,190 - DEBUG - Distance to test4: 1.3173424165290282
+2025-04-18 16:04:03,190 - DEBUG - Distance to ahmedyasser: 1.5742995306808918
+2025-04-18 16:04:03,190 - DEBUG - Assigned name: Mina (min_distance: 1.1873958516200165)
+2025-04-18 16:04:03,191 - DEBUG - Detected 1 faces
+2025-04-18 16:04:03,194 - DEBUG - Processing new frame
+2025-04-18 16:04:03,246 - DEBUG - Distance to Mariam: 1.4402922268233458
+2025-04-18 16:04:03,247 - DEBUG - Distance to Mina: 1.2531750897058047
+2025-04-18 16:04:03,247 - DEBUG - Distance to Motasem: 1.1858175880046937
+2025-04-18 16:04:03,248 - DEBUG - Distance to Shymaa: 1.2378700066287631
+2025-04-18 16:04:03,248 - DEBUG - Distance to Mari: 1.4857160445840463
+2025-04-18 16:04:03,248 - DEBUG - Distance to mariam: 1.438884473400915
+2025-04-18 16:04:03,249 - DEBUG - Distance to kola: 1.4610864854990164
+2025-04-18 16:04:03,249 - DEBUG - Distance to test: 1.4093740314332137
+2025-04-18 16:04:03,249 - DEBUG - Distance to test: 1.4093740314332137
+2025-04-18 16:04:03,250 - DEBUG - Distance to test4: 1.36132024625381
+2025-04-18 16:04:03,250 - DEBUG - Distance to ahmedyasser: 1.4883825714406682
+2025-04-18 16:04:03,250 - DEBUG - Assigned name: Motasem (min_distance: 1.1858175880046937)
+2025-04-18 16:04:03,251 - DEBUG - Detected 1 faces
+2025-04-18 16:04:03,253 - DEBUG - Processing new frame
+2025-04-18 16:04:03,296 - DEBUG - {"topologyId": {"$oid": "68025bd3a1a412d32220a0dd"}, "message": "Starting topology monitoring"}
+2025-04-18 16:04:03,296 - DEBUG - {"topologyId": {"$oid": "68025bd3a1a412d32220a0dd"}, "previousDescription": "<TopologyDescription id: 68025bd3a1a412d32220a0dd, topology_type: Unknown, servers: []>", "newDescription": "<TopologyDescription id: 68025bd3a1a412d32220a0dd, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-02.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "message": "Topology description changed"}
+2025-04-18 16:04:03,298 - DEBUG - {"topologyId": {"$oid": "68025bd3a1a412d32220a0dd"}, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "message": "Starting server monitoring"}
+2025-04-18 16:04:03,298 - DEBUG - {"topologyId": {"$oid": "68025bd3a1a412d32220a0dd"}, "serverHost": "cluster0-shard-00-02.22ogf.mongodb.net", "serverPort": 27017, "message": "Starting server monitoring"}
+2025-04-18 16:04:03,299 - DEBUG - {"topologyId": {"$oid": "68025bd3a1a412d32220a0dd"}, "serverHost": "cluster0-shard-00-00.22ogf.mongodb.net", "serverPort": 27017, "message": "Starting server monitoring"}
+2025-04-18 16:04:03,300 - DEBUG - {"clientId": {"$oid": "68025bd3a1a412d32220a0dd"}, "message": "Connection pool created", "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017}
+2025-04-18 16:04:03,303 - DEBUG - {"clientId": {"$oid": "68025bd3a1a412d32220a0dd"}, "message": "Connection pool created", "serverHost": "cluster0-shard-00-02.22ogf.mongodb.net", "serverPort": 27017}
+2025-04-18 16:04:03,305 - DEBUG - {"clientId": {"$oid": "68025bd3a1a412d32220a0dd"}, "message": "Connection pool created", "serverHost": "cluster0-shard-00-00.22ogf.mongodb.net", "serverPort": 27017}
+2025-04-18 16:04:03,307 - DEBUG - {"message": "Server selection started", "selector": "Primary()", "operation": "buildinfo", "topologyDescription": "<TopologyDescription id: 68025bd3a1a412d32220a0dd, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-02.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "68025bd3a1a412d32220a0dd"}}
+2025-04-18 16:04:03,308 - DEBUG - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "buildinfo", "topologyDescription": "<TopologyDescription id: 68025bd3a1a412d32220a0dd, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-02.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "68025bd3a1a412d32220a0dd"}, "remainingTimeMS": 5}
+2025-04-18 16:04:03,329 - DEBUG - Distance to Mariam: 1.3719885506682308
+2025-04-18 16:04:03,329 - DEBUG - Distance to Mina: 1.3321932771437943
+2025-04-18 16:04:03,330 - DEBUG - Distance to Motasem: 1.386899277161515
+2025-04-18 16:04:03,330 - DEBUG - Distance to Shymaa: 1.171861003531307
+2025-04-18 16:04:03,330 - DEBUG - Distance to Mari: 1.3824477375422357
+2025-04-18 16:04:03,331 - DEBUG - Distance to mariam: 1.3809851004473817
+2025-04-18 16:04:03,331 - DEBUG - Distance to kola: 1.3813846781581332
+2025-04-18 16:04:03,331 - DEBUG - Distance to test: 1.4953783421713478
+2025-04-18 16:04:03,331 - DEBUG - Distance to test: 1.4953783421713478
+2025-04-18 16:04:03,332 - DEBUG - Distance to test4: 1.3691009558570972
+2025-04-18 16:04:03,332 - DEBUG - Distance to ahmedyasser: 1.5347332420538267
+2025-04-18 16:04:03,332 - DEBUG - Assigned name: Shymaa (min_distance: 1.171861003531307)
+2025-04-18 16:04:03,332 - DEBUG - Detected 1 faces
+2025-04-18 16:04:03,335 - DEBUG - Processing new frame
+2025-04-18 16:04:03,350 - DEBUG - No faces detected in frame
+2025-04-18 16:04:03,353 - DEBUG - Processing new frame
+2025-04-18 16:04:03,370 - DEBUG - No faces detected in frame
+2025-04-18 16:04:03,373 - DEBUG - Processing new frame
+2025-04-18 16:04:03,385 - DEBUG - Distance to Mariam: 1.3604173778058595
+2025-04-18 16:04:03,386 - DEBUG - Distance to Mina: 0.8907888275749566
+2025-04-18 16:04:03,386 - DEBUG - Distance to Motasem: 0.9400885508117707
+2025-04-18 16:04:03,386 - DEBUG - Distance to Shymaa: 1.211655000754661
+2025-04-18 16:04:03,386 - DEBUG - Distance to Mari: 1.3143783209260398
+2025-04-18 16:04:03,386 - DEBUG - Distance to mariam: 1.348034410632598
+2025-04-18 16:04:03,387 - DEBUG - Distance to kola: 1.3323917552985987
+2025-04-18 16:04:03,387 - DEBUG - Distance to test: 1.2473112548140481
+2025-04-18 16:04:03,387 - DEBUG - Distance to test: 1.2473112548140481
+2025-04-18 16:04:03,387 - DEBUG - Distance to test4: 1.221133869748585
+2025-04-18 16:04:03,388 - DEBUG - Distance to ahmedyasser: 1.2285855814147715
+2025-04-18 16:04:03,388 - DEBUG - Assigned name: Mina (min_distance: 0.8907888275749566)
+2025-04-18 16:04:03,388 - DEBUG - Detected 1 faces
+2025-04-18 16:04:03,389 - DEBUG - No faces detected in frame
+2025-04-18 16:04:03,391 - DEBUG - Processing new frame
+2025-04-18 16:04:03,393 - DEBUG - Processing new frame
+2025-04-18 16:04:03,409 - DEBUG - No faces detected in frame
+2025-04-18 16:04:03,413 - DEBUG - Processing new frame
+2025-04-18 16:04:03,430 - DEBUG - No faces detected in frame
+2025-04-18 16:04:03,433 - DEBUG - Processing new frame
+2025-04-18 16:04:03,448 - DEBUG - No faces detected in frame
+2025-04-18 16:04:03,451 - DEBUG - Processing new frame
+2025-04-18 16:04:03,463 - DEBUG - No faces detected in frame
+2025-04-18 16:04:03,466 - DEBUG - Processing new frame
+2025-04-18 16:04:03,482 - DEBUG - No faces detected in frame
+2025-04-18 16:04:03,484 - DEBUG - Processing new frame
+2025-04-18 16:04:03,499 - DEBUG - No faces detected in frame
+2025-04-18 16:04:03,502 - DEBUG - Processing new frame
+2025-04-18 16:04:03,503 - DEBUG - Distance to Mariam: 1.3612221202332335
+2025-04-18 16:04:03,504 - DEBUG - Distance to Mina: 0.6487383221822249
+2025-04-18 16:04:03,504 - DEBUG - Distance to Motasem: 1.0585712182188285
+2025-04-18 16:04:03,504 - DEBUG - Distance to Shymaa: 1.2282561803328658
+2025-04-18 16:04:03,505 - DEBUG - Distance to Mari: 1.2748483526147343
+2025-04-18 16:04:03,505 - DEBUG - Distance to mariam: 1.3601096153065537
+2025-04-18 16:04:03,505 - DEBUG - Distance to kola: 1.3679484442211758
+2025-04-18 16:04:03,506 - DEBUG - Distance to test: 1.1334887690518562
+2025-04-18 16:04:03,506 - DEBUG - Distance to test: 1.1334887690518562
+2025-04-18 16:04:03,506 - DEBUG - Distance to test4: 1.1240744704382188
+2025-04-18 16:04:03,507 - DEBUG - Distance to ahmedyasser: 1.1997710192362425
+2025-04-18 16:04:03,507 - DEBUG - Assigned name: Mina (min_distance: 0.6487383221822249)
+2025-04-18 16:04:03,507 - DEBUG - Detected 1 faces
+2025-04-18 16:04:03,511 - DEBUG - Processing new frame
+2025-04-18 16:04:03,517 - DEBUG - No faces detected in frame
+2025-04-18 16:04:03,520 - DEBUG - Processing new frame
+2025-04-18 16:04:03,534 - DEBUG - No faces detected in frame
+2025-04-18 16:04:03,605 - DEBUG - Distance to Mariam: 1.3407977982786174
+2025-04-18 16:04:03,605 - DEBUG - Distance to Mina: 0.6636911618860688
+2025-04-18 16:04:03,605 - DEBUG - Distance to Motasem: 1.1182766518977478
+2025-04-18 16:04:03,606 - DEBUG - Distance to Shymaa: 1.23199691087233
+2025-04-18 16:04:03,606 - DEBUG - Distance to Mari: 1.2592113276067085
+2025-04-18 16:04:03,606 - DEBUG - Distance to mariam: 1.3361001494926867
+2025-04-18 16:04:03,607 - DEBUG - Distance to kola: 1.3023006602804996
+2025-04-18 16:04:03,607 - DEBUG - Distance to test: 1.049364566650187
+2025-04-18 16:04:03,607 - DEBUG - Distance to test: 1.049364566650187
+2025-04-18 16:04:03,607 - DEBUG - Distance to test4: 1.0480201730798486
+2025-04-18 16:04:03,608 - DEBUG - Distance to ahmedyasser: 1.2394172884515995
+2025-04-18 16:04:03,608 - DEBUG - Assigned name: Mina (min_distance: 0.6636911618860688)
+2025-04-18 16:04:03,608 - DEBUG - Detected 1 faces
+2025-04-18 16:04:03,612 - DEBUG - Processing new frame
+2025-04-18 16:04:03,625 - DEBUG - {"topologyId": {"$oid": "68025bb4a1a412d32220a0dc"}, "driverConnectionId": 1, "serverConnectionId": 34666, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 10032.00000000652, "reply": "{\"topologyVersion\": {\"processId\": {\"$oid\": \"6801226dff33cb7585aa41a0\"}, \"counter\": 6}, \"hosts\": [\"cluster0-shard-00-00.22ogf.mongodb.net:27017\", \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"cluster0-shard-00-02.22ogf.mongodb.net:27017\"], \"setName\": \"atlas-1b7lne-shard-0\", \"setVersion\": 172, \"isWritablePrimary\": true, \"primary\": \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"tags\": {\"availabilityZone\": \"use1-az2\", \"workloadType\": \"OPERATIONAL\", \"diskState\": \"READY\", \"nodeType\": \"ELECTABLE\", \"provider\": \"AWS\", \"region\": \"US_EAST_1\"}, \"me\": \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"electionId\": {\"$oid\": \"7fffffff00000000000001cd\"}, \"lastWrite\": {\"opTime\": {\"ts\": {\"$timestamp\": {\"t\": 1744985043, \"i\": 44}}, \"t\": 461}, \"lastWriteDate\": {\"$date\": \"2025-04-18T14:04:03Z\"}, \"majorityOpTime\": {\"ts\": {\"$timestamp\": {\"t\": 1744985043, \"i\": 44}}, \"t\": 461}, \"majorityWriteDate\": {\"$date\": \"2025-04-18T14:04:03Z\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWriteBa...", "message": "Server heartbeat succeeded"}
+2025-04-18 16:04:03,625 - DEBUG - {"topologyId": {"$oid": "68025bd3a1a412d32220a0dd"}, "driverConnectionId": 1, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "awaited": false, "message": "Server heartbeat started"}
+2025-04-18 16:04:03,625 - DEBUG - {"topologyId": {"$oid": "68025bb4a1a412d32220a0dc"}, "driverConnectionId": 1, "serverConnectionId": 34666, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-04-18 16:04:03,625 - DEBUG - {"topologyId": {"$oid": "68025bd3a1a412d32220a0dd"}, "driverConnectionId": 1, "serverHost": "cluster0-shard-00-02.22ogf.mongodb.net", "serverPort": 27017, "awaited": false, "message": "Server heartbeat started"}
+2025-04-18 16:04:03,630 - DEBUG - {"topologyId": {"$oid": "68025bb4a1a412d32220a0dc"}, "driverConnectionId": 1, "serverConnectionId": 32286, "serverHost": "cluster0-shard-00-02.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 10000.0, "reply": "{\"topologyVersion\": {\"processId\": {\"$oid\": \"680122b53703e43dd6b313ee\"}, \"counter\": 3}, \"hosts\": [\"cluster0-shard-00-00.22ogf.mongodb.net:27017\", \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"cluster0-shard-00-02.22ogf.mongodb.net:27017\"], \"setName\": \"atlas-1b7lne-shard-0\", \"setVersion\": 172, \"secondary\": true, \"primary\": \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"tags\": {\"availabilityZone\": \"use1-az4\", \"workloadType\": \"OPERATIONAL\", \"nodeType\": \"ELECTABLE\", \"region\": \"US_EAST_1\", \"provider\": \"AWS\", \"diskState\": \"READY\"}, \"me\": \"cluster0-shard-00-02.22ogf.mongodb.net:27017\", \"lastWrite\": {\"opTime\": {\"ts\": {\"$timestamp\": {\"t\": 1744985043, \"i\": 44}}, \"t\": 461}, \"lastWriteDate\": {\"$date\": \"2025-04-18T14:04:03Z\"}, \"majorityOpTime\": {\"ts\": {\"$timestamp\": {\"t\": 1744985043, \"i\": 44}}, \"t\": 461}, \"majorityWriteDate\": {\"$date\": \"2025-04-18T14:04:03Z\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWriteBatchSize\": 100000, \"localTime\": {\"$date\": \"2025-04-18T14:04:0...", "message": "Server heartbeat succeeded"}
+2025-04-18 16:04:03,631 - DEBUG - {"topologyId": {"$oid": "68025bb4a1a412d32220a0dc"}, "driverConnectionId": 1, "serverConnectionId": 32286, "serverHost": "cluster0-shard-00-02.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-04-18 16:04:03,638 - DEBUG - {"topologyId": {"$oid": "68025bb4a1a412d32220a0dc"}, "driverConnectionId": 1, "serverConnectionId": 33076, "serverHost": "cluster0-shard-00-00.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 10015.00000001397, "reply": "{\"topologyVersion\": {\"processId\": {\"$oid\": \"68012225d4b896fbaf5771cd\"}, \"counter\": 4}, \"hosts\": [\"cluster0-shard-00-00.22ogf.mongodb.net:27017\", \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"cluster0-shard-00-02.22ogf.mongodb.net:27017\"], \"setName\": \"atlas-1b7lne-shard-0\", \"setVersion\": 172, \"secondary\": true, \"primary\": \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"tags\": {\"workloadType\": \"OPERATIONAL\", \"region\": \"US_EAST_1\", \"availabilityZone\": \"use1-az1\", \"nodeType\": \"ELECTABLE\", \"provider\": \"AWS\", \"diskState\": \"READY\"}, \"me\": \"cluster0-shard-00-00.22ogf.mongodb.net:27017\", \"lastWrite\": {\"opTime\": {\"ts\": {\"$timestamp\": {\"t\": 1744985043, \"i\": 44}}, \"t\": 461}, \"lastWriteDate\": {\"$date\": \"2025-04-18T14:04:03Z\"}, \"majorityOpTime\": {\"ts\": {\"$timestamp\": {\"t\": 1744985043, \"i\": 44}}, \"t\": 461}, \"majorityWriteDate\": {\"$date\": \"2025-04-18T14:04:03Z\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWriteBatchSize\": 100000, \"localTime\": {\"$date\": \"2025-04-18T14:04:0...", "message": "Server heartbeat succeeded"}
+2025-04-18 16:04:03,640 - DEBUG - {"topologyId": {"$oid": "68025bb4a1a412d32220a0dc"}, "driverConnectionId": 1, "serverConnectionId": 33076, "serverHost": "cluster0-shard-00-00.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-04-18 16:04:03,707 - DEBUG - Distance to Mariam: 1.345314682220095
+2025-04-18 16:04:03,707 - DEBUG - Distance to Mina: 0.7677986844167594
+2025-04-18 16:04:03,707 - DEBUG - Distance to Motasem: 1.1062311544965937
+2025-04-18 16:04:03,707 - DEBUG - Distance to Shymaa: 1.251460073717983
+2025-04-18 16:04:03,707 - DEBUG - Distance to Mari: 1.285522281126241
+2025-04-18 16:04:03,707 - DEBUG - Distance to mariam: 1.3356874945771162
+2025-04-18 16:04:03,709 - DEBUG - Distance to kola: 1.3213856663539345
+2025-04-18 16:04:03,709 - DEBUG - Distance to test: 1.1642779131457583
+2025-04-18 16:04:03,709 - DEBUG - Distance to test: 1.1642779131457583
+2025-04-18 16:04:03,710 - DEBUG - Distance to test4: 1.1584364398114082
+2025-04-18 16:04:03,710 - DEBUG - Distance to ahmedyasser: 1.2005258116232727
+2025-04-18 16:04:03,710 - DEBUG - Assigned name: Mina (min_distance: 0.7677986844167594)
+2025-04-18 16:04:03,711 - DEBUG - Detected 1 faces
+2025-04-18 16:04:03,713 - DEBUG - Processing new frame
+2025-04-18 16:04:03,786 - DEBUG - {"topologyId": {"$oid": "68025bd3a1a412d32220a0dd"}, "driverConnectionId": 1, "serverConnectionId": 34465, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "awaited": false, "durationMS": 155.99999998812564, "reply": "{\"helloOk\": true, \"topologyVersion\": {\"processId\": {\"$oid\": \"6801226dff33cb7585aa41a0\"}, \"counter\": 6}, \"hosts\": [\"cluster0-shard-00-00.22ogf.mongodb.net:27017\", \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"cluster0-shard-00-02.22ogf.mongodb.net:27017\"], \"setName\": \"atlas-1b7lne-shard-0\", \"setVersion\": 172, \"ismaster\": true, \"primary\": \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"tags\": {\"availabilityZone\": \"use1-az2\", \"workloadType\": \"OPERATIONAL\", \"provider\": \"AWS\", \"diskState\": \"READY\", \"nodeType\": \"ELECTABLE\", \"region\": \"US_EAST_1\"}, \"me\": \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"electionId\": {\"$oid\": \"7fffffff00000000000001cd\"}, \"lastWrite\": {\"opTime\": {\"ts\": {\"$timestamp\": {\"t\": 1744985043, \"i\": 51}}, \"t\": 461}, \"lastWriteDate\": {\"$date\": \"2025-04-18T14:04:03Z\"}, \"majorityOpTime\": {\"ts\": {\"$timestamp\": {\"t\": 1744985043, \"i\": 51}}, \"t\": 461}, \"majorityWriteDate\": {\"$date\": \"2025-04-18T14:04:03Z\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"ma...", "message": "Server heartbeat succeeded"}
+2025-04-18 16:04:03,787 - DEBUG - {"topologyId": {"$oid": "68025bd3a1a412d32220a0dd"}, "driverConnectionId": 1, "serverConnectionId": 32294, "serverHost": "cluster0-shard-00-02.22ogf.mongodb.net", "serverPort": 27017, "awaited": false, "durationMS": 155.99999998812564, "reply": "{\"helloOk\": true, \"topologyVersion\": {\"processId\": {\"$oid\": \"680122b53703e43dd6b313ee\"}, \"counter\": 3}, \"hosts\": [\"cluster0-shard-00-00.22ogf.mongodb.net:27017\", \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"cluster0-shard-00-02.22ogf.mongodb.net:27017\"], \"setName\": \"atlas-1b7lne-shard-0\", \"setVersion\": 172, \"secondary\": true, \"primary\": \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"tags\": {\"diskState\": \"READY\", \"availabilityZone\": \"use1-az4\", \"region\": \"US_EAST_1\", \"provider\": \"AWS\", \"workloadType\": \"OPERATIONAL\", \"nodeType\": \"ELECTABLE\"}, \"me\": \"cluster0-shard-00-02.22ogf.mongodb.net:27017\", \"lastWrite\": {\"opTime\": {\"ts\": {\"$timestamp\": {\"t\": 1744985043, \"i\": 51}}, \"t\": 461}, \"lastWriteDate\": {\"$date\": \"2025-04-18T14:04:03Z\"}, \"majorityOpTime\": {\"ts\": {\"$timestamp\": {\"t\": 1744985043, \"i\": 51}}, \"t\": 461}, \"majorityWriteDate\": {\"$date\": \"2025-04-18T14:04:03Z\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWriteBatchSize\": 100000, \"localTime\": {\"$date\": \"2...", "message": "Server heartbeat succeeded"}
+2025-04-18 16:04:03,789 - DEBUG - {"clientId": {"$oid": "68025bd3a1a412d32220a0dd"}, "message": "Connection pool ready", "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017}
+2025-04-18 16:04:03,789 - DEBUG - {"topologyId": {"$oid": "68025bd3a1a412d32220a0dd"}, "previousDescription": "<TopologyDescription id: 68025bd3a1a412d32220a0dd, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-02.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "newDescription": "<TopologyDescription id: 68025bd3a1a412d32220a0dd, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.22ogf.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.15599999998812564>, <ServerDescription ('cluster0-shard-00-02.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "message": "Topology description changed"}
+2025-04-18 16:04:03,790 - DEBUG - {"clientId": {"$oid": "68025bd3a1a412d32220a0dd"}, "message": "Connection pool ready", "serverHost": "cluster0-shard-00-02.22ogf.mongodb.net", "serverPort": 27017}
+2025-04-18 16:04:03,791 - DEBUG - {"topologyId": {"$oid": "68025bd3a1a412d32220a0dd"}, "previousDescription": "<TopologyDescription id: 68025bd3a1a412d32220a0dd, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.22ogf.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.15599999998812564>, <ServerDescription ('cluster0-shard-00-02.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "newDescription": "<TopologyDescription id: 68025bd3a1a412d32220a0dd, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.22ogf.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.15599999998812564>, <ServerDescription ('cluster0-shard-00-02.22ogf.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.15599999998812564>]>", "message": "Topology description changed"}
+2025-04-18 16:04:03,792 - DEBUG - {"topologyId": {"$oid": "68025bd3a1a412d32220a0dd"}, "driverConnectionId": 1, "serverConnectionId": 34465, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-04-18 16:04:03,793 - DEBUG - {"message": "Server selection succeeded", "selector": "Primary()", "operation": "buildinfo", "topologyDescription": "<TopologyDescription id: 68025bd3a1a412d32220a0dd, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.22ogf.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.15599999998812564>, <ServerDescription ('cluster0-shard-00-02.22ogf.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.15599999998812564>]>", "clientId": {"$oid": "68025bd3a1a412d32220a0dd"}, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017}
+2025-04-18 16:04:03,794 - DEBUG - {"topologyId": {"$oid": "68025bd3a1a412d32220a0dd"}, "driverConnectionId": 1, "serverConnectionId": 32294, "serverHost": "cluster0-shard-00-02.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-04-18 16:04:03,794 - DEBUG - {"clientId": {"$oid": "68025bd3a1a412d32220a0dd"}, "message": "Connection checkout started", "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017}
+2025-04-18 16:04:03,795 - DEBUG - {"clientId": {"$oid": "68025bd3a1a412d32220a0dd"}, "message": "Connection created", "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "driverConnectionId": 1}
+2025-04-18 16:04:03,799 - DEBUG - {"topologyId": {"$oid": "68025bd3a1a412d32220a0dd"}, "driverConnectionId": 1, "serverHost": "cluster0-shard-00-00.22ogf.mongodb.net", "serverPort": 27017, "awaited": false, "message": "Server heartbeat started"}
+2025-04-18 16:04:03,810 - DEBUG - Distance to Mariam: 1.3417954943588166
+2025-04-18 16:04:03,810 - DEBUG - Distance to Mina: 0.7111922413422037
+2025-04-18 16:04:03,812 - DEBUG - Distance to Motasem: 1.0717168346247363
+2025-04-18 16:04:03,812 - DEBUG - Distance to Shymaa: 1.2052115932175163
+2025-04-18 16:04:03,812 - DEBUG - Distance to Mari: 1.2895740155755424
+2025-04-18 16:04:03,813 - DEBUG - Distance to mariam: 1.3679196193903587
+2025-04-18 16:04:03,813 - DEBUG - Distance to kola: 1.3233461487777263
+2025-04-18 16:04:03,813 - DEBUG - Distance to test: 1.149869824736326
+2025-04-18 16:04:03,813 - DEBUG - Distance to test: 1.149869824736326
+2025-04-18 16:04:03,814 - DEBUG - Distance to test4: 1.1240561851516302
+2025-04-18 16:04:03,814 - DEBUG - Distance to ahmedyasser: 1.2619599378403514
+2025-04-18 16:04:03,814 - DEBUG - Assigned name: Mina (min_distance: 0.7111922413422037)
+2025-04-18 16:04:03,814 - DEBUG - Detected 1 faces
+2025-04-18 16:04:03,818 - DEBUG - Processing new frame
+2025-04-18 16:04:03,909 - DEBUG - Distance to Mariam: 1.4097745039821794
+2025-04-18 16:04:03,910 - DEBUG - Distance to Mina: 1.3270435602489021
+2025-04-18 16:04:03,910 - DEBUG - Distance to Motasem: 1.292660245494904
+2025-04-18 16:04:03,911 - DEBUG - Distance to Shymaa: 1.2697166162928561
+2025-04-18 16:04:03,911 - DEBUG - Distance to Mari: 1.4569654895272932
+2025-04-18 16:04:03,911 - DEBUG - Distance to mariam: 1.450213846417946
+2025-04-18 16:04:03,911 - DEBUG - Distance to kola: 1.4531797119351737
+2025-04-18 16:04:03,912 - DEBUG - Distance to test: 1.4649783598639188
+2025-04-18 16:04:03,912 - DEBUG - Distance to test: 1.4649783598639188
+2025-04-18 16:04:03,912 - DEBUG - Distance to test4: 1.404255236544755
+2025-04-18 16:04:03,912 - DEBUG - Distance to ahmedyasser: 1.5664355149512466
+2025-04-18 16:04:03,912 - DEBUG - Assigned name: Unknown (min_distance: 1.2697166162928561)
+2025-04-18 16:04:03,912 - DEBUG - Detected 1 faces
+2025-04-18 16:04:03,914 - DEBUG - Processing new frame
+2025-04-18 16:04:03,933 - DEBUG - {"topologyId": {"$oid": "68025bd3a1a412d32220a0dd"}, "driverConnectionId": 1, "serverConnectionId": 33081, "serverHost": "cluster0-shard-00-00.22ogf.mongodb.net", "serverPort": 27017, "awaited": false, "durationMS": 125.0, "reply": "{\"helloOk\": true, \"topologyVersion\": {\"processId\": {\"$oid\": \"68012225d4b896fbaf5771cd\"}, \"counter\": 4}, \"hosts\": [\"cluster0-shard-00-00.22ogf.mongodb.net:27017\", \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"cluster0-shard-00-02.22ogf.mongodb.net:27017\"], \"setName\": \"atlas-1b7lne-shard-0\", \"setVersion\": 172, \"secondary\": true, \"primary\": \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"tags\": {\"provider\": \"AWS\", \"availabilityZone\": \"use1-az1\", \"region\": \"US_EAST_1\", \"workloadType\": \"OPERATIONAL\", \"nodeType\": \"ELECTABLE\", \"diskState\": \"READY\"}, \"me\": \"cluster0-shard-00-00.22ogf.mongodb.net:27017\", \"lastWrite\": {\"opTime\": {\"ts\": {\"$timestamp\": {\"t\": 1744985044, \"i\": 10}}, \"t\": 461}, \"lastWriteDate\": {\"$date\": \"2025-04-18T14:04:04Z\"}, \"majorityOpTime\": {\"ts\": {\"$timestamp\": {\"t\": 1744985044, \"i\": 10}}, \"t\": 461}, \"majorityWriteDate\": {\"$date\": \"2025-04-18T14:04:04Z\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWriteBatchSize\": 100000, \"localTime\": {\"$date\": \"2...", "message": "Server heartbeat succeeded"}
+2025-04-18 16:04:03,934 - DEBUG - {"clientId": {"$oid": "68025bd3a1a412d32220a0dd"}, "message": "Connection pool ready", "serverHost": "cluster0-shard-00-00.22ogf.mongodb.net", "serverPort": 27017}
+2025-04-18 16:04:03,935 - DEBUG - {"topologyId": {"$oid": "68025bd3a1a412d32220a0dd"}, "previousDescription": "<TopologyDescription id: 68025bd3a1a412d32220a0dd, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.22ogf.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.15599999998812564>, <ServerDescription ('cluster0-shard-00-02.22ogf.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.15599999998812564>]>", "newDescription": "<TopologyDescription id: 68025bd3a1a412d32220a0dd, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.22ogf.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.125>, <ServerDescription ('cluster0-shard-00-01.22ogf.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.15599999998812564>, <ServerDescription ('cluster0-shard-00-02.22ogf.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.15599999998812564>]>", "message": "Topology description changed"}
+2025-04-18 16:04:03,937 - DEBUG - {"topologyId": {"$oid": "68025bd3a1a412d32220a0dd"}, "driverConnectionId": 1, "serverConnectionId": 33081, "serverHost": "cluster0-shard-00-00.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-04-18 16:04:04,010 - DEBUG - Distance to Mariam: 1.4225784947845939
+2025-04-18 16:04:04,010 - DEBUG - Distance to Mina: 1.0588968920889448
+2025-04-18 16:04:04,011 - DEBUG - Distance to Motasem: 1.0430941686878974
+2025-04-18 16:04:04,011 - DEBUG - Distance to Shymaa: 1.3132860181484036
+2025-04-18 16:04:04,011 - DEBUG - Distance to Mari: 1.4400269514533708
+2025-04-18 16:04:04,012 - DEBUG - Distance to mariam: 1.415208183916935
+2025-04-18 16:04:04,012 - DEBUG - Distance to kola: 1.4693822289735798
+2025-04-18 16:04:04,012 - DEBUG - Distance to test: 1.2238856658379567
+2025-04-18 16:04:04,013 - DEBUG - Distance to test: 1.2238856658379567
+2025-04-18 16:04:04,013 - DEBUG - Distance to test4: 1.2117930087351205
+2025-04-18 16:04:04,013 - DEBUG - Distance to ahmedyasser: 1.302574425912685
+2025-04-18 16:04:04,013 - DEBUG - Assigned name: Motasem (min_distance: 1.0430941686878974)
+2025-04-18 16:04:04,013 - DEBUG - Detected 1 faces
+2025-04-18 16:04:04,016 - DEBUG - Processing new frame
+2025-04-18 16:04:04,116 - DEBUG - Distance to Mariam: 1.4016709565075476
+2025-04-18 16:04:04,116 - DEBUG - Distance to Mina: 1.2715335091147637
+2025-04-18 16:04:04,116 - DEBUG - Distance to Motasem: 1.3837715307813274
+2025-04-18 16:04:04,117 - DEBUG - Distance to Shymaa: 1.2085798810204897
+2025-04-18 16:04:04,117 - DEBUG - Distance to Mari: 1.4261779758083915
+2025-04-18 16:04:04,117 - DEBUG - Distance to mariam: 1.3742126645711124
+2025-04-18 16:04:04,117 - DEBUG - Distance to kola: 1.4283231681711508
+2025-04-18 16:04:04,119 - DEBUG - Distance to test: 1.4880980823190495
+2025-04-18 16:04:04,119 - DEBUG - Distance to test: 1.4880980823190495
+2025-04-18 16:04:04,119 - DEBUG - Distance to test4: 1.4156396922215153
+2025-04-18 16:04:04,119 - DEBUG - Distance to ahmedyasser: 1.5617744905798503
+2025-04-18 16:04:04,120 - DEBUG - Assigned name: Unknown (min_distance: 1.2085798810204897)
+2025-04-18 16:04:04,120 - DEBUG - Detected 1 faces
+2025-04-18 16:04:04,124 - DEBUG - Processing new frame
+2025-04-18 16:04:04,215 - DEBUG - Distance to Mariam: 1.3715375477857943
+2025-04-18 16:04:04,215 - DEBUG - Distance to Mina: 1.3360443990888564
+2025-04-18 16:04:04,216 - DEBUG - Distance to Motasem: 1.348281463625928
+2025-04-18 16:04:04,216 - DEBUG - Distance to Shymaa: 1.2325101533577694
+2025-04-18 16:04:04,216 - DEBUG - Distance to Mari: 1.4076577037496156
+2025-04-18 16:04:04,216 - DEBUG - Distance to mariam: 1.390964312358685
+2025-04-18 16:04:04,216 - DEBUG - Distance to kola: 1.3964558042661348
+2025-04-18 16:04:04,217 - DEBUG - Distance to test: 1.4977582203694886
+2025-04-18 16:04:04,217 - DEBUG - Distance to test: 1.4977582203694886
+2025-04-18 16:04:04,217 - DEBUG - Distance to test4: 1.4201569135679282
+2025-04-18 16:04:04,217 - DEBUG - Distance to ahmedyasser: 1.590972855787718
+2025-04-18 16:04:04,217 - DEBUG - Assigned name: Unknown (min_distance: 1.2325101533577694)
+2025-04-18 16:04:04,218 - DEBUG - Detected 1 faces
+2025-04-18 16:04:04,221 - DEBUG - Processing new frame
+2025-04-18 16:04:04,308 - DEBUG - Distance to Mariam: 1.3931637181813397
+2025-04-18 16:04:04,308 - DEBUG - Distance to Mina: 1.316090542102528
+2025-04-18 16:04:04,309 - DEBUG - Distance to Motasem: 1.3274644806100415
+2025-04-18 16:04:04,309 - DEBUG - Distance to Shymaa: 1.2586129361125493
+2025-04-18 16:04:04,309 - DEBUG - Distance to Mari: 1.45359970932403
+2025-04-18 16:04:04,310 - DEBUG - Distance to mariam: 1.4481226435252625
+2025-04-18 16:04:04,310 - DEBUG - Distance to kola: 1.4459680665736845
+2025-04-18 16:04:04,310 - DEBUG - Distance to test: 1.4622650382597604
+2025-04-18 16:04:04,310 - DEBUG - Distance to test: 1.4622650382597604
+2025-04-18 16:04:04,310 - DEBUG - Distance to test4: 1.411665450191451
+2025-04-18 16:04:04,311 - DEBUG - Distance to ahmedyasser: 1.5735122211897958
+2025-04-18 16:04:04,311 - DEBUG - Assigned name: Unknown (min_distance: 1.2586129361125493)
+2025-04-18 16:04:04,311 - DEBUG - Detected 1 faces
+2025-04-18 16:04:04,315 - DEBUG - Processing new frame
+2025-04-18 16:04:04,401 - DEBUG - Distance to Mariam: 1.4048797509062834
+2025-04-18 16:04:04,402 - DEBUG - Distance to Mina: 1.3442048399485855
+2025-04-18 16:04:04,402 - DEBUG - Distance to Motasem: 1.3504115485015968
+2025-04-18 16:04:04,402 - DEBUG - Distance to Shymaa: 1.2924879250778487
+2025-04-18 16:04:04,402 - DEBUG - Distance to Mari: 1.4218486132155814
+2025-04-18 16:04:04,403 - DEBUG - Distance to mariam: 1.4067993256405273
+2025-04-18 16:04:04,403 - DEBUG - Distance to kola: 1.4126521243246493
+2025-04-18 16:04:04,403 - DEBUG - Distance to test: 1.462246375155662
+2025-04-18 16:04:04,404 - DEBUG - Distance to test: 1.462246375155662
+2025-04-18 16:04:04,404 - DEBUG - Distance to test4: 1.4036537065624617
+2025-04-18 16:04:04,404 - DEBUG - Distance to ahmedyasser: 1.5699276354970997
+2025-04-18 16:04:04,404 - DEBUG - Assigned name: Unknown (min_distance: 1.2924879250778487)
+2025-04-18 16:04:04,404 - DEBUG - Detected 1 faces
+2025-04-18 16:04:04,407 - DEBUG - Processing new frame
+2025-04-18 16:04:04,504 - DEBUG - Distance to Mariam: 1.3995367424077663
+2025-04-18 16:04:04,505 - DEBUG - Distance to Mina: 1.1331717638268692
+2025-04-18 16:04:04,505 - DEBUG - Distance to Motasem: 1.0598240086631665
+2025-04-18 16:04:04,505 - DEBUG - Distance to Shymaa: 1.242169917090375
+2025-04-18 16:04:04,506 - DEBUG - Distance to Mari: 1.4634918667980958
+2025-04-18 16:04:04,506 - DEBUG - Distance to mariam: 1.4172348397655719
+2025-04-18 16:04:04,506 - DEBUG - Distance to kola: 1.4591188528396428
+2025-04-18 16:04:04,506 - DEBUG - Distance to test: 1.3547262608188824
+2025-04-18 16:04:04,506 - DEBUG - Distance to test: 1.3547262608188824
+2025-04-18 16:04:04,507 - DEBUG - Distance to test4: 1.3269391704794309
+2025-04-18 16:04:04,507 - DEBUG - Distance to ahmedyasser: 1.3443835677834404
+2025-04-18 16:04:04,507 - DEBUG - Assigned name: Motasem (min_distance: 1.0598240086631665)
+2025-04-18 16:04:04,507 - DEBUG - Detected 1 faces
+2025-04-18 16:04:04,510 - DEBUG - Processing new frame
+2025-04-18 16:04:04,595 - DEBUG - {"clientId": {"$oid": "68025bd3a1a412d32220a0dd"}, "message": "Connection ready", "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "driverConnectionId": 1, "durationMS": 0.40599999998812564}
+2025-04-18 16:04:04,595 - DEBUG - {"clientId": {"$oid": "68025bd3a1a412d32220a0dd"}, "message": "Connection checked out", "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "driverConnectionId": 1, "durationMS": 0.7969999999913853}
+2025-04-18 16:04:04,597 - DEBUG - {"clientId": {"$oid": "68025bd3a1a412d32220a0dd"}, "message": "Command started", "command": "{\"buildinfo\": 1, \"lsid\": {\"id\": {\"$binary\": {\"base64\": \"IlJQInKiS6e0Vl/2BynIkw==\", \"subType\": \"04\"}}}, \"$clusterTime\": {\"clusterTime\": {\"$timestamp\": {\"t\": 1744985044, \"i\": 10}}, \"signature\": {\"hash\": {\"$binary\": {\"base64\": \"MF/hhG2byP7AQldwo2wYu/9Hbmc=\", \"subType\": \"00\"}}, \"keyId\": 7457716444667576322}}, \"$db\": \"admin\"}", "commandName": "buildinfo", "databaseName": "admin", "requestId": 26500, "operationId": 26500, "driverConnectionId": 1, "serverConnectionId": 34575, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017}
+2025-04-18 16:04:04,604 - DEBUG - Distance to Mariam: 1.3694204331384814
+2025-04-18 16:04:04,605 - DEBUG - Distance to Mina: 1.352255858026269
+2025-04-18 16:04:04,605 - DEBUG - Distance to Motasem: 1.3601449831213932
+2025-04-18 16:04:04,606 - DEBUG - Distance to Shymaa: 1.2381573462695168
+2025-04-18 16:04:04,606 - DEBUG - Distance to Mari: 1.4243924718974548
+2025-04-18 16:04:04,606 - DEBUG - Distance to mariam: 1.4008503887728383
+2025-04-18 16:04:04,606 - DEBUG - Distance to kola: 1.3984766072549457
+2025-04-18 16:04:04,607 - DEBUG - Distance to test: 1.5055994851891763
+2025-04-18 16:04:04,607 - DEBUG - Distance to test: 1.5055994851891763
+2025-04-18 16:04:04,607 - DEBUG - Distance to test4: 1.3896859676727698
+2025-04-18 16:04:04,608 - DEBUG - Distance to ahmedyasser: 1.5396029822567725
+2025-04-18 16:04:04,608 - DEBUG - Assigned name: Unknown (min_distance: 1.2381573462695168)
+2025-04-18 16:04:04,608 - DEBUG - Detected 1 faces
+2025-04-18 16:04:04,612 - DEBUG - Processing new frame
+2025-04-18 16:04:04,706 - DEBUG - Distance to Mariam: 1.3828403146245467
+2025-04-18 16:04:04,706 - DEBUG - Distance to Mina: 1.3600186242284378
+2025-04-18 16:04:04,707 - DEBUG - Distance to Motasem: 1.3951137825284223
+2025-04-18 16:04:04,707 - DEBUG - Distance to Shymaa: 1.224428811855606
+2025-04-18 16:04:04,707 - DEBUG - Distance to Mari: 1.4376072260787733
+2025-04-18 16:04:04,708 - DEBUG - Distance to mariam: 1.393705582418984
+2025-04-18 16:04:04,708 - DEBUG - Distance to kola: 1.4198947146536678
+2025-04-18 16:04:04,708 - DEBUG - Distance to test: 1.5289610147718182
+2025-04-18 16:04:04,708 - DEBUG - Distance to test: 1.5289610147718182
+2025-04-18 16:04:04,709 - DEBUG - Distance to test4: 1.3994138919255845
+2025-04-18 16:04:04,709 - DEBUG - Distance to ahmedyasser: 1.5444463043689314
+2025-04-18 16:04:04,709 - DEBUG - Assigned name: Unknown (min_distance: 1.224428811855606)
+2025-04-18 16:04:04,709 - DEBUG - Detected 1 faces
+2025-04-18 16:04:04,712 - DEBUG - Processing new frame
+2025-04-18 16:04:04,768 - DEBUG - {"clientId": {"$oid": "68025bd3a1a412d32220a0dd"}, "message": "Command succeeded", "durationMS": 170.932, "reply": "{\"version\": \"8.0.8\", \"gitVersion\": \"7f52660c14217ed2c8d3240f823a2291a4fe6abd\", \"modules\": [\"enterprise\"], \"allocator\": \"tcmalloc-google\", \"javascriptEngine\": \"mozjs\", \"sysInfo\": \"deprecated\", \"versionArray\": [8, 8], \"bits\": 64, \"maxBsonObjectSize\": 16777216, \"storageEngines\": [\"devnull\", \"inMemory\", \"queryable_wt\", \"wiredTiger\"], \"ok\": 1.0, \"$clusterTime\": {\"clusterTime\": {\"$timestamp\": {\"t\": 1744985044, \"i\": 51}}, \"signature\": {\"hash\": {\"$binary\": {\"base64\": \"MF/hhG2byP7AQldwo2wYu/9Hbmc=\", \"subType\": \"00\"}}, \"keyId\": 7457716444667576322}}, \"operationTime\": {\"$timestamp\": {\"t\": 1744985044, \"i\": 51}}}", "commandName": "buildinfo", "databaseName": "admin", "requestId": 26500, "operationId": 26500, "driverConnectionId": 1, "serverConnectionId": 34575, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017}
+2025-04-18 16:04:04,769 - DEBUG - {"clientId": {"$oid": "68025bd3a1a412d32220a0dd"}, "message": "Connection checked in", "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "driverConnectionId": 1}
+2025-04-18 16:04:04,770 - INFO - Connected to MongoDB
+2025-04-18 16:04:04,771 - DEBUG - {"message": "Server selection started", "selector": "Primary()", "operation": "find", "topologyDescription": "<TopologyDescription id: 68025bd3a1a412d32220a0dd, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.22ogf.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.125>, <ServerDescription ('cluster0-shard-00-01.22ogf.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.15599999998812564>, <ServerDescription ('cluster0-shard-00-02.22ogf.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.15599999998812564>]>", "clientId": {"$oid": "68025bd3a1a412d32220a0dd"}}
+2025-04-18 16:04:04,771 - DEBUG - {"message": "Server selection succeeded", "selector": "Primary()", "operation": "find", "topologyDescription": "<TopologyDescription id: 68025bd3a1a412d32220a0dd, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.22ogf.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.125>, <ServerDescription ('cluster0-shard-00-01.22ogf.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.15599999998812564>, <ServerDescription ('cluster0-shard-00-02.22ogf.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.15599999998812564>]>", "clientId": {"$oid": "68025bd3a1a412d32220a0dd"}, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017}
+2025-04-18 16:04:04,772 - DEBUG - {"clientId": {"$oid": "68025bd3a1a412d32220a0dd"}, "message": "Connection checkout started", "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017}
+2025-04-18 16:04:04,772 - DEBUG - {"clientId": {"$oid": "68025bd3a1a412d32220a0dd"}, "message": "Connection checked out", "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "driverConnectionId": 1, "durationMS": 0.0}
+2025-04-18 16:04:04,772 - DEBUG - {"clientId": {"$oid": "68025bd3a1a412d32220a0dd"}, "message": "Command started", "command": "{\"find\": \"Users\", \"projection\": {\"embedding\": 1, \"name\": 1}, \"lsid\": {\"id\": {\"$binary\": {\"base64\": \"IlJQInKiS6e0Vl/2BynIkw==\", \"subType\": \"04\"}}}, \"$clusterTime\": {\"clusterTime\": {\"$timestamp\": {\"t\": 1744985044, \"i\": 51}}, \"signature\": {\"hash\": {\"$binary\": {\"base64\": \"MF/hhG2byP7AQldwo2wYu/9Hbmc=\", \"subType\": \"00\"}}, \"keyId\": 7457716444667576322}}, \"$db\": \"Face\"}", "commandName": "find", "databaseName": "Face", "requestId": 19169, "operationId": 19169, "driverConnectionId": 1, "serverConnectionId": 34575, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017}
+2025-04-18 16:04:04,805 - DEBUG - Distance to Mariam: 1.3866295796388899
+2025-04-18 16:04:04,806 - DEBUG - Distance to Mina: 1.3534876956292368
+2025-04-18 16:04:04,806 - DEBUG - Distance to Motasem: 1.370498873587624
+2025-04-18 16:04:04,807 - DEBUG - Distance to Shymaa: 1.2155143509832973
+2025-04-18 16:04:04,807 - DEBUG - Distance to Mari: 1.4218043201430326
+2025-04-18 16:04:04,807 - DEBUG - Distance to mariam: 1.3997122191081226
+2025-04-18 16:04:04,808 - DEBUG - Distance to kola: 1.4187949105951176
+2025-04-18 16:04:04,808 - DEBUG - Distance to test: 1.5152054989682036
+2025-04-18 16:04:04,808 - DEBUG - Distance to test: 1.5152054989682036
+2025-04-18 16:04:04,808 - DEBUG - Distance to test4: 1.3880796235706439
+2025-04-18 16:04:04,808 - DEBUG - Distance to ahmedyasser: 1.5322158324771296
+2025-04-18 16:04:04,810 - DEBUG - Assigned name: Unknown (min_distance: 1.2155143509832973)
+2025-04-18 16:04:04,810 - DEBUG - Detected 1 faces
+2025-04-18 16:04:04,812 - DEBUG - Processing new frame
+2025-04-18 16:04:04,906 - DEBUG - Distance to Mariam: 1.3927515056888968
+2025-04-18 16:04:04,906 - DEBUG - Distance to Mina: 1.283691226033257
+2025-04-18 16:04:04,907 - DEBUG - Distance to Motasem: 1.3515650642144401
+2025-04-18 16:04:04,907 - DEBUG - Distance to Shymaa: 1.17540699381617
+2025-04-18 16:04:04,907 - DEBUG - Distance to Mari: 1.4306014708441694
+2025-04-18 16:04:04,907 - DEBUG - Distance to mariam: 1.4001604232898814
+2025-04-18 16:04:04,908 - DEBUG - Distance to kola: 1.4175357966368616
+2025-04-18 16:04:04,908 - DEBUG - Distance to test: 1.4900007279230156
+2025-04-18 16:04:04,908 - DEBUG - Distance to test: 1.4900007279230156
+2025-04-18 16:04:04,908 - DEBUG - Distance to test4: 1.3739854604985928
+2025-04-18 16:04:04,909 - DEBUG - Distance to ahmedyasser: 1.5388003101498304
+2025-04-18 16:04:04,909 - DEBUG - Assigned name: Shymaa (min_distance: 1.17540699381617)
+2025-04-18 16:04:04,909 - DEBUG - Detected 1 faces
+2025-04-18 16:04:04,912 - DEBUG - Processing new frame
+2025-04-18 16:04:04,948 - DEBUG - Processing new frame
+2025-04-18 16:04:04,961 - DEBUG - No faces detected in frame
+2025-04-18 16:04:04,964 - DEBUG - Processing new frame
+2025-04-18 16:04:04,979 - DEBUG - No faces detected in frame
+2025-04-18 16:04:04,981 - DEBUG - Processing new frame
+2025-04-18 16:04:04,995 - DEBUG - No faces detected in frame
+2025-04-18 16:04:04,997 - DEBUG - Processing new frame
+2025-04-18 16:04:05,012 - DEBUG - Distance to Mariam: 1.3730623585863262
+2025-04-18 16:04:05,013 - DEBUG - Distance to Mina: 1.278805653595447
+2025-04-18 16:04:05,013 - DEBUG - Distance to Motasem: 1.38606417965705
+2025-04-18 16:04:05,013 - DEBUG - Distance to Shymaa: 1.162942941521139
+2025-04-18 16:04:05,014 - DEBUG - Distance to Mari: 1.4188222215380848
+2025-04-18 16:04:05,014 - DEBUG - Distance to mariam: 1.3804041442489243
+2025-04-18 16:04:05,014 - DEBUG - Distance to kola: 1.3933390783234403
+2025-04-18 16:04:05,015 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,015 - DEBUG - Distance to test: 1.5048540129806156
+2025-04-18 16:04:05,015 - DEBUG - Distance to test: 1.5048540129806156
+2025-04-18 16:04:05,015 - DEBUG - Distance to test4: 1.3882381146107992
+2025-04-18 16:04:05,016 - DEBUG - Distance to ahmedyasser: 1.5567386428802412
+2025-04-18 16:04:05,016 - DEBUG - Assigned name: Shymaa (min_distance: 1.162942941521139)
+2025-04-18 16:04:05,016 - DEBUG - Detected 1 faces
+2025-04-18 16:04:05,016 - DEBUG - Processing new frame
+2025-04-18 16:04:05,018 - DEBUG - Processing new frame
+2025-04-18 16:04:05,034 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,037 - DEBUG - Processing new frame
+2025-04-18 16:04:05,055 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,057 - DEBUG - Processing new frame
+2025-04-18 16:04:05,075 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,079 - DEBUG - Processing new frame
+2025-04-18 16:04:05,093 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,096 - DEBUG - Processing new frame
+2025-04-18 16:04:05,111 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,114 - DEBUG - Processing new frame
+2025-04-18 16:04:05,128 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,131 - DEBUG - Processing new frame
+2025-04-18 16:04:05,148 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,150 - DEBUG - Distance to Mariam: 1.3876060877192702
+2025-04-18 16:04:05,151 - DEBUG - Distance to Mina: 1.2625681293398008
+2025-04-18 16:04:05,151 - DEBUG - Processing new frame
+2025-04-18 16:04:05,151 - DEBUG - Distance to Motasem: 1.3694872834469782
+2025-04-18 16:04:05,152 - DEBUG - Distance to Shymaa: 1.1491798759142262
+2025-04-18 16:04:05,152 - DEBUG - Distance to Mari: 1.4586978569394338
+2025-04-18 16:04:05,153 - DEBUG - Distance to mariam: 1.4222868106607753
+2025-04-18 16:04:05,153 - DEBUG - Distance to kola: 1.4552812019859216
+2025-04-18 16:04:05,154 - DEBUG - Distance to test: 1.4947370924847472
+2025-04-18 16:04:05,154 - DEBUG - Distance to test: 1.4947370924847472
+2025-04-18 16:04:05,154 - DEBUG - Distance to test4: 1.3991363814282947
+2025-04-18 16:04:05,154 - DEBUG - Distance to ahmedyasser: 1.5381373567006333
+2025-04-18 16:04:05,154 - DEBUG - Assigned name: Shymaa (min_distance: 1.1491798759142262)
+2025-04-18 16:04:05,154 - DEBUG - Detected 1 faces
+2025-04-18 16:04:05,157 - DEBUG - Processing new frame
+2025-04-18 16:04:05,166 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,169 - DEBUG - Processing new frame
+2025-04-18 16:04:05,186 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,188 - DEBUG - Processing new frame
+2025-04-18 16:04:05,205 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,209 - DEBUG - Processing new frame
+2025-04-18 16:04:05,226 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,229 - DEBUG - Processing new frame
+2025-04-18 16:04:05,246 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,249 - DEBUG - Processing new frame
+2025-04-18 16:04:05,259 - DEBUG - Distance to Mariam: 1.4225162412258507
+2025-04-18 16:04:05,259 - DEBUG - Distance to Mina: 1.2021528446702026
+2025-04-18 16:04:05,260 - DEBUG - Distance to Motasem: 1.3521897155794225
+2025-04-18 16:04:05,260 - DEBUG - Distance to Shymaa: 1.1843639629806157
+2025-04-18 16:04:05,261 - DEBUG - Distance to Mari: 1.4978638902843822
+2025-04-18 16:04:05,261 - DEBUG - Distance to mariam: 1.4674562655692234
+2025-04-18 16:04:05,261 - DEBUG - Distance to kola: 1.4826031650100118
+2025-04-18 16:04:05,262 - DEBUG - Distance to test: 1.486554724112416
+2025-04-18 16:04:05,262 - DEBUG - Distance to test: 1.486554724112416
+2025-04-18 16:04:05,262 - DEBUG - Distance to test4: 1.394404813620966
+2025-04-18 16:04:05,263 - DEBUG - Distance to ahmedyasser: 1.5405970244904237
+2025-04-18 16:04:05,263 - DEBUG - Assigned name: Shymaa (min_distance: 1.1843639629806157)
+2025-04-18 16:04:05,263 - DEBUG - Detected 1 faces
+2025-04-18 16:04:05,265 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,267 - DEBUG - Processing new frame
+2025-04-18 16:04:05,267 - DEBUG - Processing new frame
+2025-04-18 16:04:05,284 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,287 - DEBUG - Processing new frame
+2025-04-18 16:04:05,304 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,307 - DEBUG - Processing new frame
+2025-04-18 16:04:05,320 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,324 - DEBUG - Processing new frame
+2025-04-18 16:04:05,341 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,344 - DEBUG - {"clientId": {"$oid": "68025bd3a1a412d32220a0dd"}, "message": "Command succeeded", "durationMS": 572.648, "reply": "{\"cursor\": {\"firstBatch\": [{\"name\": \"Mariam\", \"embedding\": [0.01898426003754139, -0.02435726672410965, -0.024255715310573578, 0.0010182757396250963, -0.0538032092154026, -0.01841103285551071, 0.030284009873867035, -0.03693436086177826, 0.06752249598503113, 0.05933712422847748, -0.04299423098564148, 0.06443177908658981, 0.06023566424846649, 0.07493552565574646, -0.09272390604019165, -0.014058071188628674, 0.00659866351634264, -0.008295617066323757, 0.05754998326301575, 0.005258271936327219, -0.078140988945961, -0.02959357015788555, 0.016655687242746353, -0.022396856918931007, 0.023047788068652153, -0.04479692876338959, -0.07425180822610855, -0.06935499608516693, -0.06946518272161484, -0.06975125521421432, -0.04533588886260986, 0.0011985822347924113, -0.020666584372520447, -0.0008407181012444198, -0.04435174912214279, 0.0076848226599395275, -0.010485973209142685, 0.006945374887436628, -0.044967491179704666, 0.007772664539515972, -0.07404948770999908, -0.01174876932054758, -0.011771840974...", "commandName": "find", "databaseName": "Face", "requestId": 19169, "operationId": 19169, "driverConnectionId": 1, "serverConnectionId": 34575, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017}
+2025-04-18 16:04:05,361 - DEBUG - Processing new frame
+2025-04-18 16:04:05,374 - DEBUG - {"clientId": {"$oid": "68025bd3a1a412d32220a0dd"}, "message": "Connection checked in", "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "driverConnectionId": 1}
+2025-04-18 16:04:05,375 - INFO - Loaded 11 face embeddings
+2025-04-18 16:04:05,376 - DEBUG - Attempting to open RTSP stream: https://b-604520a7.kinesisvideo.us-east-1.amazonaws.com/hls/v1/getHLSMasterPlaylist.m3u8?SessionToken=CiBwreTWeEZBgfNNAjsccXbp7y5lumYNNma2UXK9oyNhOhIQALVXnpDmM5AbhrJ9ABWOfhoZfQKsaHstUXUiuYUz2CHlulfaOsVcZ14hhyIgHf1cG-LvJsrY4aax9pg_-L0yC9tQuQKYAA15v4tD5TU~
+2025-04-18 16:04:05,393 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,394 - DEBUG - Processing new frame
+2025-04-18 16:04:05,396 - DEBUG - Distance to Mariam: 1.3501941797390757
+2025-04-18 16:04:05,397 - DEBUG - Distance to Mina: 0.5451614938820049
+2025-04-18 16:04:05,397 - DEBUG - Distance to Motasem: 1.1638188924441581
+2025-04-18 16:04:05,398 - DEBUG - Distance to Shymaa: 1.2827779008919797
+2025-04-18 16:04:05,398 - DEBUG - Distance to Mari: 1.289741159425057
+2025-04-18 16:04:05,398 - DEBUG - Distance to mariam: 1.4026448500617235
+2025-04-18 16:04:05,398 - DEBUG - Distance to kola: 1.3497390590409344
+2025-04-18 16:04:05,399 - DEBUG - Distance to test: 0.9733608354826169
+2025-04-18 16:04:05,399 - DEBUG - Distance to test: 0.9733608354826169
+2025-04-18 16:04:05,399 - DEBUG - Distance to test4: 0.9945117457684303
+2025-04-18 16:04:05,400 - DEBUG - Distance to ahmedyasser: 1.233890521395591
+2025-04-18 16:04:05,400 - DEBUG - Assigned name: Mina (min_distance: 0.5451614938820049)
+2025-04-18 16:04:05,401 - DEBUG - Detected 1 faces
+2025-04-18 16:04:05,402 - DEBUG - Processing new frame
+2025-04-18 16:04:05,409 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,411 - DEBUG - Processing new frame
+2025-04-18 16:04:05,426 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,429 - DEBUG - Processing new frame
+2025-04-18 16:04:05,447 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,450 - DEBUG - Processing new frame
+2025-04-18 16:04:05,468 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,471 - DEBUG - Processing new frame
+2025-04-18 16:04:05,488 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,491 - DEBUG - Processing new frame
+2025-04-18 16:04:05,498 - DEBUG - Distance to Mariam: 1.3869313325603423
+2025-04-18 16:04:05,499 - DEBUG - Distance to Mina: 1.2603135400568808
+2025-04-18 16:04:05,499 - DEBUG - Distance to Motasem: 1.3593494542749018
+2025-04-18 16:04:05,499 - DEBUG - Distance to Shymaa: 1.165424652136445
+2025-04-18 16:04:05,499 - DEBUG - Distance to Mari: 1.4238263129072453
+2025-04-18 16:04:05,500 - DEBUG - Distance to mariam: 1.405936697483692
+2025-04-18 16:04:05,500 - DEBUG - Distance to kola: 1.4261788236477997
+2025-04-18 16:04:05,500 - DEBUG - Distance to test: 1.5121353561433222
+2025-04-18 16:04:05,500 - DEBUG - Distance to test: 1.5121353561433222
+2025-04-18 16:04:05,501 - DEBUG - Distance to test4: 1.3995757190556217
+2025-04-18 16:04:05,501 - DEBUG - Distance to ahmedyasser: 1.5437498948182786
+2025-04-18 16:04:05,501 - DEBUG - Assigned name: Shymaa (min_distance: 1.165424652136445)
+2025-04-18 16:04:05,501 - DEBUG - Detected 1 faces
+2025-04-18 16:04:05,504 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,505 - DEBUG - Processing new frame
+2025-04-18 16:04:05,506 - DEBUG - Processing new frame
+2025-04-18 16:04:05,522 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,526 - DEBUG - Processing new frame
+2025-04-18 16:04:05,543 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,546 - DEBUG - Processing new frame
+2025-04-18 16:04:05,563 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,565 - DEBUG - Processing new frame
+2025-04-18 16:04:05,583 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,585 - DEBUG - Processing new frame
+2025-04-18 16:04:05,604 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,606 - DEBUG - Processing new frame
+2025-04-18 16:04:05,609 - DEBUG - Distance to Mariam: 1.3963746502237793
+2025-04-18 16:04:05,609 - DEBUG - Distance to Mina: 1.295068397434381
+2025-04-18 16:04:05,611 - DEBUG - Distance to Motasem: 1.3619779407311774
+2025-04-18 16:04:05,611 - DEBUG - Distance to Shymaa: 1.1875880480206442
+2025-04-18 16:04:05,611 - DEBUG - Distance to Mari: 1.4256793750013306
+2025-04-18 16:04:05,612 - DEBUG - Distance to mariam: 1.404285390701224
+2025-04-18 16:04:05,612 - DEBUG - Distance to kola: 1.4256224423736938
+2025-04-18 16:04:05,612 - DEBUG - Distance to test: 1.5139539512266351
+2025-04-18 16:04:05,613 - DEBUG - Distance to test: 1.5139539512266351
+2025-04-18 16:04:05,613 - DEBUG - Distance to test4: 1.3900783256416167
+2025-04-18 16:04:05,613 - DEBUG - Distance to ahmedyasser: 1.5258434864178714
+2025-04-18 16:04:05,614 - DEBUG - Assigned name: Shymaa (min_distance: 1.1875880480206442)
+2025-04-18 16:04:05,614 - DEBUG - Detected 1 faces
+2025-04-18 16:04:05,617 - DEBUG - Processing new frame
+2025-04-18 16:04:05,622 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,625 - DEBUG - Processing new frame
+2025-04-18 16:04:05,637 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,639 - DEBUG - Processing new frame
+2025-04-18 16:04:05,656 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,659 - DEBUG - Processing new frame
+2025-04-18 16:04:05,674 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,678 - DEBUG - Processing new frame
+2025-04-18 16:04:05,690 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,693 - DEBUG - Processing new frame
+2025-04-18 16:04:05,707 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,710 - DEBUG - Processing new frame
+2025-04-18 16:04:05,724 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,726 - DEBUG - Processing new frame
+2025-04-18 16:04:05,733 - DEBUG - Distance to Mariam: 1.4053098018803232
+2025-04-18 16:04:05,734 - DEBUG - Distance to Mina: 1.3960537979957965
+2025-04-18 16:04:05,734 - DEBUG - Distance to Motasem: 1.2965293303617278
+2025-04-18 16:04:05,734 - DEBUG - Distance to Shymaa: 1.1831010600783236
+2025-04-18 16:04:05,735 - DEBUG - Distance to Mari: 1.4149058845963598
+2025-04-18 16:04:05,735 - DEBUG - Distance to mariam: 1.3915938529481215
+2025-04-18 16:04:05,735 - DEBUG - Distance to kola: 1.4005545035757692
+2025-04-18 16:04:05,736 - DEBUG - Distance to test: 1.5117535383459606
+2025-04-18 16:04:05,736 - DEBUG - Distance to test: 1.5117535383459606
+2025-04-18 16:04:05,736 - DEBUG - Distance to test4: 1.4022635994853088
+2025-04-18 16:04:05,736 - DEBUG - Distance to ahmedyasser: 1.4987413246729344
+2025-04-18 16:04:05,736 - DEBUG - Assigned name: Shymaa (min_distance: 1.1831010600783236)
+2025-04-18 16:04:05,737 - DEBUG - Detected 1 faces
+2025-04-18 16:04:05,739 - DEBUG - Processing new frame
+2025-04-18 16:04:05,741 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,743 - DEBUG - Processing new frame
+2025-04-18 16:04:05,758 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,762 - DEBUG - Processing new frame
+2025-04-18 16:04:05,777 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,779 - DEBUG - Processing new frame
+2025-04-18 16:04:05,792 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,794 - DEBUG - Processing new frame
+2025-04-18 16:04:05,807 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,810 - DEBUG - Processing new frame
+2025-04-18 16:04:05,823 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,825 - DEBUG - Processing new frame
+2025-04-18 16:04:05,841 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,843 - DEBUG - Processing new frame
+2025-04-18 16:04:05,845 - DEBUG - Distance to Mariam: 1.408268281965669
+2025-04-18 16:04:05,845 - DEBUG - Distance to Mina: 1.1202928165473953
+2025-04-18 16:04:05,845 - DEBUG - Distance to Motasem: 1.2369848706662254
+2025-04-18 16:04:05,845 - DEBUG - Distance to Shymaa: 1.280227715186852
+2025-04-18 16:04:05,846 - DEBUG - Distance to Mari: 1.4606649269649448
+2025-04-18 16:04:05,846 - DEBUG - Distance to mariam: 1.4455399718662498
+2025-04-18 16:04:05,846 - DEBUG - Distance to kola: 1.4977733697685012
+2025-04-18 16:04:05,846 - DEBUG - Distance to test: 1.3001722141883225
+2025-04-18 16:04:05,846 - DEBUG - Distance to test: 1.3001722141883225
+2025-04-18 16:04:05,848 - DEBUG - Distance to test4: 1.2624499016918624
+2025-04-18 16:04:05,848 - DEBUG - Distance to ahmedyasser: 1.483055506428493
+2025-04-18 16:04:05,848 - DEBUG - Assigned name: Mina (min_distance: 1.1202928165473953)
+2025-04-18 16:04:05,848 - DEBUG - Detected 1 faces
+2025-04-18 16:04:05,850 - DEBUG - Processing new frame
+2025-04-18 16:04:05,861 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,864 - DEBUG - Processing new frame
+2025-04-18 16:04:05,879 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,881 - DEBUG - Processing new frame
+2025-04-18 16:04:05,896 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,901 - DEBUG - Processing new frame
+2025-04-18 16:04:05,916 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,918 - DEBUG - Processing new frame
+2025-04-18 16:04:05,934 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,938 - DEBUG - Processing new frame
+2025-04-18 16:04:05,951 - DEBUG - Distance to Mariam: 1.3872628834996308
+2025-04-18 16:04:05,951 - DEBUG - Distance to Mina: 1.1873958516200165
+2025-04-18 16:04:05,952 - DEBUG - Distance to Motasem: 1.2739960925438762
+2025-04-18 16:04:05,952 - DEBUG - Distance to Shymaa: 1.200268446564944
+2025-04-18 16:04:05,952 - DEBUG - Distance to Mari: 1.4372085650949156
+2025-04-18 16:04:05,953 - DEBUG - Distance to mariam: 1.4134704141135135
+2025-04-18 16:04:05,953 - DEBUG - Distance to kola: 1.4343072169261117
+2025-04-18 16:04:05,953 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,953 - DEBUG - Distance to test: 1.4231350662150968
+2025-04-18 16:04:05,954 - DEBUG - Distance to test: 1.4231350662150968
+2025-04-18 16:04:05,954 - DEBUG - Distance to test4: 1.3173424165290282
+2025-04-18 16:04:05,955 - DEBUG - Distance to ahmedyasser: 1.5742995306808918
+2025-04-18 16:04:05,955 - DEBUG - Assigned name: Mina (min_distance: 1.1873958516200165)
+2025-04-18 16:04:05,955 - DEBUG - Detected 1 faces
+2025-04-18 16:04:05,956 - DEBUG - Processing new frame
+2025-04-18 16:04:05,958 - DEBUG - Processing new frame
+2025-04-18 16:04:05,974 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,977 - DEBUG - Processing new frame
+2025-04-18 16:04:05,994 - DEBUG - No faces detected in frame
+2025-04-18 16:04:05,997 - DEBUG - Processing new frame
+2025-04-18 16:04:06,015 - DEBUG - No faces detected in frame
+2025-04-18 16:04:06,018 - DEBUG - Processing new frame
+2025-04-18 16:04:06,035 - DEBUG - No faces detected in frame
+2025-04-18 16:04:06,037 - DEBUG - Processing new frame
+2025-04-18 16:04:06,054 - DEBUG - No faces detected in frame
+2025-04-18 16:04:06,056 - DEBUG - Processing new frame
+2025-04-18 16:04:06,062 - DEBUG - Distance to Mariam: 1.3719885506682308
+2025-04-18 16:04:06,063 - DEBUG - Distance to Mina: 1.3321932771437943
+2025-04-18 16:04:06,064 - DEBUG - Distance to Motasem: 1.386899277161515
+2025-04-18 16:04:06,065 - DEBUG - Distance to Shymaa: 1.171861003531307
+2025-04-18 16:04:06,065 - DEBUG - Distance to Mari: 1.3824477375422357
+2025-04-18 16:04:06,066 - DEBUG - Distance to mariam: 1.3809851004473817
+2025-04-18 16:04:06,066 - DEBUG - Distance to kola: 1.3813846781581332
+2025-04-18 16:04:06,066 - DEBUG - Distance to test: 1.4953783421713478
+2025-04-18 16:04:06,067 - DEBUG - Distance to test: 1.4953783421713478
+2025-04-18 16:04:06,067 - DEBUG - Distance to test4: 1.3691009558570972
+2025-04-18 16:04:06,068 - DEBUG - Distance to ahmedyasser: 1.5347332420538267
+2025-04-18 16:04:06,068 - DEBUG - Assigned name: Shymaa (min_distance: 1.171861003531307)
+2025-04-18 16:04:06,068 - DEBUG - Detected 1 faces
+2025-04-18 16:04:06,073 - DEBUG - Processing new frame
+2025-04-18 16:04:06,075 - DEBUG - No faces detected in frame
+2025-04-18 16:04:06,077 - DEBUG - Processing new frame
+2025-04-18 16:04:06,087 - DEBUG - No faces detected in frame
+2025-04-18 16:04:06,090 - DEBUG - Processing new frame
+2025-04-18 16:04:06,092 - DEBUG - No faces detected in frame
+2025-04-18 16:04:06,108 - DEBUG - No faces detected in frame
+2025-04-18 16:04:06,111 - DEBUG - Processing new frame
+2025-04-18 16:04:06,130 - DEBUG - No faces detected in frame
+2025-04-18 16:04:06,138 - DEBUG - Processing new frame
+2025-04-18 16:04:06,155 - DEBUG - No faces detected in frame
+2025-04-18 16:04:06,157 - DEBUG - Processing new frame
+2025-04-18 16:04:06,172 - DEBUG - No faces detected in frame
+2025-04-18 16:04:06,175 - DEBUG - Processing new frame
+2025-04-18 16:04:06,191 - DEBUG - No faces detected in frame
+2025-04-18 16:04:06,193 - DEBUG - Processing new frame
+2025-04-18 16:04:06,208 - DEBUG - No faces detected in frame
+2025-04-18 16:04:06,211 - DEBUG - Processing new frame
+2025-04-18 16:04:06,228 - DEBUG - No faces detected in frame
+2025-04-18 16:04:06,230 - DEBUG - Processing new frame
+2025-04-18 16:04:06,249 - DEBUG - No faces detected in frame
+2025-04-18 16:04:06,251 - DEBUG - Processing new frame
+2025-04-18 16:04:06,264 - DEBUG - No faces detected in frame
+2025-04-18 16:04:06,266 - DEBUG - Processing new frame
+2025-04-18 16:04:06,284 - DEBUG - No faces detected in frame
+2025-04-18 16:04:06,972 - DEBUG - Processing new frame
+2025-04-18 16:04:06,986 - DEBUG - No faces detected in frame
+2025-04-18 16:04:06,989 - DEBUG - Processing new frame
+2025-04-18 16:04:07,004 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,005 - DEBUG - Processing new frame
+2025-04-18 16:04:07,020 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,022 - DEBUG - Processing new frame
+2025-04-18 16:04:07,040 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,042 - DEBUG - Processing new frame
+2025-04-18 16:04:07,056 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,058 - DEBUG - Processing new frame
+2025-04-18 16:04:07,073 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,075 - DEBUG - Processing new frame
+2025-04-18 16:04:07,089 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,091 - DEBUG - Processing new frame
+2025-04-18 16:04:07,104 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,106 - DEBUG - Processing new frame
+2025-04-18 16:04:07,119 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,122 - DEBUG - Processing new frame
+2025-04-18 16:04:07,137 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,139 - DEBUG - Processing new frame
+2025-04-18 16:04:07,155 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,158 - DEBUG - Processing new frame
+2025-04-18 16:04:07,172 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,173 - DEBUG - Processing new frame
+2025-04-18 16:04:07,188 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,190 - DEBUG - Processing new frame
+2025-04-18 16:04:07,205 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,207 - DEBUG - Processing new frame
+2025-04-18 16:04:07,221 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,223 - DEBUG - Processing new frame
+2025-04-18 16:04:07,238 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,241 - DEBUG - Processing new frame
+2025-04-18 16:04:07,253 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,256 - DEBUG - Processing new frame
+2025-04-18 16:04:07,269 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,269 - DEBUG - Processing new frame
+2025-04-18 16:04:07,272 - DEBUG - Processing new frame
+2025-04-18 16:04:07,287 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,290 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,291 - DEBUG - Processing new frame
+2025-04-18 16:04:07,292 - DEBUG - Processing new frame
+2025-04-18 16:04:07,305 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,309 - DEBUG - Processing new frame
+2025-04-18 16:04:07,309 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,311 - DEBUG - Processing new frame
+2025-04-18 16:04:07,324 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,325 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,326 - DEBUG - Processing new frame
+2025-04-18 16:04:07,327 - DEBUG - Processing new frame
+2025-04-18 16:04:07,339 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,339 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,341 - DEBUG - Processing new frame
+2025-04-18 16:04:07,342 - DEBUG - Processing new frame
+2025-04-18 16:04:07,358 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,359 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,360 - DEBUG - Processing new frame
+2025-04-18 16:04:07,361 - DEBUG - Processing new frame
+2025-04-18 16:04:07,379 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,380 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,381 - DEBUG - Processing new frame
+2025-04-18 16:04:07,382 - DEBUG - Processing new frame
+2025-04-18 16:04:07,397 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,397 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,399 - DEBUG - Processing new frame
+2025-04-18 16:04:07,399 - DEBUG - Processing new frame
+2025-04-18 16:04:07,415 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,416 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,418 - DEBUG - Processing new frame
+2025-04-18 16:04:07,418 - DEBUG - Processing new frame
+2025-04-18 16:04:07,433 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,434 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,436 - DEBUG - Processing new frame
+2025-04-18 16:04:07,437 - DEBUG - Processing new frame
+2025-04-18 16:04:07,449 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,451 - DEBUG - Processing new frame
+2025-04-18 16:04:07,452 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,455 - DEBUG - Processing new frame
+2025-04-18 16:04:07,468 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,471 - DEBUG - Processing new frame
+2025-04-18 16:04:07,473 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,476 - DEBUG - Processing new frame
+2025-04-18 16:04:07,487 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,489 - DEBUG - Processing new frame
+2025-04-18 16:04:07,491 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,493 - DEBUG - Processing new frame
+2025-04-18 16:04:07,505 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,508 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,509 - DEBUG - Processing new frame
+2025-04-18 16:04:07,512 - DEBUG - Processing new frame
+2025-04-18 16:04:07,524 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,527 - DEBUG - Processing new frame
+2025-04-18 16:04:07,528 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,532 - DEBUG - Processing new frame
+2025-04-18 16:04:07,541 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,544 - DEBUG - Processing new frame
+2025-04-18 16:04:07,549 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,552 - DEBUG - Processing new frame
+2025-04-18 16:04:07,558 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,561 - DEBUG - Processing new frame
+2025-04-18 16:04:07,567 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,570 - DEBUG - Processing new frame
+2025-04-18 16:04:07,577 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,581 - DEBUG - Processing new frame
+2025-04-18 16:04:07,587 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,589 - DEBUG - Processing new frame
+2025-04-18 16:04:07,597 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,599 - DEBUG - Processing new frame
+2025-04-18 16:04:07,605 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,608 - DEBUG - Processing new frame
+2025-04-18 16:04:07,614 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,617 - DEBUG - Processing new frame
+2025-04-18 16:04:07,626 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,629 - DEBUG - Processing new frame
+2025-04-18 16:04:07,634 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,636 - DEBUG - Processing new frame
+2025-04-18 16:04:07,647 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,650 - DEBUG - Processing new frame
+2025-04-18 16:04:07,652 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,653 - DEBUG - Processing new frame
+2025-04-18 16:04:07,666 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,668 - DEBUG - Processing new frame
+2025-04-18 16:04:07,668 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,670 - DEBUG - Processing new frame
+2025-04-18 16:04:07,682 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,684 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,685 - DEBUG - Processing new frame
+2025-04-18 16:04:07,686 - DEBUG - Processing new frame
+2025-04-18 16:04:07,699 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,699 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,701 - DEBUG - Processing new frame
+2025-04-18 16:04:07,701 - DEBUG - Processing new frame
+2025-04-18 16:04:07,715 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,717 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,718 - DEBUG - Processing new frame
+2025-04-18 16:04:07,719 - DEBUG - Processing new frame
+2025-04-18 16:04:07,733 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,734 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,735 - DEBUG - Processing new frame
+2025-04-18 16:04:07,736 - DEBUG - Processing new frame
+2025-04-18 16:04:07,751 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,753 - DEBUG - Processing new frame
+2025-04-18 16:04:07,755 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,757 - DEBUG - Processing new frame
+2025-04-18 16:04:07,766 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,769 - DEBUG - Processing new frame
+2025-04-18 16:04:07,772 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,775 - DEBUG - Processing new frame
+2025-04-18 16:04:07,784 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,787 - DEBUG - Processing new frame
+2025-04-18 16:04:07,788 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,790 - DEBUG - Processing new frame
+2025-04-18 16:04:07,804 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,806 - DEBUG - Processing new frame
+2025-04-18 16:04:07,806 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,808 - DEBUG - Processing new frame
+2025-04-18 16:04:07,821 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,823 - DEBUG - Processing new frame
+2025-04-18 16:04:07,825 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,827 - DEBUG - Processing new frame
+2025-04-18 16:04:07,839 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,842 - DEBUG - Processing new frame
+2025-04-18 16:04:07,842 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,845 - DEBUG - Processing new frame
+2025-04-18 16:04:07,856 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,859 - DEBUG - Processing new frame
+2025-04-18 16:04:07,860 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,862 - DEBUG - Processing new frame
+2025-04-18 16:04:07,870 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,873 - DEBUG - Processing new frame
+2025-04-18 16:04:07,876 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,878 - DEBUG - Processing new frame
+2025-04-18 16:04:07,888 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,890 - DEBUG - Processing new frame
+2025-04-18 16:04:07,895 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,897 - DEBUG - Processing new frame
+2025-04-18 16:04:07,908 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,910 - DEBUG - Processing new frame
+2025-04-18 16:04:07,912 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,915 - DEBUG - Processing new frame
+2025-04-18 16:04:07,927 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,929 - DEBUG - Processing new frame
+2025-04-18 16:04:07,933 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,935 - DEBUG - Processing new frame
+2025-04-18 16:04:07,946 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,948 - DEBUG - Processing new frame
+2025-04-18 16:04:07,950 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,952 - DEBUG - Processing new frame
+2025-04-18 16:04:07,964 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,966 - DEBUG - Processing new frame
+2025-04-18 16:04:07,968 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,971 - DEBUG - Processing new frame
+2025-04-18 16:04:07,981 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,983 - DEBUG - Processing new frame
+2025-04-18 16:04:07,986 - DEBUG - No faces detected in frame
+2025-04-18 16:04:07,989 - DEBUG - Processing new frame
+2025-04-18 16:04:07,998 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,002 - DEBUG - Processing new frame
+2025-04-18 16:04:08,004 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,007 - DEBUG - Processing new frame
+2025-04-18 16:04:08,015 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,016 - DEBUG - Processing new frame
+2025-04-18 16:04:08,022 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,032 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,035 - DEBUG - Processing new frame
+2025-04-18 16:04:08,049 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,052 - DEBUG - Processing new frame
+2025-04-18 16:04:08,067 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,069 - DEBUG - Processing new frame
+2025-04-18 16:04:08,085 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,087 - DEBUG - Processing new frame
+2025-04-18 16:04:08,103 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,105 - DEBUG - Processing new frame
+2025-04-18 16:04:08,121 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,124 - DEBUG - Processing new frame
+2025-04-18 16:04:08,139 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,140 - DEBUG - Processing new frame
+2025-04-18 16:04:08,154 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,154 - INFO - Video capture initialized successfully
+2025-04-18 16:04:08,155 - DEBUG - Processing new frame
+2025-04-18 16:04:08,155 - DEBUG - Processing new frame
+2025-04-18 16:04:08,170 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,172 - DEBUG - Processing new frame
+2025-04-18 16:04:08,174 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,176 - INFO - 127.0.0.1 - - [18/Apr/2025 16:04:08] "GET /video_feed?target_name=Mina HTTP/1.1" 200 -
+2025-04-18 16:04:08,177 - DEBUG - Processing new frame
+2025-04-18 16:04:08,186 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,189 - DEBUG - Processing new frame
+2025-04-18 16:04:08,190 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,194 - DEBUG - Processing new frame
+2025-04-18 16:04:08,203 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,206 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,207 - DEBUG - Processing new frame
+2025-04-18 16:04:08,224 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,228 - DEBUG - Processing new frame
+2025-04-18 16:04:08,243 - INFO - System cleanup completed
+2025-04-18 16:04:08,244 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,246 - DEBUG - Processing new frame
+2025-04-18 16:04:08,266 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,268 - DEBUG - Processing new frame
+2025-04-18 16:04:08,285 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,287 - DEBUG - Processing new frame
+2025-04-18 16:04:08,305 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,307 - DEBUG - Processing new frame
+2025-04-18 16:04:08,322 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,325 - DEBUG - Processing new frame
+2025-04-18 16:04:08,339 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,342 - DEBUG - Processing new frame
+2025-04-18 16:04:08,360 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,362 - DEBUG - Processing new frame
+2025-04-18 16:04:08,377 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,379 - DEBUG - Processing new frame
+2025-04-18 16:04:08,394 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,396 - DEBUG - Processing new frame
+2025-04-18 16:04:08,411 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,414 - DEBUG - Processing new frame
+2025-04-18 16:04:08,430 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,433 - DEBUG - Processing new frame
+2025-04-18 16:04:08,449 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,452 - DEBUG - Processing new frame
+2025-04-18 16:04:08,466 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,469 - DEBUG - Processing new frame
+2025-04-18 16:04:08,484 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,486 - DEBUG - Processing new frame
+2025-04-18 16:04:08,502 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,505 - DEBUG - Processing new frame
+2025-04-18 16:04:08,516 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,518 - DEBUG - Processing new frame
+2025-04-18 16:04:08,533 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,535 - DEBUG - Processing new frame
+2025-04-18 16:04:08,548 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,551 - DEBUG - Processing new frame
+2025-04-18 16:04:08,566 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,569 - DEBUG - Processing new frame
+2025-04-18 16:04:08,583 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,586 - DEBUG - Processing new frame
+2025-04-18 16:04:08,601 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,604 - DEBUG - Processing new frame
+2025-04-18 16:04:08,618 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,620 - DEBUG - Processing new frame
+2025-04-18 16:04:08,636 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,638 - DEBUG - Processing new frame
+2025-04-18 16:04:08,652 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,654 - DEBUG - Processing new frame
+2025-04-18 16:04:08,664 - DEBUG - Processing new frame
+2025-04-18 16:04:08,668 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,670 - DEBUG - Processing new frame
+2025-04-18 16:04:08,680 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,683 - DEBUG - Processing new frame
+2025-04-18 16:04:08,685 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,688 - DEBUG - Processing new frame
+2025-04-18 16:04:08,697 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,700 - DEBUG - Processing new frame
+2025-04-18 16:04:08,705 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,707 - DEBUG - Processing new frame
+2025-04-18 16:04:08,715 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,718 - DEBUG - Processing new frame
+2025-04-18 16:04:08,719 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,721 - DEBUG - Processing new frame
+2025-04-18 16:04:08,732 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,734 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,734 - DEBUG - Processing new frame
+2025-04-18 16:04:08,738 - DEBUG - Processing new frame
+2025-04-18 16:04:08,749 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,751 - DEBUG - Processing new frame
+2025-04-18 16:04:08,752 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,755 - DEBUG - Processing new frame
+2025-04-18 16:04:08,768 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,770 - DEBUG - Processing new frame
+2025-04-18 16:04:08,771 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,773 - DEBUG - Processing new frame
+2025-04-18 16:04:08,784 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,786 - DEBUG - Processing new frame
+2025-04-18 16:04:08,787 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,789 - DEBUG - Processing new frame
+2025-04-18 16:04:08,799 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,801 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,802 - DEBUG - Processing new frame
+2025-04-18 16:04:08,803 - DEBUG - Processing new frame
+2025-04-18 16:04:08,819 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,820 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,823 - DEBUG - Processing new frame
+2025-04-18 16:04:08,823 - DEBUG - Processing new frame
+2025-04-18 16:04:08,838 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,839 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,841 - DEBUG - Processing new frame
+2025-04-18 16:04:08,841 - DEBUG - Processing new frame
+2025-04-18 16:04:08,856 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,857 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,859 - DEBUG - Processing new frame
+2025-04-18 16:04:08,861 - DEBUG - Processing new frame
+2025-04-18 16:04:08,873 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,876 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,877 - DEBUG - Processing new frame
+2025-04-18 16:04:08,879 - DEBUG - Processing new frame
+2025-04-18 16:04:08,893 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,894 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,896 - DEBUG - Processing new frame
+2025-04-18 16:04:08,896 - DEBUG - Processing new frame
+2025-04-18 16:04:08,910 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,912 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,914 - DEBUG - Processing new frame
+2025-04-18 16:04:08,915 - DEBUG - Processing new frame
+2025-04-18 16:04:08,931 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,931 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,933 - DEBUG - Processing new frame
+2025-04-18 16:04:08,935 - DEBUG - Processing new frame
+2025-04-18 16:04:08,949 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,951 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,952 - DEBUG - Processing new frame
+2025-04-18 16:04:08,953 - DEBUG - Processing new frame
+2025-04-18 16:04:08,967 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,968 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,969 - DEBUG - Processing new frame
+2025-04-18 16:04:08,970 - DEBUG - Processing new frame
+2025-04-18 16:04:08,986 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,986 - DEBUG - No faces detected in frame
+2025-04-18 16:04:08,989 - DEBUG - Processing new frame
+2025-04-18 16:04:08,990 - DEBUG - Processing new frame
+2025-04-18 16:04:09,003 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,005 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,006 - DEBUG - Processing new frame
+2025-04-18 16:04:09,007 - DEBUG - Processing new frame
+2025-04-18 16:04:09,022 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,023 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,024 - DEBUG - Processing new frame
+2025-04-18 16:04:09,025 - DEBUG - Processing new frame
+2025-04-18 16:04:09,037 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,040 - DEBUG - Processing new frame
+2025-04-18 16:04:09,042 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,044 - DEBUG - Processing new frame
+2025-04-18 16:04:09,055 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,059 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,060 - DEBUG - Processing new frame
+2025-04-18 16:04:09,061 - DEBUG - Processing new frame
+2025-04-18 16:04:09,072 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,074 - DEBUG - Processing new frame
+2025-04-18 16:04:09,076 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,079 - DEBUG - Processing new frame
+2025-04-18 16:04:09,089 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,092 - DEBUG - Processing new frame
+2025-04-18 16:04:09,093 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,095 - DEBUG - Processing new frame
+2025-04-18 16:04:09,103 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,105 - DEBUG - Processing new frame
+2025-04-18 16:04:09,109 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,111 - DEBUG - Processing new frame
+2025-04-18 16:04:09,120 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,123 - DEBUG - Processing new frame
+2025-04-18 16:04:09,126 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,127 - DEBUG - Processing new frame
+2025-04-18 16:04:09,138 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,140 - DEBUG - Processing new frame
+2025-04-18 16:04:09,144 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,147 - DEBUG - Processing new frame
+2025-04-18 16:04:09,154 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,157 - DEBUG - Processing new frame
+2025-04-18 16:04:09,162 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,164 - DEBUG - Processing new frame
+2025-04-18 16:04:09,174 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,177 - DEBUG - Processing new frame
+2025-04-18 16:04:09,179 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,182 - DEBUG - Processing new frame
+2025-04-18 16:04:09,191 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,194 - DEBUG - Processing new frame
+2025-04-18 16:04:09,199 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,202 - DEBUG - Processing new frame
+2025-04-18 16:04:09,207 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,209 - DEBUG - Processing new frame
+2025-04-18 16:04:09,217 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,220 - DEBUG - Processing new frame
+2025-04-18 16:04:09,224 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,226 - DEBUG - Processing new frame
+2025-04-18 16:04:09,233 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,235 - DEBUG - Processing new frame
+2025-04-18 16:04:09,241 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,244 - DEBUG - Processing new frame
+2025-04-18 16:04:09,252 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,254 - DEBUG - Processing new frame
+2025-04-18 16:04:09,259 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,261 - DEBUG - Processing new frame
+2025-04-18 16:04:09,270 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,272 - DEBUG - Processing new frame
+2025-04-18 16:04:09,279 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,282 - DEBUG - Processing new frame
+2025-04-18 16:04:09,289 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,290 - DEBUG - Processing new frame
+2025-04-18 16:04:09,296 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,298 - DEBUG - Processing new frame
+2025-04-18 16:04:09,305 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,309 - DEBUG - Processing new frame
+2025-04-18 16:04:09,314 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,317 - DEBUG - Processing new frame
+2025-04-18 16:04:09,325 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,327 - DEBUG - Processing new frame
+2025-04-18 16:04:09,334 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,337 - DEBUG - Processing new frame
+2025-04-18 16:04:09,343 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,345 - DEBUG - Processing new frame
+2025-04-18 16:04:09,352 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,355 - DEBUG - Processing new frame
+2025-04-18 16:04:09,362 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,366 - DEBUG - Processing new frame
+2025-04-18 16:04:09,370 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,373 - DEBUG - Processing new frame
+2025-04-18 16:04:09,380 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,383 - DEBUG - Processing new frame
+2025-04-18 16:04:09,389 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,392 - DEBUG - Processing new frame
+2025-04-18 16:04:09,397 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,398 - DEBUG - Processing new frame
+2025-04-18 16:04:09,408 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,410 - DEBUG - Processing new frame
+2025-04-18 16:04:09,414 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,416 - DEBUG - Processing new frame
+2025-04-18 16:04:09,423 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,425 - DEBUG - Processing new frame
+2025-04-18 16:04:09,434 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,436 - DEBUG - Processing new frame
+2025-04-18 16:04:09,440 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,442 - DEBUG - {"topologyId": {"$oid": "68025bd3a1a412d32220a0dd"}, "serverHost": "cluster0-shard-00-00.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 5500.0, "failure": "\"_OperationCancelled('operation cancelled')\"", "message": "Server heartbeat failed"}
+2025-04-18 16:04:09,443 - DEBUG - Processing new frame
+2025-04-18 16:04:09,453 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,456 - DEBUG - Processing new frame
+2025-04-18 16:04:09,460 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,464 - DEBUG - Processing new frame
+2025-04-18 16:04:09,472 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,474 - DEBUG - Processing new frame
+2025-04-18 16:04:09,481 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,483 - DEBUG - Processing new frame
+2025-04-18 16:04:09,489 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,492 - DEBUG - Processing new frame
+2025-04-18 16:04:09,499 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,500 - DEBUG - Processing new frame
+2025-04-18 16:04:09,507 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,510 - DEBUG - Processing new frame
+2025-04-18 16:04:09,515 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,516 - DEBUG - Processing new frame
+2025-04-18 16:04:09,527 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,529 - DEBUG - Processing new frame
+2025-04-18 16:04:09,534 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,537 - DEBUG - Processing new frame
+2025-04-18 16:04:09,546 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,549 - DEBUG - Processing new frame
+2025-04-18 16:04:09,553 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,555 - DEBUG - Processing new frame
+2025-04-18 16:04:09,562 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,566 - DEBUG - Processing new frame
+2025-04-18 16:04:09,573 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,575 - DEBUG - Processing new frame
+2025-04-18 16:04:09,582 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,585 - DEBUG - Processing new frame
+2025-04-18 16:04:09,593 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,596 - DEBUG - Processing new frame
+2025-04-18 16:04:09,600 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,604 - DEBUG - Processing new frame
+2025-04-18 16:04:09,613 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,616 - DEBUG - Processing new frame
+2025-04-18 16:04:09,619 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,622 - DEBUG - Processing new frame
+2025-04-18 16:04:09,629 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,632 - DEBUG - Processing new frame
+2025-04-18 16:04:09,635 - DEBUG - {"topologyId": {"$oid": "68025bb4a1a412d32220a0dc"}, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 6000.0, "failure": "\"_OperationCancelled('operation cancelled')\"", "message": "Server heartbeat failed"}
+2025-04-18 16:04:09,639 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,640 - DEBUG - {"topologyId": {"$oid": "68025bb4a1a412d32220a0dc"}, "serverHost": "cluster0-shard-00-02.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 6015.00000001397, "failure": "\"_OperationCancelled('operation cancelled')\"", "message": "Server heartbeat failed"}
+2025-04-18 16:04:09,642 - DEBUG - Processing new frame
+2025-04-18 16:04:09,646 - DEBUG - {"topologyId": {"$oid": "68025bb4a1a412d32220a0dc"}, "serverHost": "cluster0-shard-00-00.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 6000.0, "failure": "\"_OperationCancelled('operation cancelled')\"", "message": "Server heartbeat failed"}
+2025-04-18 16:04:09,651 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,653 - DEBUG - Processing new frame
+2025-04-18 16:04:09,657 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,661 - DEBUG - Processing new frame
+2025-04-18 16:04:09,670 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,673 - DEBUG - Processing new frame
+2025-04-18 16:04:09,680 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,683 - DEBUG - Processing new frame
+2025-04-18 16:04:09,689 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,692 - DEBUG - Processing new frame
+2025-04-18 16:04:09,700 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,702 - DEBUG - Processing new frame
+2025-04-18 16:04:09,709 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,712 - DEBUG - Processing new frame
+2025-04-18 16:04:09,720 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,724 - DEBUG - Processing new frame
+2025-04-18 16:04:09,728 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,731 - DEBUG - Processing new frame
+2025-04-18 16:04:09,741 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,745 - DEBUG - Processing new frame
+2025-04-18 16:04:09,748 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,761 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,764 - DEBUG - Processing new frame
+2025-04-18 16:04:09,780 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,784 - DEBUG - Processing new frame
+2025-04-18 16:04:09,800 - DEBUG - {"topologyId": {"$oid": "68025bd3a1a412d32220a0dd"}, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 6015.00000001397, "failure": "\"_OperationCancelled('operation cancelled')\"", "message": "Server heartbeat failed"}
+2025-04-18 16:04:09,803 - DEBUG - {"topologyId": {"$oid": "68025bd3a1a412d32220a0dd"}, "serverHost": "cluster0-shard-00-02.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 6000.0, "failure": "\"_OperationCancelled('operation cancelled')\"", "message": "Server heartbeat failed"}
+2025-04-18 16:04:09,805 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,808 - DEBUG - Processing new frame
+2025-04-18 16:04:09,824 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,828 - DEBUG - Processing new frame
+2025-04-18 16:04:09,843 - DEBUG - No faces detected in frame
+2025-04-18 16:04:09,845 - DEBUG - Processing new frame
