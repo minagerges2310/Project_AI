@@ -1,3 +1,5 @@
+##yet to be determined
+
 import cv2
 import mediapipe as mp
 import numpy as np
@@ -12,9 +14,10 @@ from datetime import datetime
 from flask import Flask, Response, request
 from HLS import generate_hls_url
 stream_name = 'Camer_121' 
-# Hardcoded configuration
-##RTSP_URL = generate_hls_url(stream_name)
-RTSP_URL = "rtsp://admin:admin@192.168.1.57:1935"
+
+RTSP_URL = generate_hls_url(stream_name)
+# Configuration
+##RTSP_URL = "rtsp://admin:admin@192.168.1.57:1935"
 MONGO_URI = "mongodb+srv://mina23:01555758130@cluster0.22ogf.mongodb.net/?retryWrites=true&w=majority"
 FRAME_WIDTH = 640
 FRAME_HEIGHT = 480
@@ -33,31 +36,33 @@ class FaceData:
 
 class FaceRecognitionSystem:
     def __init__(self, target_name: str):
+        # Initialize face detection and recognition models
         self.face_detection = mp.solutions.face_detection.FaceDetection(
             model_selection=1,
             min_detection_confidence=DETECTION_CONFIDENCE
         )
         self.facenet = InceptionResnetV1(pretrained='vggface2').eval()
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-        self.facenet = self.facenet.to(self.device)
+        self.facenet.to(self.device)
         logging.info(f"FaceNet running on {self.device}")
+
+        # Initialize video capture and MongoDB connection
         self.cap = None
         self.collection = None
         self.known_faces: List[FaceData] = []
         self.target_name = target_name.lower()  # Case-insensitive matching
         self.setup_logging()
-        
-        # Attempt to connect to MongoDB during initialization
+
+        # Connect to MongoDB and load face data
         if self.connect_to_mongodb():
             self.load_face_data()
         else:
             logging.warning("Proceeding without MongoDB data")
 
-
     def setup_logging(self):
         """Configure logging with immediate flush"""
         logging.basicConfig(
-            level=logging.DEBUG,
+            level=logging.INFO,  # Reduced logging level for production
             format='%(asctime)s - %(levelname)s - %(message)s',
             handlers=[
                 logging.FileHandler(f'face_recognition_{datetime.now().strftime("%Y%m%d")}.log', mode='w'),
@@ -65,8 +70,6 @@ class FaceRecognitionSystem:
             ],
             force=True
         )
-        for handler in logging.getLogger().handlers:
-            handler.flush()
 
     def connect_to_mongodb(self) -> bool:
         """Connect to MongoDB synchronously with retry logic"""
@@ -128,56 +131,55 @@ class FaceRecognitionSystem:
     def process_frame(self, frame: np.ndarray) -> Tuple[List, List[str]]:
         """Process frame synchronously with MediaPipe detection and FaceNet recognition"""
         try:
-            logging.debug("Processing new frame")
             if frame is None or frame.size == 0:
                 logging.error("Received invalid frame")
                 return [], []
+
             rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             results = self.face_detection.process(rgb_frame)
+
             if not results.detections:
                 logging.debug("No faces detected in frame")
                 return [], []
-            face_locations = []
-            face_names = []
+
+            face_locations, face_names = [], []
             THRESHOLD = 1.2
+
             for detection in results.detections:
                 bbox = detection.location_data.relative_bounding_box
                 h, w = frame.shape[:2]
-                left = max(0, int(bbox.xmin * w))
-                top = max(0, int(bbox.ymin * h))
-                width = int(bbox.width * w)
-                height = int(bbox.height * h)
-                right = min(w, left + width)
-                bottom = min(h, top + height)
-                face_locations.append((top, right, bottom, left))
+                left, top = max(0, int(bbox.xmin * w)), max(0, int(bbox.ymin * h))
+                right, bottom = min(w, left + int(bbox.width * w)), min(h, top + int(bbox.height * h))
+
                 face_crop = frame[top:bottom, left:right]
                 if face_crop.size > 0:
                     face_resized = cv2.resize(face_crop, (160, 160))
                     face_tensor = torch.tensor(face_resized.transpose(2, 0, 1)).float() / 255.0
                     face_tensor = face_tensor.unsqueeze(0).to(self.device)
+
                     with torch.no_grad():
                         embedding = self.facenet(face_tensor).cpu().numpy()[0]
+
                     name = "Unknown"
                     min_distance = float('inf')
-                    closest_name = None
-                    if self.known_faces:
-                        for known_face in self.known_faces:
-                            distance = np.linalg.norm(embedding - known_face.embedding)
-                            logging.debug(f"Distance to {known_face.name}: {distance}")
-                            if distance < min_distance:
-                                min_distance = distance
-                                closest_name = known_face.name
-                        if min_distance < THRESHOLD:
-                            name = closest_name
+
+                    for known_face in self.known_faces:
+                        distance = np.linalg.norm(embedding - known_face.embedding)
+                        if distance < min_distance:
+                            min_distance = distance
+                            name = known_face.name
+
+                    if min_distance >= THRESHOLD:
+                        name = "Unknown"
+
+                    face_locations.append((top, right, bottom, left))
                     face_names.append(name)
-                    logging.debug(f"Assigned name: {name} (min_distance: {min_distance})")
+
                     # Zoom in if the name matches the target_name
                     if name.lower() == self.target_name:
                         padding = int((right - left) * 0.5)  # 50% padding around face
-                        zoom_left = max(0, left - padding)
-                        zoom_right = min(w, right + padding)
-                        zoom_top = max(0, top - padding)
-                        zoom_bottom = min(h, bottom + padding)
+                        zoom_left, zoom_top = max(0, left - padding), max(0, top - padding)
+                        zoom_right, zoom_bottom = min(w, right + padding), min(h, bottom + padding)
                         zoomed_face = frame[zoom_top:zoom_bottom, zoom_left:zoom_right]
                         if zoomed_face.size > 0:
                             zoomed_face = cv2.resize(zoomed_face, (ZOOM_SIZE, ZOOM_SIZE))
@@ -185,7 +187,7 @@ class FaceRecognitionSystem:
                             cv2.putText(frame, f"Zoom: {name}", 
                                         (FRAME_WIDTH-ZOOM_SIZE, 20), 
                                         cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
-            logging.debug(f"Detected {len(face_locations)} faces")
+
             return face_locations, face_names
         except Exception as e:
             logging.error(f"Frame processing error: {e}")
@@ -196,6 +198,7 @@ class FaceRecognitionSystem:
         if not self.initialize_video():
             logging.error("Failed to initialize video - exiting")
             return
+
         try:
             while True:
                 ret, frame = self.cap.read()
@@ -206,16 +209,20 @@ class FaceRecognitionSystem:
                         logging.error("Reconnection failed - exiting")
                         break
                     continue
+
                 face_locations, face_names = self.process_frame(frame)
+
                 for (top, right, bottom, left), name in zip(face_locations, face_names):
                     cv2.rectangle(frame, (left, top), (right, bottom), (0, 255, 0), 2)
                     cv2.putText(frame, name, (left, bottom + 20), 
                               cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
+
                 # Encode the frame as JPEG
                 _, buffer = cv2.imencode('.jpg', frame)
                 frame_bytes = buffer.tobytes()
                 yield (b'--frame\r\n'
                        b'Content-Type: image/jpeg\r\n\r\n' + frame_bytes + b'\r\n')
+
         except Exception as e:
             logging.error(f"Runtime error: {e}")
         finally:
@@ -228,8 +235,6 @@ class FaceRecognitionSystem:
         cv2.destroyAllWindows()
         self.face_detection.close()
         logging.info("System cleanup completed")
-        for handler in logging.getLogger().handlers:
-            handler.flush()
 
 
 @app.route('/video_feed')

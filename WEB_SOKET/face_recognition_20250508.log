@@ -1,0 +1,1161 @@
+2025-05-08 01:09:26,724 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "message": "Starting topology monitoring"}
+2025-05-08 01:09:26,725 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "previousDescription": "<TopologyDescription id: 681bda168f8fe3dc1bf7956a, topology_type: Unknown, servers: []>", "newDescription": "<TopologyDescription id: 681bda168f8fe3dc1bf7956a, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.5h4nt.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.5h4nt.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-02.5h4nt.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "message": "Topology description changed"}
+2025-05-08 01:09:26,726 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "serverHost": "cluster0-shard-00-01.5h4nt.mongodb.net", "serverPort": 27017, "message": "Starting server monitoring"}
+2025-05-08 01:09:26,726 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "serverHost": "cluster0-shard-00-00.5h4nt.mongodb.net", "serverPort": 27017, "message": "Starting server monitoring"}
+2025-05-08 01:09:26,727 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017, "message": "Starting server monitoring"}
+2025-05-08 01:09:26,728 - DEBUG - {"clientId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "message": "Connection pool created", "serverHost": "cluster0-shard-00-01.5h4nt.mongodb.net", "serverPort": 27017}
+2025-05-08 01:09:26,729 - DEBUG - {"clientId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "message": "Connection pool created", "serverHost": "cluster0-shard-00-00.5h4nt.mongodb.net", "serverPort": 27017}
+2025-05-08 01:09:26,730 - DEBUG - {"clientId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "message": "Connection pool created", "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017}
+2025-05-08 01:09:26,732 - DEBUG - {"message": "Server selection started", "selector": "Primary()", "operation": "buildinfo", "topologyDescription": "<TopologyDescription id: 681bda168f8fe3dc1bf7956a, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.5h4nt.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.5h4nt.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-02.5h4nt.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "681bda168f8fe3dc1bf7956a"}}
+2025-05-08 01:09:26,733 - DEBUG - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "buildinfo", "topologyDescription": "<TopologyDescription id: 681bda168f8fe3dc1bf7956a, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.5h4nt.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.5h4nt.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-02.5h4nt.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "remainingTimeMS": 5}
+2025-05-08 01:09:27,036 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverHost": "cluster0-shard-00-01.5h4nt.mongodb.net", "serverPort": 27017, "awaited": false, "message": "Server heartbeat started"}
+2025-05-08 01:09:27,185 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverConnectionId": 5630, "serverHost": "cluster0-shard-00-01.5h4nt.mongodb.net", "serverPort": 27017, "awaited": false, "durationMS": 141.0000000614673, "reply": "{\"helloOk\": true, \"topologyVersion\": {\"processId\": {\"$oid\": \"681bb177fc6bf1c7572c5ef0\"}, \"counter\": 3}, \"hosts\": [\"cluster0-shard-00-00.5h4nt.mongodb.net:27017\", \"cluster0-shard-00-01.5h4nt.mongodb.net:27017\", \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\"], \"setName\": \"atlas-3ohfxw-shard-0\", \"setVersion\": 72, \"secondary\": true, \"primary\": \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\", \"tags\": {\"region\": \"ME_SOUTH_1\", \"workloadType\": \"OPERATIONAL\", \"diskState\": \"READY\", \"availabilityZone\": \"mes1-az2\", \"provider\": \"AWS\", \"nodeType\": \"ELECTABLE\"}, \"me\": \"cluster0-shard-00-01.5h4nt.mongodb.net:27017\", \"lastWrite\": {\"opTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746655767, \"i\": 4}}, \"t\": 138}, \"lastWriteDate\": {\"$date\": \"2025-05-07T22:09:27Z\"}, \"majorityOpTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746655767, \"i\": 4}}, \"t\": 138}, \"majorityWriteDate\": {\"$date\": \"2025-05-07T22:09:27Z\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWriteBatchSize\": 100000, \"localTime\": {\"$date\": \"202...", "message": "Server heartbeat succeeded"}
+2025-05-08 01:09:27,187 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverHost": "cluster0-shard-00-00.5h4nt.mongodb.net", "serverPort": 27017, "awaited": false, "message": "Server heartbeat started"}
+2025-05-08 01:09:27,187 - DEBUG - {"clientId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "message": "Connection pool ready", "serverHost": "cluster0-shard-00-01.5h4nt.mongodb.net", "serverPort": 27017}
+2025-05-08 01:09:27,188 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "previousDescription": "<TopologyDescription id: 681bda168f8fe3dc1bf7956a, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.5h4nt.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.5h4nt.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-02.5h4nt.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "newDescription": "<TopologyDescription id: 681bda168f8fe3dc1bf7956a, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.5h4nt.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.5h4nt.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.1410000000614673>, <ServerDescription ('cluster0-shard-00-02.5h4nt.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "message": "Topology description changed"}
+2025-05-08 01:09:27,190 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverConnectionId": 5630, "serverHost": "cluster0-shard-00-01.5h4nt.mongodb.net", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-05-08 01:09:27,240 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017, "awaited": false, "message": "Server heartbeat started"}
+2025-05-08 01:09:27,293 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverConnectionId": 5952, "serverHost": "cluster0-shard-00-00.5h4nt.mongodb.net", "serverPort": 27017, "awaited": false, "durationMS": 108.99999993853271, "reply": "{\"helloOk\": true, \"topologyVersion\": {\"processId\": {\"$oid\": \"681baff9dcdc076bc04e6972\"}, \"counter\": 4}, \"hosts\": [\"cluster0-shard-00-00.5h4nt.mongodb.net:27017\", \"cluster0-shard-00-01.5h4nt.mongodb.net:27017\", \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\"], \"setName\": \"atlas-3ohfxw-shard-0\", \"setVersion\": 72, \"secondary\": true, \"primary\": \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\", \"tags\": {\"availabilityZone\": \"mes1-az1\", \"diskState\": \"READY\", \"nodeType\": \"ELECTABLE\", \"region\": \"ME_SOUTH_1\", \"workloadType\": \"OPERATIONAL\", \"provider\": \"AWS\"}, \"me\": \"cluster0-shard-00-00.5h4nt.mongodb.net:27017\", \"lastWrite\": {\"opTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746655767, \"i\": 5}}, \"t\": 138}, \"lastWriteDate\": {\"$date\": \"2025-05-07T22:09:27Z\"}, \"majorityOpTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746655767, \"i\": 5}}, \"t\": 138}, \"majorityWriteDate\": {\"$date\": \"2025-05-07T22:09:27Z\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWriteBatchSize\": 100000, \"localTime\": {\"$date\": \"202...", "message": "Server heartbeat succeeded"}
+2025-05-08 01:09:27,295 - DEBUG - {"clientId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "message": "Connection pool ready", "serverHost": "cluster0-shard-00-00.5h4nt.mongodb.net", "serverPort": 27017}
+2025-05-08 01:09:27,295 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "previousDescription": "<TopologyDescription id: 681bda168f8fe3dc1bf7956a, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.5h4nt.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.5h4nt.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.1410000000614673>, <ServerDescription ('cluster0-shard-00-02.5h4nt.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "newDescription": "<TopologyDescription id: 681bda168f8fe3dc1bf7956a, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.5h4nt.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.10899999993853271>, <ServerDescription ('cluster0-shard-00-01.5h4nt.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.1410000000614673>, <ServerDescription ('cluster0-shard-00-02.5h4nt.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "message": "Topology description changed"}
+2025-05-08 01:09:27,297 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverConnectionId": 5952, "serverHost": "cluster0-shard-00-00.5h4nt.mongodb.net", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-05-08 01:09:27,353 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverConnectionId": 6303, "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017, "awaited": false, "durationMS": 109.00000005494803, "reply": "{\"helloOk\": true, \"topologyVersion\": {\"processId\": {\"$oid\": \"681bae95af98b4f381c7213a\"}, \"counter\": 6}, \"hosts\": [\"cluster0-shard-00-00.5h4nt.mongodb.net:27017\", \"cluster0-shard-00-01.5h4nt.mongodb.net:27017\", \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\"], \"setName\": \"atlas-3ohfxw-shard-0\", \"setVersion\": 72, \"ismaster\": true, \"primary\": \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\", \"tags\": {\"region\": \"ME_SOUTH_1\", \"workloadType\": \"OPERATIONAL\", \"provider\": \"AWS\", \"availabilityZone\": \"mes1-az3\", \"diskState\": \"READY\", \"nodeType\": \"ELECTABLE\"}, \"me\": \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\", \"electionId\": {\"$oid\": \"7fffffff000000000000008a\"}, \"lastWrite\": {\"opTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746655767, \"i\": 5}}, \"t\": 138}, \"lastWriteDate\": {\"$date\": \"2025-05-07T22:09:27Z\"}, \"majorityOpTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746655767, \"i\": 5}}, \"t\": 138}, \"majorityWriteDate\": {\"$date\": \"2025-05-07T22:09:27Z\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxW...", "message": "Server heartbeat succeeded"}
+2025-05-08 01:09:27,354 - DEBUG - {"clientId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "message": "Connection pool ready", "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017}
+2025-05-08 01:09:27,354 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "previousDescription": "<TopologyDescription id: 681bda168f8fe3dc1bf7956a, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.5h4nt.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.10899999993853271>, <ServerDescription ('cluster0-shard-00-01.5h4nt.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.1410000000614673>, <ServerDescription ('cluster0-shard-00-02.5h4nt.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "newDescription": "<TopologyDescription id: 681bda168f8fe3dc1bf7956a, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.5h4nt.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.10899999993853271>, <ServerDescription ('cluster0-shard-00-01.5h4nt.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.1410000000614673>, <ServerDescription ('cluster0-shard-00-02.5h4nt.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.10900000005494803>]>", "message": "Topology description changed"}
+2025-05-08 01:09:27,355 - DEBUG - {"message": "Server selection succeeded", "selector": "Primary()", "operation": "buildinfo", "topologyDescription": "<TopologyDescription id: 681bda168f8fe3dc1bf7956a, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.5h4nt.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.10899999993853271>, <ServerDescription ('cluster0-shard-00-01.5h4nt.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.1410000000614673>, <ServerDescription ('cluster0-shard-00-02.5h4nt.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.10900000005494803>]>", "clientId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017}
+2025-05-08 01:09:27,356 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverConnectionId": 6303, "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-05-08 01:09:27,356 - DEBUG - {"clientId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "message": "Connection checkout started", "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017}
+2025-05-08 01:09:27,357 - DEBUG - {"clientId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "message": "Connection created", "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017, "driverConnectionId": 1}
+2025-05-08 01:09:27,871 - DEBUG - {"clientId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "message": "Connection ready", "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017, "driverConnectionId": 1, "durationMS": 0.28200000000651926}
+2025-05-08 01:09:27,873 - DEBUG - {"clientId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "message": "Connection checked out", "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017, "driverConnectionId": 1, "durationMS": 0.515999999945052}
+2025-05-08 01:09:27,873 - DEBUG - {"clientId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "message": "Command started", "command": "{\"buildinfo\": 1, \"lsid\": {\"id\": {\"$binary\": {\"base64\": \"ssTntTxbTeSPQmoxK/E9cQ==\", \"subType\": \"04\"}}}, \"$clusterTime\": {\"clusterTime\": {\"$timestamp\": {\"t\": 1746655767, \"i\": 5}}, \"signature\": {\"hash\": {\"$binary\": {\"base64\": \"PFXQjJefJ7IpjCbw+Qg2rF6k12U=\", \"subType\": \"00\"}}, \"keyId\": 7438657574536216586}}, \"$db\": \"admin\"}", "commandName": "buildinfo", "databaseName": "admin", "requestId": 26500, "operationId": 26500, "driverConnectionId": 1, "serverConnectionId": 6236, "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017}
+2025-05-08 01:09:27,959 - DEBUG - {"clientId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "message": "Command succeeded", "durationMS": 86.245, "reply": "{\"version\": \"8.0.9\", \"gitVersion\": \"f882ef816d531ecfbb593843e4c554fda90ca416\", \"modules\": [\"enterprise\"], \"allocator\": \"tcmalloc-google\", \"javascriptEngine\": \"mozjs\", \"sysInfo\": \"deprecated\", \"versionArray\": [8, 9], \"bits\": 64, \"maxBsonObjectSize\": 16777216, \"storageEngines\": [\"devnull\", \"inMemory\", \"queryable_wt\", \"wiredTiger\"], \"ok\": 1.0, \"$clusterTime\": {\"clusterTime\": {\"$timestamp\": {\"t\": 1746655768, \"i\": 3}}, \"signature\": {\"hash\": {\"$binary\": {\"base64\": \"19xtw0KE6C9kS6Ixx3GQ+A9+Lbo=\", \"subType\": \"00\"}}, \"keyId\": 7438657574536216586}}, \"operationTime\": {\"$timestamp\": {\"t\": 1746655768, \"i\": 3}}}", "commandName": "buildinfo", "databaseName": "admin", "requestId": 26500, "operationId": 26500, "driverConnectionId": 1, "serverConnectionId": 6236, "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017}
+2025-05-08 01:09:27,961 - DEBUG - {"clientId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "message": "Connection checked in", "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017, "driverConnectionId": 1}
+2025-05-08 01:09:27,963 - INFO - Connected to MongoDB
+2025-05-08 01:09:27,964 - DEBUG - {"message": "Server selection started", "selector": "Primary()", "operation": "find", "topologyDescription": "<TopologyDescription id: 681bda168f8fe3dc1bf7956a, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.5h4nt.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.10899999993853271>, <ServerDescription ('cluster0-shard-00-01.5h4nt.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.1410000000614673>, <ServerDescription ('cluster0-shard-00-02.5h4nt.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.10900000005494803>]>", "clientId": {"$oid": "681bda168f8fe3dc1bf7956a"}}
+2025-05-08 01:09:27,965 - DEBUG - {"message": "Server selection succeeded", "selector": "Primary()", "operation": "find", "topologyDescription": "<TopologyDescription id: 681bda168f8fe3dc1bf7956a, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.5h4nt.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.10899999993853271>, <ServerDescription ('cluster0-shard-00-01.5h4nt.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.1410000000614673>, <ServerDescription ('cluster0-shard-00-02.5h4nt.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.10900000005494803>]>", "clientId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017}
+2025-05-08 01:09:27,966 - DEBUG - {"clientId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "message": "Connection checkout started", "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017}
+2025-05-08 01:09:27,968 - DEBUG - {"clientId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "message": "Connection checked out", "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017, "driverConnectionId": 1, "durationMS": 0.0}
+2025-05-08 01:09:27,968 - DEBUG - {"clientId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "message": "Command started", "command": "{\"find\": \"childrens\", \"projection\": {\"encoding\": 1, \"name\": 1}, \"lsid\": {\"id\": {\"$binary\": {\"base64\": \"ssTntTxbTeSPQmoxK/E9cQ==\", \"subType\": \"04\"}}}, \"$clusterTime\": {\"clusterTime\": {\"$timestamp\": {\"t\": 1746655768, \"i\": 3}}, \"signature\": {\"hash\": {\"$binary\": {\"base64\": \"19xtw0KE6C9kS6Ixx3GQ+A9+Lbo=\", \"subType\": \"00\"}}, \"keyId\": 7438657574536216586}}, \"$db\": \"test\"}", "commandName": "find", "databaseName": "test", "requestId": 19169, "operationId": 19169, "driverConnectionId": 1, "serverConnectionId": 6236, "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017}
+2025-05-08 01:09:28,076 - DEBUG - {"clientId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "message": "Command succeeded", "durationMS": 108.058, "reply": "{\"cursor\": {\"firstBatch\": [{\"name\": \"ahmed\", \"encoding\": [-0.019286731258034706, 0.025563472881913185, -0.06720174849033356, 0.003317138645797968, 0.07002028077840805, -0.0007384870550595224, 0.0462879054248333, -0.04544176906347275, 0.04382147639989853, 0.02012837678194046, -0.05270630121231079, -0.019962875172495842, -0.08951018750667572, -0.02583364024758339, 0.023107610642910004, 0.0012614773586392403, -0.0782121941447258, 0.020171187818050385, 0.03804193064570427, 0.04189810901880264, -0.045034583657979965, -0.07088468223810196, -0.09425605088472366, 0.02292099967598915, 0.013472114689648151, -0.0057332077994942665, -0.007555888034403324, -0.01200539618730545, -0.06695665419101715, -0.029972018674016, 0.014676575548946857, -0.013597770594060421, 0.00690375454723835, 0.044800251722335815, -0.011961337178945541, 0.034101564437150955, 0.07097551226615906, 0.06457170099020004, -0.011112290434539318, 0.0004657903336919844, -0.03200392797589302, 0.00935050193220377, -0.08454791456460953...", "commandName": "find", "databaseName": "test", "requestId": 19169, "operationId": 19169, "driverConnectionId": 1, "serverConnectionId": 6236, "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017}
+2025-05-08 01:09:28,080 - DEBUG - {"clientId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "message": "Connection checked in", "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017, "driverConnectionId": 1}
+2025-05-08 01:09:28,081 - INFO - Loaded 1 face encodings
+2025-05-08 01:09:28,082 - DEBUG - Attempting to open RTSP stream: rtsp://admin:admin@192.168.1.57:1935
+2025-05-08 01:09:32,795 - INFO - Video capture initialized successfully
+2025-05-08 01:09:32,797 - DEBUG - Processing new frame
+2025-05-08 01:09:32,827 - DEBUG - No faces detected in frame
+2025-05-08 01:09:32,830 - INFO - 127.0.0.1 - - [08/May/2025 01:09:32] "GET /video_feed?target_name=ahmed HTTP/1.1" 200 -
+2025-05-08 01:09:32,831 - DEBUG - Processing new frame
+2025-05-08 01:09:32,848 - DEBUG - No faces detected in frame
+2025-05-08 01:09:32,851 - DEBUG - Processing new frame
+2025-05-08 01:09:32,867 - DEBUG - No faces detected in frame
+2025-05-08 01:09:32,924 - DEBUG - Processing new frame
+2025-05-08 01:09:32,940 - DEBUG - No faces detected in frame
+2025-05-08 01:09:32,943 - DEBUG - Processing new frame
+2025-05-08 01:09:32,958 - DEBUG - No faces detected in frame
+2025-05-08 01:09:32,962 - DEBUG - Processing new frame
+2025-05-08 01:09:32,980 - DEBUG - No faces detected in frame
+2025-05-08 01:09:32,983 - DEBUG - Processing new frame
+2025-05-08 01:09:32,996 - DEBUG - No faces detected in frame
+2025-05-08 01:09:32,999 - DEBUG - Processing new frame
+2025-05-08 01:09:33,011 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,015 - DEBUG - Processing new frame
+2025-05-08 01:09:33,027 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,030 - DEBUG - Processing new frame
+2025-05-08 01:09:33,042 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,045 - DEBUG - Processing new frame
+2025-05-08 01:09:33,057 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,060 - DEBUG - Processing new frame
+2025-05-08 01:09:33,074 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,077 - DEBUG - Processing new frame
+2025-05-08 01:09:33,090 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,092 - DEBUG - Processing new frame
+2025-05-08 01:09:33,106 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,108 - DEBUG - Processing new frame
+2025-05-08 01:09:33,120 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,123 - DEBUG - Processing new frame
+2025-05-08 01:09:33,135 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,137 - DEBUG - Processing new frame
+2025-05-08 01:09:33,149 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,151 - DEBUG - Processing new frame
+2025-05-08 01:09:33,164 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,167 - DEBUG - Processing new frame
+2025-05-08 01:09:33,178 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,182 - DEBUG - Processing new frame
+2025-05-08 01:09:33,196 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,285 - DEBUG - Processing new frame
+2025-05-08 01:09:33,300 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,303 - DEBUG - Processing new frame
+2025-05-08 01:09:33,315 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,346 - DEBUG - Processing new frame
+2025-05-08 01:09:33,361 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,382 - DEBUG - Processing new frame
+2025-05-08 01:09:33,396 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,448 - DEBUG - Processing new frame
+2025-05-08 01:09:33,461 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,509 - DEBUG - Processing new frame
+2025-05-08 01:09:33,522 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,550 - DEBUG - Processing new frame
+2025-05-08 01:09:33,562 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,590 - DEBUG - Processing new frame
+2025-05-08 01:09:33,603 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,640 - DEBUG - Processing new frame
+2025-05-08 01:09:33,653 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,700 - DEBUG - Processing new frame
+2025-05-08 01:09:33,713 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,754 - DEBUG - Processing new frame
+2025-05-08 01:09:33,766 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,799 - DEBUG - Processing new frame
+2025-05-08 01:09:33,813 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,882 - DEBUG - Processing new frame
+2025-05-08 01:09:33,895 - DEBUG - No faces detected in frame
+2025-05-08 01:09:33,903 - DEBUG - Processing new frame
+2025-05-08 01:09:33,915 - DEBUG - No faces detected in frame
+2025-05-08 01:09:34,125 - DEBUG - Processing new frame
+2025-05-08 01:09:34,139 - DEBUG - No faces detected in frame
+2025-05-08 01:09:34,144 - DEBUG - Processing new frame
+2025-05-08 01:09:34,160 - DEBUG - No faces detected in frame
+2025-05-08 01:09:34,163 - DEBUG - Processing new frame
+2025-05-08 01:09:34,179 - DEBUG - No faces detected in frame
+2025-05-08 01:09:34,183 - DEBUG - Processing new frame
+2025-05-08 01:09:34,196 - DEBUG - No faces detected in frame
+2025-05-08 01:09:34,226 - DEBUG - Processing new frame
+2025-05-08 01:09:34,308 - DEBUG - No faces detected in frame
+2025-05-08 01:09:34,311 - DEBUG - Processing new frame
+2025-05-08 01:09:34,435 - DEBUG - Distance to ahmed: 1.35245318711761
+2025-05-08 01:09:34,435 - DEBUG - Detected 1 faces
+2025-05-08 01:09:34,439 - DEBUG - Processing new frame
+2025-05-08 01:09:34,528 - DEBUG - Distance to ahmed: 1.3703687357635363
+2025-05-08 01:09:34,529 - DEBUG - Detected 1 faces
+2025-05-08 01:09:34,532 - DEBUG - Processing new frame
+2025-05-08 01:09:34,640 - DEBUG - Distance to ahmed: 0.7857739668681907
+2025-05-08 01:09:34,641 - DEBUG - Detected 1 faces
+2025-05-08 01:09:34,644 - DEBUG - Processing new frame
+2025-05-08 01:09:34,721 - DEBUG - Distance to ahmed: 0.9011641999002835
+2025-05-08 01:09:34,722 - DEBUG - Detected 1 faces
+2025-05-08 01:09:34,725 - DEBUG - Processing new frame
+2025-05-08 01:09:34,801 - DEBUG - Distance to ahmed: 1.121837785650522
+2025-05-08 01:09:34,802 - DEBUG - Detected 1 faces
+2025-05-08 01:09:34,805 - DEBUG - Processing new frame
+2025-05-08 01:09:34,882 - DEBUG - Distance to ahmed: 1.3765381384497728
+2025-05-08 01:09:34,882 - DEBUG - Detected 1 faces
+2025-05-08 01:09:34,885 - DEBUG - Processing new frame
+2025-05-08 01:09:34,963 - DEBUG - Distance to ahmed: 1.4081524526746778
+2025-05-08 01:09:34,964 - DEBUG - Detected 1 faces
+2025-05-08 01:09:34,967 - DEBUG - Processing new frame
+2025-05-08 01:09:35,044 - DEBUG - Distance to ahmed: 0.7717919887780494
+2025-05-08 01:09:35,044 - DEBUG - Detected 1 faces
+2025-05-08 01:09:35,047 - DEBUG - Processing new frame
+2025-05-08 01:09:35,122 - DEBUG - Distance to ahmed: 1.388002123326064
+2025-05-08 01:09:35,123 - DEBUG - Detected 1 faces
+2025-05-08 01:09:35,125 - DEBUG - Processing new frame
+2025-05-08 01:09:35,201 - DEBUG - Distance to ahmed: 0.8223168300999291
+2025-05-08 01:09:35,202 - DEBUG - Detected 1 faces
+2025-05-08 01:09:35,205 - DEBUG - Processing new frame
+2025-05-08 01:09:35,219 - DEBUG - No faces detected in frame
+2025-05-08 01:09:35,222 - DEBUG - Processing new frame
+2025-05-08 01:09:35,236 - DEBUG - No faces detected in frame
+2025-05-08 01:09:35,240 - DEBUG - Processing new frame
+2025-05-08 01:09:35,253 - DEBUG - No faces detected in frame
+2025-05-08 01:09:35,256 - DEBUG - Processing new frame
+2025-05-08 01:09:35,332 - DEBUG - Distance to ahmed: 1.350151071280797
+2025-05-08 01:09:35,333 - DEBUG - Detected 1 faces
+2025-05-08 01:09:35,336 - DEBUG - Processing new frame
+2025-05-08 01:09:35,412 - DEBUG - Distance to ahmed: 1.3486792192300556
+2025-05-08 01:09:35,413 - DEBUG - Detected 1 faces
+2025-05-08 01:09:35,416 - DEBUG - Processing new frame
+2025-05-08 01:09:35,494 - DEBUG - Distance to ahmed: 1.2374773193309982
+2025-05-08 01:09:35,495 - DEBUG - Detected 1 faces
+2025-05-08 01:09:35,498 - DEBUG - Processing new frame
+2025-05-08 01:09:35,575 - DEBUG - Distance to ahmed: 1.2331691343134752
+2025-05-08 01:09:35,575 - DEBUG - Detected 1 faces
+2025-05-08 01:09:35,721 - DEBUG - Processing new frame
+2025-05-08 01:09:35,797 - DEBUG - Distance to ahmed: 1.2986485034507416
+2025-05-08 01:09:35,797 - DEBUG - Detected 1 faces
+2025-05-08 01:09:35,800 - DEBUG - Processing new frame
+2025-05-08 01:09:35,877 - DEBUG - Distance to ahmed: 1.3535070983553414
+2025-05-08 01:09:35,878 - DEBUG - Detected 1 faces
+2025-05-08 01:09:35,881 - DEBUG - Processing new frame
+2025-05-08 01:09:35,956 - DEBUG - Distance to ahmed: 0.9390505355748138
+2025-05-08 01:09:35,956 - DEBUG - Detected 1 faces
+2025-05-08 01:09:35,960 - DEBUG - Processing new frame
+2025-05-08 01:09:36,039 - DEBUG - Distance to ahmed: 0.8084649819081224
+2025-05-08 01:09:36,040 - DEBUG - Detected 1 faces
+2025-05-08 01:09:36,043 - DEBUG - Processing new frame
+2025-05-08 01:09:36,117 - DEBUG - Distance to ahmed: 0.7222729465495341
+2025-05-08 01:09:36,118 - DEBUG - Detected 1 faces
+2025-05-08 01:09:36,121 - DEBUG - Processing new frame
+2025-05-08 01:09:36,195 - DEBUG - Distance to ahmed: 0.5317912297105535
+2025-05-08 01:09:36,196 - DEBUG - Detected 1 faces
+2025-05-08 01:09:36,199 - DEBUG - Processing new frame
+2025-05-08 01:09:36,275 - DEBUG - Distance to ahmed: 0.6454881419449359
+2025-05-08 01:09:36,275 - DEBUG - Detected 1 faces
+2025-05-08 01:09:36,278 - DEBUG - Processing new frame
+2025-05-08 01:09:36,351 - DEBUG - Distance to ahmed: 0.5720296182328052
+2025-05-08 01:09:36,352 - DEBUG - Detected 1 faces
+2025-05-08 01:09:36,355 - DEBUG - Processing new frame
+2025-05-08 01:09:36,431 - DEBUG - Distance to ahmed: 0.5547595292951983
+2025-05-08 01:09:36,432 - DEBUG - Detected 1 faces
+2025-05-08 01:09:36,435 - DEBUG - Processing new frame
+2025-05-08 01:09:36,510 - DEBUG - Distance to ahmed: 0.581005390075626
+2025-05-08 01:09:36,511 - DEBUG - Detected 1 faces
+2025-05-08 01:09:36,514 - DEBUG - Processing new frame
+2025-05-08 01:09:36,597 - DEBUG - Distance to ahmed: 0.5330099112799134
+2025-05-08 01:09:36,598 - DEBUG - Detected 1 faces
+2025-05-08 01:09:36,601 - DEBUG - Processing new frame
+2025-05-08 01:09:36,685 - DEBUG - Distance to ahmed: 0.6086341965473276
+2025-05-08 01:09:36,685 - DEBUG - Detected 1 faces
+2025-05-08 01:09:36,688 - DEBUG - Processing new frame
+2025-05-08 01:09:36,772 - DEBUG - Distance to ahmed: 0.5337093632758196
+2025-05-08 01:09:36,772 - DEBUG - Detected 1 faces
+2025-05-08 01:09:36,776 - DEBUG - Processing new frame
+2025-05-08 01:09:36,860 - DEBUG - Distance to ahmed: 0.6363423175571397
+2025-05-08 01:09:36,860 - DEBUG - Detected 1 faces
+2025-05-08 01:09:36,863 - DEBUG - Processing new frame
+2025-05-08 01:09:36,945 - DEBUG - Distance to ahmed: 0.6255289351226382
+2025-05-08 01:09:36,992 - DEBUG - Detected 1 faces
+2025-05-08 01:09:36,996 - DEBUG - Processing new frame
+2025-05-08 01:09:37,085 - DEBUG - Distance to ahmed: 0.6065949375712838
+2025-05-08 01:09:37,086 - DEBUG - Detected 1 faces
+2025-05-08 01:09:37,089 - DEBUG - Processing new frame
+2025-05-08 01:09:37,176 - DEBUG - Distance to ahmed: 0.5971815418423726
+2025-05-08 01:09:37,177 - DEBUG - Detected 1 faces
+2025-05-08 01:09:37,180 - DEBUG - Processing new frame
+2025-05-08 01:09:37,293 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverConnectionId": 5630, "serverHost": "cluster0-shard-00-01.5h4nt.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 10108.999999938533, "reply": "{\"topologyVersion\": {\"processId\": {\"$oid\": \"681bb177fc6bf1c7572c5ef0\"}, \"counter\": 3}, \"hosts\": [\"cluster0-shard-00-00.5h4nt.mongodb.net:27017\", \"cluster0-shard-00-01.5h4nt.mongodb.net:27017\", \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\"], \"setName\": \"atlas-3ohfxw-shard-0\", \"setVersion\": 72, \"secondary\": true, \"primary\": \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\", \"tags\": {\"nodeType\": \"ELECTABLE\", \"region\": \"ME_SOUTH_1\", \"availabilityZone\": \"mes1-az2\", \"workloadType\": \"OPERATIONAL\", \"diskState\": \"READY\", \"provider\": \"AWS\"}, \"me\": \"cluster0-shard-00-01.5h4nt.mongodb.net:27017\", \"lastWrite\": {\"opTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746655777, \"i\": 5}}, \"t\": 138}, \"lastWriteDate\": {\"$date\": \"2025-05-07T22:09:37Z\"}, \"majorityOpTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746655777, \"i\": 5}}, \"t\": 138}, \"majorityWriteDate\": {\"$date\": \"2025-05-07T22:09:37Z\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWriteBatchSize\": 100000, \"localTime\": {\"$date\": \"2025-05-07T22:09:37....", "message": "Server heartbeat succeeded"}
+2025-05-08 01:09:37,295 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverConnectionId": 5630, "serverHost": "cluster0-shard-00-01.5h4nt.mongodb.net", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-05-08 01:09:37,300 - DEBUG - Distance to ahmed: 0.6006890379793067
+2025-05-08 01:09:37,301 - DEBUG - Detected 1 faces
+2025-05-08 01:09:37,304 - DEBUG - Processing new frame
+2025-05-08 01:09:37,401 - DEBUG - Distance to ahmed: 0.5922544130739759
+2025-05-08 01:09:37,402 - DEBUG - Detected 1 faces
+2025-05-08 01:09:37,403 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverConnectionId": 5952, "serverHost": "cluster0-shard-00-00.5h4nt.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 10109.99999998603, "reply": "{\"topologyVersion\": {\"processId\": {\"$oid\": \"681baff9dcdc076bc04e6972\"}, \"counter\": 4}, \"hosts\": [\"cluster0-shard-00-00.5h4nt.mongodb.net:27017\", \"cluster0-shard-00-01.5h4nt.mongodb.net:27017\", \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\"], \"setName\": \"atlas-3ohfxw-shard-0\", \"setVersion\": 72, \"secondary\": true, \"primary\": \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\", \"tags\": {\"nodeType\": \"ELECTABLE\", \"diskState\": \"READY\", \"availabilityZone\": \"mes1-az1\", \"region\": \"ME_SOUTH_1\", \"workloadType\": \"OPERATIONAL\", \"provider\": \"AWS\"}, \"me\": \"cluster0-shard-00-00.5h4nt.mongodb.net:27017\", \"lastWrite\": {\"opTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746655777, \"i\": 7}}, \"t\": 138}, \"lastWriteDate\": {\"$date\": \"2025-05-07T22:09:37Z\"}, \"majorityOpTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746655777, \"i\": 7}}, \"t\": 138}, \"majorityWriteDate\": {\"$date\": \"2025-05-07T22:09:37Z\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWriteBatchSize\": 100000, \"localTime\": {\"$date\": \"2025-05-07T22:09:37....", "message": "Server heartbeat succeeded"}
+2025-05-08 01:09:37,405 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverConnectionId": 5952, "serverHost": "cluster0-shard-00-00.5h4nt.mongodb.net", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-05-08 01:09:37,407 - DEBUG - Processing new frame
+2025-05-08 01:09:37,447 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverConnectionId": 6249, "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 10093.999999924563, "reply": "{\"topologyVersion\": {\"processId\": {\"$oid\": \"681bae95af98b4f381c7213a\"}, \"counter\": 6}, \"hosts\": [\"cluster0-shard-00-00.5h4nt.mongodb.net:27017\", \"cluster0-shard-00-01.5h4nt.mongodb.net:27017\", \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\"], \"setName\": \"atlas-3ohfxw-shard-0\", \"setVersion\": 72, \"isWritablePrimary\": true, \"primary\": \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\", \"tags\": {\"availabilityZone\": \"mes1-az3\", \"workloadType\": \"OPERATIONAL\", \"region\": \"ME_SOUTH_1\", \"provider\": \"AWS\", \"diskState\": \"READY\", \"nodeType\": \"ELECTABLE\"}, \"me\": \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\", \"electionId\": {\"$oid\": \"7fffffff000000000000008a\"}, \"lastWrite\": {\"opTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746655777, \"i\": 7}}, \"t\": 138}, \"lastWriteDate\": {\"$date\": \"2025-05-07T22:09:37Z\"}, \"majorityOpTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746655777, \"i\": 7}}, \"t\": 138}, \"majorityWriteDate\": {\"$date\": \"2025-05-07T22:09:37Z\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWriteBatc...", "message": "Server heartbeat succeeded"}
+2025-05-08 01:09:37,449 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverConnectionId": 6249, "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-05-08 01:09:37,497 - DEBUG - Distance to ahmed: 0.574498137062028
+2025-05-08 01:09:37,497 - DEBUG - Detected 1 faces
+2025-05-08 01:09:37,500 - DEBUG - Processing new frame
+2025-05-08 01:09:37,578 - DEBUG - Distance to ahmed: 0.5704991776722688
+2025-05-08 01:09:37,579 - DEBUG - Detected 1 faces
+2025-05-08 01:09:37,582 - DEBUG - Processing new frame
+2025-05-08 01:09:37,662 - DEBUG - Distance to ahmed: 0.5657845844710931
+2025-05-08 01:09:37,663 - DEBUG - Detected 1 faces
+2025-05-08 01:09:37,666 - DEBUG - Processing new frame
+2025-05-08 01:09:37,743 - DEBUG - Distance to ahmed: 0.5807439605669031
+2025-05-08 01:09:37,744 - DEBUG - Detected 1 faces
+2025-05-08 01:09:37,747 - DEBUG - Processing new frame
+2025-05-08 01:09:37,821 - DEBUG - Distance to ahmed: 0.5883810806069169
+2025-05-08 01:09:37,822 - DEBUG - Detected 1 faces
+2025-05-08 01:09:37,824 - DEBUG - Processing new frame
+2025-05-08 01:09:37,897 - DEBUG - Distance to ahmed: 0.6048504490595709
+2025-05-08 01:09:37,898 - DEBUG - Detected 1 faces
+2025-05-08 01:09:37,900 - DEBUG - Processing new frame
+2025-05-08 01:09:37,979 - DEBUG - Distance to ahmed: 0.5760130676449432
+2025-05-08 01:09:37,980 - DEBUG - Detected 1 faces
+2025-05-08 01:09:37,983 - DEBUG - Processing new frame
+2025-05-08 01:09:38,059 - DEBUG - Distance to ahmed: 0.5875987671720437
+2025-05-08 01:09:38,060 - DEBUG - Detected 1 faces
+2025-05-08 01:09:38,062 - DEBUG - Processing new frame
+2025-05-08 01:09:38,140 - DEBUG - Distance to ahmed: 0.6007248139511376
+2025-05-08 01:09:38,141 - DEBUG - Detected 1 faces
+2025-05-08 01:09:38,144 - DEBUG - Processing new frame
+2025-05-08 01:09:38,218 - DEBUG - Distance to ahmed: 0.522207701777871
+2025-05-08 01:09:38,219 - DEBUG - Detected 1 faces
+2025-05-08 01:09:38,221 - DEBUG - Processing new frame
+2025-05-08 01:09:38,298 - DEBUG - Distance to ahmed: 0.5316380545703471
+2025-05-08 01:09:38,298 - DEBUG - Detected 1 faces
+2025-05-08 01:09:38,301 - DEBUG - Processing new frame
+2025-05-08 01:09:38,375 - DEBUG - Distance to ahmed: 0.5328599996369693
+2025-05-08 01:09:38,376 - DEBUG - Detected 1 faces
+2025-05-08 01:09:38,379 - DEBUG - Processing new frame
+2025-05-08 01:09:38,453 - DEBUG - Distance to ahmed: 0.531891165774352
+2025-05-08 01:09:38,454 - DEBUG - Detected 1 faces
+2025-05-08 01:09:38,457 - DEBUG - Processing new frame
+2025-05-08 01:09:38,531 - DEBUG - Distance to ahmed: 0.5117482096058901
+2025-05-08 01:09:38,532 - DEBUG - Detected 1 faces
+2025-05-08 01:09:38,535 - DEBUG - Processing new frame
+2025-05-08 01:09:38,612 - DEBUG - Distance to ahmed: 0.5064978102016345
+2025-05-08 01:09:38,613 - DEBUG - Detected 1 faces
+2025-05-08 01:09:38,615 - DEBUG - Processing new frame
+2025-05-08 01:09:38,698 - DEBUG - Distance to ahmed: 0.5671300769649716
+2025-05-08 01:09:38,699 - DEBUG - Detected 1 faces
+2025-05-08 01:09:38,702 - DEBUG - Processing new frame
+2025-05-08 01:09:38,776 - DEBUG - Distance to ahmed: 0.5297563185472688
+2025-05-08 01:09:38,777 - DEBUG - Detected 1 faces
+2025-05-08 01:09:38,779 - DEBUG - Processing new frame
+2025-05-08 01:09:38,859 - DEBUG - Distance to ahmed: 0.5326156459326669
+2025-05-08 01:09:38,859 - DEBUG - Detected 1 faces
+2025-05-08 01:09:38,862 - DEBUG - Processing new frame
+2025-05-08 01:09:38,945 - DEBUG - Distance to ahmed: 0.5454072072898555
+2025-05-08 01:09:38,946 - DEBUG - Detected 1 faces
+2025-05-08 01:09:38,949 - DEBUG - Processing new frame
+2025-05-08 01:09:39,023 - DEBUG - Distance to ahmed: 0.5138924346326571
+2025-05-08 01:09:39,024 - DEBUG - Detected 1 faces
+2025-05-08 01:09:39,026 - DEBUG - Processing new frame
+2025-05-08 01:09:39,099 - DEBUG - Distance to ahmed: 0.5445871651459184
+2025-05-08 01:09:39,100 - DEBUG - Detected 1 faces
+2025-05-08 01:09:39,103 - DEBUG - Processing new frame
+2025-05-08 01:09:39,179 - DEBUG - Distance to ahmed: 0.5227350047709947
+2025-05-08 01:09:39,180 - DEBUG - Detected 1 faces
+2025-05-08 01:09:39,182 - DEBUG - Processing new frame
+2025-05-08 01:09:39,258 - DEBUG - Distance to ahmed: 0.5315463870621527
+2025-05-08 01:09:39,258 - DEBUG - Detected 1 faces
+2025-05-08 01:09:39,261 - DEBUG - Processing new frame
+2025-05-08 01:09:39,334 - DEBUG - Distance to ahmed: 0.520905569089389
+2025-05-08 01:09:39,336 - DEBUG - Detected 1 faces
+2025-05-08 01:09:39,338 - DEBUG - Processing new frame
+2025-05-08 01:09:39,414 - DEBUG - Distance to ahmed: 0.523968041108048
+2025-05-08 01:09:39,415 - DEBUG - Detected 1 faces
+2025-05-08 01:09:39,418 - DEBUG - Processing new frame
+2025-05-08 01:09:39,492 - DEBUG - Distance to ahmed: 0.5264494028305189
+2025-05-08 01:09:39,493 - DEBUG - Detected 1 faces
+2025-05-08 01:09:39,496 - DEBUG - Processing new frame
+2025-05-08 01:09:39,573 - DEBUG - Distance to ahmed: 0.544252987398045
+2025-05-08 01:09:39,573 - DEBUG - Detected 1 faces
+2025-05-08 01:09:39,575 - DEBUG - Processing new frame
+2025-05-08 01:09:39,651 - DEBUG - Distance to ahmed: 0.5331733473085563
+2025-05-08 01:09:39,652 - DEBUG - Detected 1 faces
+2025-05-08 01:09:39,655 - DEBUG - Processing new frame
+2025-05-08 01:09:39,732 - DEBUG - Distance to ahmed: 0.5348465136022499
+2025-05-08 01:09:39,740 - DEBUG - Detected 1 faces
+2025-05-08 01:09:39,743 - DEBUG - Processing new frame
+2025-05-08 01:09:39,818 - DEBUG - Distance to ahmed: 0.5457669702417755
+2025-05-08 01:09:39,819 - DEBUG - Detected 1 faces
+2025-05-08 01:09:39,822 - DEBUG - Processing new frame
+2025-05-08 01:09:39,902 - DEBUG - Distance to ahmed: 0.5351103479663192
+2025-05-08 01:09:39,903 - DEBUG - Detected 1 faces
+2025-05-08 01:09:39,906 - DEBUG - Processing new frame
+2025-05-08 01:09:39,979 - DEBUG - Distance to ahmed: 0.5296323761704439
+2025-05-08 01:09:39,980 - DEBUG - Detected 1 faces
+2025-05-08 01:09:39,983 - DEBUG - Processing new frame
+2025-05-08 01:09:40,060 - DEBUG - Distance to ahmed: 0.5326295777456945
+2025-05-08 01:09:40,061 - DEBUG - Detected 1 faces
+2025-05-08 01:09:40,063 - DEBUG - Processing new frame
+2025-05-08 01:09:40,137 - DEBUG - Distance to ahmed: 0.5387046296345034
+2025-05-08 01:09:40,138 - DEBUG - Detected 1 faces
+2025-05-08 01:09:40,141 - DEBUG - Processing new frame
+2025-05-08 01:09:40,218 - DEBUG - Distance to ahmed: 0.5148791184785486
+2025-05-08 01:09:40,219 - DEBUG - Detected 1 faces
+2025-05-08 01:09:40,222 - DEBUG - Processing new frame
+2025-05-08 01:09:40,300 - DEBUG - Distance to ahmed: 0.5407926881547261
+2025-05-08 01:09:40,301 - DEBUG - Detected 1 faces
+2025-05-08 01:09:40,303 - DEBUG - Processing new frame
+2025-05-08 01:09:40,378 - DEBUG - Distance to ahmed: 0.5361409063121299
+2025-05-08 01:09:40,378 - DEBUG - Detected 1 faces
+2025-05-08 01:09:40,381 - DEBUG - Processing new frame
+2025-05-08 01:09:40,459 - DEBUG - Distance to ahmed: 0.5451111569884185
+2025-05-08 01:09:40,459 - DEBUG - Detected 1 faces
+2025-05-08 01:09:40,462 - DEBUG - Processing new frame
+2025-05-08 01:09:40,538 - DEBUG - Distance to ahmed: 0.4999346237176923
+2025-05-08 01:09:40,539 - DEBUG - Detected 1 faces
+2025-05-08 01:09:40,541 - DEBUG - Processing new frame
+2025-05-08 01:09:40,621 - DEBUG - Distance to ahmed: 0.47977212655848156
+2025-05-08 01:09:40,621 - DEBUG - Detected 1 faces
+2025-05-08 01:09:40,625 - DEBUG - Processing new frame
+2025-05-08 01:09:40,700 - DEBUG - Distance to ahmed: 0.5000916611791721
+2025-05-08 01:09:40,701 - DEBUG - Detected 1 faces
+2025-05-08 01:09:40,703 - DEBUG - Processing new frame
+2025-05-08 01:09:40,778 - DEBUG - Distance to ahmed: 0.5323172532970813
+2025-05-08 01:09:40,779 - DEBUG - Detected 1 faces
+2025-05-08 01:09:40,782 - DEBUG - Processing new frame
+2025-05-08 01:09:40,859 - DEBUG - Distance to ahmed: 0.5410447332482571
+2025-05-08 01:09:40,860 - DEBUG - Detected 1 faces
+2025-05-08 01:09:40,863 - DEBUG - Processing new frame
+2025-05-08 01:09:40,937 - DEBUG - Distance to ahmed: 0.5125103931966761
+2025-05-08 01:09:40,938 - DEBUG - Detected 1 faces
+2025-05-08 01:09:40,941 - DEBUG - Processing new frame
+2025-05-08 01:09:41,020 - DEBUG - Distance to ahmed: 0.5094286513872784
+2025-05-08 01:09:41,021 - DEBUG - Detected 1 faces
+2025-05-08 01:09:41,024 - DEBUG - Processing new frame
+2025-05-08 01:09:41,100 - DEBUG - Distance to ahmed: 0.4967023980708724
+2025-05-08 01:09:41,100 - DEBUG - Detected 1 faces
+2025-05-08 01:09:41,103 - DEBUG - Processing new frame
+2025-05-08 01:09:41,186 - DEBUG - Distance to ahmed: 0.5002954043290144
+2025-05-08 01:09:41,187 - DEBUG - Detected 1 faces
+2025-05-08 01:09:41,189 - DEBUG - Processing new frame
+2025-05-08 01:09:41,280 - DEBUG - Distance to ahmed: 0.5183124321011997
+2025-05-08 01:09:41,281 - DEBUG - Detected 1 faces
+2025-05-08 01:09:41,283 - DEBUG - Processing new frame
+2025-05-08 01:09:41,364 - DEBUG - Distance to ahmed: 0.5134659772970296
+2025-05-08 01:09:41,365 - DEBUG - Detected 1 faces
+2025-05-08 01:09:41,367 - DEBUG - Processing new frame
+2025-05-08 01:09:41,444 - DEBUG - Distance to ahmed: 0.49898292806976313
+2025-05-08 01:09:41,445 - DEBUG - Detected 1 faces
+2025-05-08 01:09:41,448 - DEBUG - Processing new frame
+2025-05-08 01:09:41,526 - DEBUG - Distance to ahmed: 0.5123952061746522
+2025-05-08 01:09:41,526 - DEBUG - Detected 1 faces
+2025-05-08 01:09:41,529 - DEBUG - Processing new frame
+2025-05-08 01:09:41,605 - DEBUG - Distance to ahmed: 0.4980631360896396
+2025-05-08 01:09:41,606 - DEBUG - Detected 1 faces
+2025-05-08 01:09:41,608 - DEBUG - Processing new frame
+2025-05-08 01:09:41,685 - DEBUG - Distance to ahmed: 0.520311805664611
+2025-05-08 01:09:41,686 - DEBUG - Detected 1 faces
+2025-05-08 01:09:41,689 - DEBUG - Processing new frame
+2025-05-08 01:09:41,762 - DEBUG - Distance to ahmed: 0.516659077146984
+2025-05-08 01:09:41,763 - DEBUG - Detected 1 faces
+2025-05-08 01:09:41,766 - DEBUG - Processing new frame
+2025-05-08 01:09:41,840 - DEBUG - Distance to ahmed: 0.5270406075554702
+2025-05-08 01:09:41,840 - DEBUG - Detected 1 faces
+2025-05-08 01:09:41,843 - DEBUG - Processing new frame
+2025-05-08 01:09:41,920 - DEBUG - Distance to ahmed: 0.5180767706130076
+2025-05-08 01:09:41,921 - DEBUG - Detected 1 faces
+2025-05-08 01:09:41,923 - DEBUG - Processing new frame
+2025-05-08 01:09:41,998 - DEBUG - Distance to ahmed: 0.501763560305018
+2025-05-08 01:09:41,999 - DEBUG - Detected 1 faces
+2025-05-08 01:09:42,003 - DEBUG - Processing new frame
+2025-05-08 01:09:42,084 - DEBUG - Distance to ahmed: 0.5019696315783115
+2025-05-08 01:09:42,084 - DEBUG - Detected 1 faces
+2025-05-08 01:09:42,087 - DEBUG - Processing new frame
+2025-05-08 01:09:42,164 - DEBUG - Distance to ahmed: 0.5022278071097243
+2025-05-08 01:09:42,164 - DEBUG - Detected 1 faces
+2025-05-08 01:09:42,167 - DEBUG - Processing new frame
+2025-05-08 01:09:42,244 - DEBUG - Distance to ahmed: 0.5131640418166624
+2025-05-08 01:09:42,245 - DEBUG - Detected 1 faces
+2025-05-08 01:09:42,248 - DEBUG - Processing new frame
+2025-05-08 01:09:42,321 - DEBUG - Distance to ahmed: 0.5038405186675182
+2025-05-08 01:09:42,321 - DEBUG - Detected 1 faces
+2025-05-08 01:09:42,324 - DEBUG - Processing new frame
+2025-05-08 01:09:42,431 - DEBUG - Distance to ahmed: 0.513094473373882
+2025-05-08 01:09:42,453 - DEBUG - Detected 1 faces
+2025-05-08 01:09:42,455 - DEBUG - Processing new frame
+2025-05-08 01:09:42,536 - DEBUG - Distance to ahmed: 0.5059832354102262
+2025-05-08 01:09:42,537 - DEBUG - Detected 1 faces
+2025-05-08 01:09:42,540 - DEBUG - Processing new frame
+2025-05-08 01:09:42,617 - DEBUG - Distance to ahmed: 0.5021063140054208
+2025-05-08 01:09:42,618 - DEBUG - Detected 1 faces
+2025-05-08 01:09:42,620 - DEBUG - Processing new frame
+2025-05-08 01:09:42,694 - DEBUG - Distance to ahmed: 0.5059903701552307
+2025-05-08 01:09:42,694 - DEBUG - Detected 1 faces
+2025-05-08 01:09:42,697 - DEBUG - Processing new frame
+2025-05-08 01:09:42,773 - DEBUG - Distance to ahmed: 0.5072763452331496
+2025-05-08 01:09:42,774 - DEBUG - Detected 1 faces
+2025-05-08 01:09:42,776 - DEBUG - Processing new frame
+2025-05-08 01:09:42,854 - DEBUG - Distance to ahmed: 0.5119639383816311
+2025-05-08 01:09:42,855 - DEBUG - Detected 1 faces
+2025-05-08 01:09:42,857 - DEBUG - Processing new frame
+2025-05-08 01:09:42,931 - DEBUG - Distance to ahmed: 0.5114881270965639
+2025-05-08 01:09:42,932 - DEBUG - Detected 1 faces
+2025-05-08 01:09:42,935 - DEBUG - Processing new frame
+2025-05-08 01:09:43,010 - DEBUG - Distance to ahmed: 0.5143616683012879
+2025-05-08 01:09:43,010 - DEBUG - Detected 1 faces
+2025-05-08 01:09:43,014 - DEBUG - Processing new frame
+2025-05-08 01:09:43,090 - DEBUG - Distance to ahmed: 0.5055534919767729
+2025-05-08 01:09:43,091 - DEBUG - Detected 1 faces
+2025-05-08 01:09:43,094 - DEBUG - Processing new frame
+2025-05-08 01:09:43,185 - DEBUG - Distance to ahmed: 0.4918634663510541
+2025-05-08 01:09:43,186 - DEBUG - Detected 1 faces
+2025-05-08 01:09:43,189 - DEBUG - Processing new frame
+2025-05-08 01:09:43,262 - DEBUG - Distance to ahmed: 0.4898841690767023
+2025-05-08 01:09:43,262 - DEBUG - Detected 1 faces
+2025-05-08 01:09:43,265 - DEBUG - Processing new frame
+2025-05-08 01:09:43,342 - DEBUG - Distance to ahmed: 0.5236567811101351
+2025-05-08 01:09:43,343 - DEBUG - Detected 1 faces
+2025-05-08 01:09:43,345 - DEBUG - Processing new frame
+2025-05-08 01:09:43,420 - DEBUG - Distance to ahmed: 0.48888587290822694
+2025-05-08 01:09:43,421 - DEBUG - Detected 1 faces
+2025-05-08 01:09:43,424 - DEBUG - Processing new frame
+2025-05-08 01:09:43,502 - DEBUG - Distance to ahmed: 0.4720549593075971
+2025-05-08 01:09:43,503 - DEBUG - Detected 1 faces
+2025-05-08 01:09:43,506 - DEBUG - Processing new frame
+2025-05-08 01:09:43,585 - DEBUG - Distance to ahmed: 0.4923937950139268
+2025-05-08 01:09:43,585 - DEBUG - Detected 1 faces
+2025-05-08 01:09:43,588 - DEBUG - Processing new frame
+2025-05-08 01:09:43,668 - DEBUG - Distance to ahmed: 0.48899036940720214
+2025-05-08 01:09:43,669 - DEBUG - Detected 1 faces
+2025-05-08 01:09:43,671 - DEBUG - Processing new frame
+2025-05-08 01:09:43,747 - DEBUG - Distance to ahmed: 0.5007665676473282
+2025-05-08 01:09:43,748 - DEBUG - Detected 1 faces
+2025-05-08 01:09:43,751 - DEBUG - Processing new frame
+2025-05-08 01:09:43,828 - DEBUG - Distance to ahmed: 0.5235227032734766
+2025-05-08 01:09:43,829 - DEBUG - Detected 1 faces
+2025-05-08 01:09:43,832 - DEBUG - Processing new frame
+2025-05-08 01:09:43,910 - DEBUG - Distance to ahmed: 0.49442009896428263
+2025-05-08 01:09:43,911 - DEBUG - Detected 1 faces
+2025-05-08 01:09:43,913 - DEBUG - Processing new frame
+2025-05-08 01:09:43,989 - DEBUG - Distance to ahmed: 0.5937815136119758
+2025-05-08 01:09:43,989 - DEBUG - Detected 1 faces
+2025-05-08 01:09:43,992 - DEBUG - Processing new frame
+2025-05-08 01:09:44,070 - DEBUG - Distance to ahmed: 0.6668154665199685
+2025-05-08 01:09:44,072 - DEBUG - Detected 1 faces
+2025-05-08 01:09:44,074 - DEBUG - Processing new frame
+2025-05-08 01:09:44,152 - DEBUG - Distance to ahmed: 1.161199903668088
+2025-05-08 01:09:44,153 - DEBUG - Detected 1 faces
+2025-05-08 01:09:44,155 - DEBUG - Processing new frame
+2025-05-08 01:09:44,237 - DEBUG - Distance to ahmed: 0.8605052710126843
+2025-05-08 01:09:44,238 - DEBUG - Detected 1 faces
+2025-05-08 01:09:44,240 - DEBUG - Processing new frame
+2025-05-08 01:09:44,317 - DEBUG - Distance to ahmed: 1.0430605790343082
+2025-05-08 01:09:44,318 - DEBUG - Detected 1 faces
+2025-05-08 01:09:44,320 - DEBUG - Processing new frame
+2025-05-08 01:09:44,396 - DEBUG - Distance to ahmed: 1.200878746453193
+2025-05-08 01:09:44,397 - DEBUG - Detected 1 faces
+2025-05-08 01:09:44,399 - DEBUG - Processing new frame
+2025-05-08 01:09:44,472 - DEBUG - Distance to ahmed: 1.3815168877874253
+2025-05-08 01:09:44,472 - DEBUG - Detected 1 faces
+2025-05-08 01:09:44,474 - DEBUG - Processing new frame
+2025-05-08 01:09:44,487 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,490 - DEBUG - Processing new frame
+2025-05-08 01:09:44,504 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,507 - DEBUG - Processing new frame
+2025-05-08 01:09:44,520 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,523 - DEBUG - Processing new frame
+2025-05-08 01:09:44,536 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,539 - DEBUG - Processing new frame
+2025-05-08 01:09:44,552 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,554 - DEBUG - Processing new frame
+2025-05-08 01:09:44,566 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,568 - DEBUG - Processing new frame
+2025-05-08 01:09:44,581 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,584 - DEBUG - Processing new frame
+2025-05-08 01:09:44,597 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,600 - DEBUG - Processing new frame
+2025-05-08 01:09:44,613 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,616 - DEBUG - Processing new frame
+2025-05-08 01:09:44,628 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,631 - DEBUG - Processing new frame
+2025-05-08 01:09:44,644 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,647 - DEBUG - Processing new frame
+2025-05-08 01:09:44,660 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,662 - DEBUG - Processing new frame
+2025-05-08 01:09:44,676 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,677 - DEBUG - Processing new frame
+2025-05-08 01:09:44,690 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,692 - DEBUG - Processing new frame
+2025-05-08 01:09:44,704 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,706 - DEBUG - Processing new frame
+2025-05-08 01:09:44,721 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,723 - DEBUG - Processing new frame
+2025-05-08 01:09:44,735 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,737 - DEBUG - Processing new frame
+2025-05-08 01:09:44,752 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,755 - DEBUG - Processing new frame
+2025-05-08 01:09:44,768 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,769 - DEBUG - Processing new frame
+2025-05-08 01:09:44,784 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,785 - DEBUG - Processing new frame
+2025-05-08 01:09:44,798 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,800 - DEBUG - Processing new frame
+2025-05-08 01:09:44,813 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,815 - DEBUG - Processing new frame
+2025-05-08 01:09:44,828 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,831 - DEBUG - Processing new frame
+2025-05-08 01:09:44,843 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,846 - DEBUG - Processing new frame
+2025-05-08 01:09:44,859 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,861 - DEBUG - Processing new frame
+2025-05-08 01:09:44,874 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,876 - DEBUG - Processing new frame
+2025-05-08 01:09:44,890 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,893 - DEBUG - Processing new frame
+2025-05-08 01:09:44,906 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,909 - DEBUG - Processing new frame
+2025-05-08 01:09:44,923 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,925 - DEBUG - Processing new frame
+2025-05-08 01:09:44,941 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,944 - DEBUG - Processing new frame
+2025-05-08 01:09:44,960 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,962 - DEBUG - Processing new frame
+2025-05-08 01:09:44,977 - DEBUG - No faces detected in frame
+2025-05-08 01:09:44,980 - DEBUG - Processing new frame
+2025-05-08 01:09:44,998 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,000 - DEBUG - Processing new frame
+2025-05-08 01:09:45,016 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,019 - DEBUG - Processing new frame
+2025-05-08 01:09:45,036 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,039 - DEBUG - Processing new frame
+2025-05-08 01:09:45,054 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,057 - DEBUG - Processing new frame
+2025-05-08 01:09:45,073 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,075 - DEBUG - Processing new frame
+2025-05-08 01:09:45,090 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,093 - DEBUG - Processing new frame
+2025-05-08 01:09:45,105 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,107 - DEBUG - Processing new frame
+2025-05-08 01:09:45,121 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,123 - DEBUG - Processing new frame
+2025-05-08 01:09:45,135 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,138 - DEBUG - Processing new frame
+2025-05-08 01:09:45,152 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,154 - DEBUG - Processing new frame
+2025-05-08 01:09:45,167 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,169 - DEBUG - Processing new frame
+2025-05-08 01:09:45,184 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,186 - DEBUG - Processing new frame
+2025-05-08 01:09:45,201 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,203 - DEBUG - Processing new frame
+2025-05-08 01:09:45,216 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,218 - DEBUG - Processing new frame
+2025-05-08 01:09:45,231 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,233 - DEBUG - Processing new frame
+2025-05-08 01:09:45,247 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,249 - DEBUG - Processing new frame
+2025-05-08 01:09:45,262 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,264 - DEBUG - Processing new frame
+2025-05-08 01:09:45,279 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,282 - DEBUG - Processing new frame
+2025-05-08 01:09:45,298 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,300 - DEBUG - Processing new frame
+2025-05-08 01:09:45,317 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,319 - DEBUG - Processing new frame
+2025-05-08 01:09:45,332 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,334 - DEBUG - Processing new frame
+2025-05-08 01:09:45,347 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,349 - DEBUG - Processing new frame
+2025-05-08 01:09:45,362 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,365 - DEBUG - Processing new frame
+2025-05-08 01:09:45,379 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,381 - DEBUG - Processing new frame
+2025-05-08 01:09:45,395 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,397 - DEBUG - Processing new frame
+2025-05-08 01:09:45,413 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,416 - DEBUG - Processing new frame
+2025-05-08 01:09:45,429 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,431 - DEBUG - Processing new frame
+2025-05-08 01:09:45,445 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,447 - DEBUG - Processing new frame
+2025-05-08 01:09:45,460 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,462 - DEBUG - Processing new frame
+2025-05-08 01:09:45,477 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,480 - DEBUG - Processing new frame
+2025-05-08 01:09:45,494 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,496 - DEBUG - Processing new frame
+2025-05-08 01:09:45,510 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,513 - DEBUG - Processing new frame
+2025-05-08 01:09:45,526 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,528 - DEBUG - Processing new frame
+2025-05-08 01:09:45,543 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,545 - DEBUG - Processing new frame
+2025-05-08 01:09:45,558 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,562 - DEBUG - Processing new frame
+2025-05-08 01:09:45,575 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,577 - DEBUG - Processing new frame
+2025-05-08 01:09:45,592 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,593 - DEBUG - Processing new frame
+2025-05-08 01:09:45,606 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,608 - DEBUG - Processing new frame
+2025-05-08 01:09:45,622 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,625 - DEBUG - Processing new frame
+2025-05-08 01:09:45,640 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,643 - DEBUG - Processing new frame
+2025-05-08 01:09:45,656 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,659 - DEBUG - Processing new frame
+2025-05-08 01:09:45,673 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,675 - DEBUG - Processing new frame
+2025-05-08 01:09:45,688 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,690 - DEBUG - Processing new frame
+2025-05-08 01:09:45,703 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,705 - DEBUG - Processing new frame
+2025-05-08 01:09:45,719 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,722 - DEBUG - Processing new frame
+2025-05-08 01:09:45,737 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,739 - DEBUG - Processing new frame
+2025-05-08 01:09:45,752 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,754 - DEBUG - Processing new frame
+2025-05-08 01:09:45,768 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,770 - DEBUG - Processing new frame
+2025-05-08 01:09:45,782 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,784 - DEBUG - Processing new frame
+2025-05-08 01:09:45,799 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,801 - DEBUG - Processing new frame
+2025-05-08 01:09:45,815 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,817 - DEBUG - Processing new frame
+2025-05-08 01:09:45,833 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,836 - DEBUG - Processing new frame
+2025-05-08 01:09:45,852 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,854 - DEBUG - Processing new frame
+2025-05-08 01:09:45,869 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,872 - DEBUG - Processing new frame
+2025-05-08 01:09:45,889 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,891 - DEBUG - Processing new frame
+2025-05-08 01:09:45,907 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,909 - DEBUG - Processing new frame
+2025-05-08 01:09:45,922 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,924 - DEBUG - Processing new frame
+2025-05-08 01:09:45,937 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,939 - DEBUG - Processing new frame
+2025-05-08 01:09:45,952 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,953 - DEBUG - Processing new frame
+2025-05-08 01:09:45,966 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,968 - DEBUG - Processing new frame
+2025-05-08 01:09:45,981 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,983 - DEBUG - Processing new frame
+2025-05-08 01:09:45,996 - DEBUG - No faces detected in frame
+2025-05-08 01:09:45,998 - DEBUG - Processing new frame
+2025-05-08 01:09:46,011 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,013 - DEBUG - Processing new frame
+2025-05-08 01:09:46,026 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,028 - DEBUG - Processing new frame
+2025-05-08 01:09:46,041 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,043 - DEBUG - Processing new frame
+2025-05-08 01:09:46,058 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,060 - DEBUG - Processing new frame
+2025-05-08 01:09:46,074 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,076 - DEBUG - Processing new frame
+2025-05-08 01:09:46,091 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,093 - DEBUG - Processing new frame
+2025-05-08 01:09:46,106 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,108 - DEBUG - Processing new frame
+2025-05-08 01:09:46,122 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,125 - DEBUG - Processing new frame
+2025-05-08 01:09:46,141 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,143 - DEBUG - Processing new frame
+2025-05-08 01:09:46,158 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,161 - DEBUG - Processing new frame
+2025-05-08 01:09:46,178 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,180 - DEBUG - Processing new frame
+2025-05-08 01:09:46,196 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,199 - DEBUG - Processing new frame
+2025-05-08 01:09:46,217 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,220 - DEBUG - Processing new frame
+2025-05-08 01:09:46,236 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,253 - DEBUG - Processing new frame
+2025-05-08 01:09:46,273 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,306 - DEBUG - Processing new frame
+2025-05-08 01:09:46,324 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,361 - DEBUG - Processing new frame
+2025-05-08 01:09:46,379 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,416 - DEBUG - Processing new frame
+2025-05-08 01:09:46,428 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,463 - DEBUG - Processing new frame
+2025-05-08 01:09:46,475 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,512 - DEBUG - Processing new frame
+2025-05-08 01:09:46,526 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,569 - DEBUG - Processing new frame
+2025-05-08 01:09:46,582 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,672 - DEBUG - Processing new frame
+2025-05-08 01:09:46,685 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,687 - DEBUG - Processing new frame
+2025-05-08 01:09:46,700 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,721 - DEBUG - Processing new frame
+2025-05-08 01:09:46,733 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,779 - DEBUG - Processing new frame
+2025-05-08 01:09:46,795 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,822 - DEBUG - Processing new frame
+2025-05-08 01:09:46,836 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,874 - DEBUG - Processing new frame
+2025-05-08 01:09:46,888 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,930 - DEBUG - Processing new frame
+2025-05-08 01:09:46,945 - DEBUG - No faces detected in frame
+2025-05-08 01:09:46,986 - DEBUG - Processing new frame
+2025-05-08 01:09:46,998 - DEBUG - No faces detected in frame
+2025-05-08 01:09:47,037 - DEBUG - Processing new frame
+2025-05-08 01:09:47,050 - DEBUG - No faces detected in frame
+2025-05-08 01:09:47,087 - DEBUG - Processing new frame
+2025-05-08 01:09:47,100 - DEBUG - No faces detected in frame
+2025-05-08 01:09:47,168 - DEBUG - Processing new frame
+2025-05-08 01:09:47,180 - DEBUG - No faces detected in frame
+2025-05-08 01:09:47,191 - DEBUG - Processing new frame
+2025-05-08 01:09:47,203 - DEBUG - No faces detected in frame
+2025-05-08 01:09:47,247 - DEBUG - Processing new frame
+2025-05-08 01:09:47,259 - DEBUG - No faces detected in frame
+2025-05-08 01:09:47,296 - DEBUG - Processing new frame
+2025-05-08 01:09:47,311 - DEBUG - No faces detected in frame
+2025-05-08 01:09:47,311 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverConnectionId": 5630, "serverHost": "cluster0-shard-00-01.5h4nt.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 10016.000000061467, "reply": "{\"topologyVersion\": {\"processId\": {\"$oid\": \"681bb177fc6bf1c7572c5ef0\"}, \"counter\": 3}, \"hosts\": [\"cluster0-shard-00-00.5h4nt.mongodb.net:27017\", \"cluster0-shard-00-01.5h4nt.mongodb.net:27017\", \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\"], \"setName\": \"atlas-3ohfxw-shard-0\", \"setVersion\": 72, \"secondary\": true, \"primary\": \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\", \"tags\": {\"region\": \"ME_SOUTH_1\", \"nodeType\": \"ELECTABLE\", \"workloadType\": \"OPERATIONAL\", \"availabilityZone\": \"mes1-az2\", \"diskState\": \"READY\", \"provider\": \"AWS\"}, \"me\": \"cluster0-shard-00-01.5h4nt.mongodb.net:27017\", \"lastWrite\": {\"opTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746655787, \"i\": 8}}, \"t\": 138}, \"lastWriteDate\": {\"$date\": \"2025-05-07T22:09:47Z\"}, \"majorityOpTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746655787, \"i\": 8}}, \"t\": 138}, \"majorityWriteDate\": {\"$date\": \"2025-05-07T22:09:47Z\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWriteBatchSize\": 100000, \"localTime\": {\"$date\": \"2025-05-07T22:09:47....", "message": "Server heartbeat succeeded"}
+2025-05-08 01:09:47,313 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverConnectionId": 5630, "serverHost": "cluster0-shard-00-01.5h4nt.mongodb.net", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-05-08 01:09:47,346 - DEBUG - Processing new frame
+2025-05-08 01:09:47,360 - DEBUG - No faces detected in frame
+2025-05-08 01:09:47,398 - DEBUG - Processing new frame
+2025-05-08 01:09:47,406 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverConnectionId": 5952, "serverHost": "cluster0-shard-00-00.5h4nt.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 10000.0, "reply": "{\"topologyVersion\": {\"processId\": {\"$oid\": \"681baff9dcdc076bc04e6972\"}, \"counter\": 4}, \"hosts\": [\"cluster0-shard-00-00.5h4nt.mongodb.net:27017\", \"cluster0-shard-00-01.5h4nt.mongodb.net:27017\", \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\"], \"setName\": \"atlas-3ohfxw-shard-0\", \"setVersion\": 72, \"secondary\": true, \"primary\": \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\", \"tags\": {\"nodeType\": \"ELECTABLE\", \"provider\": \"AWS\", \"region\": \"ME_SOUTH_1\", \"diskState\": \"READY\", \"availabilityZone\": \"mes1-az1\", \"workloadType\": \"OPERATIONAL\"}, \"me\": \"cluster0-shard-00-00.5h4nt.mongodb.net:27017\", \"lastWrite\": {\"opTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746655787, \"i\": 8}}, \"t\": 138}, \"lastWriteDate\": {\"$date\": \"2025-05-07T22:09:47Z\"}, \"majorityOpTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746655787, \"i\": 8}}, \"t\": 138}, \"majorityWriteDate\": {\"$date\": \"2025-05-07T22:09:47Z\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWriteBatchSize\": 100000, \"localTime\": {\"$date\": \"2025-05-07T22:09:47....", "message": "Server heartbeat succeeded"}
+2025-05-08 01:09:47,407 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverConnectionId": 5952, "serverHost": "cluster0-shard-00-00.5h4nt.mongodb.net", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-05-08 01:09:47,410 - DEBUG - No faces detected in frame
+2025-05-08 01:09:47,452 - DEBUG - Processing new frame
+2025-05-08 01:09:47,464 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverConnectionId": 6249, "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 10015.00000001397, "reply": "{\"topologyVersion\": {\"processId\": {\"$oid\": \"681bae95af98b4f381c7213a\"}, \"counter\": 6}, \"hosts\": [\"cluster0-shard-00-00.5h4nt.mongodb.net:27017\", \"cluster0-shard-00-01.5h4nt.mongodb.net:27017\", \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\"], \"setName\": \"atlas-3ohfxw-shard-0\", \"setVersion\": 72, \"isWritablePrimary\": true, \"primary\": \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\", \"tags\": {\"availabilityZone\": \"mes1-az3\", \"provider\": \"AWS\", \"diskState\": \"READY\", \"workloadType\": \"OPERATIONAL\", \"region\": \"ME_SOUTH_1\", \"nodeType\": \"ELECTABLE\"}, \"me\": \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\", \"electionId\": {\"$oid\": \"7fffffff000000000000008a\"}, \"lastWrite\": {\"opTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746655787, \"i\": 8}}, \"t\": 138}, \"lastWriteDate\": {\"$date\": \"2025-05-07T22:09:47Z\"}, \"majorityOpTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746655787, \"i\": 8}}, \"t\": 138}, \"majorityWriteDate\": {\"$date\": \"2025-05-07T22:09:47Z\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWriteBatc...", "message": "Server heartbeat succeeded"}
+2025-05-08 01:09:47,466 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverConnectionId": 6249, "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-05-08 01:09:47,468 - DEBUG - No faces detected in frame
+2025-05-08 01:09:47,504 - DEBUG - Processing new frame
+2025-05-08 01:09:47,517 - DEBUG - No faces detected in frame
+2025-05-08 01:09:47,554 - DEBUG - Processing new frame
+2025-05-08 01:09:47,567 - DEBUG - No faces detected in frame
+2025-05-08 01:09:47,606 - DEBUG - Processing new frame
+2025-05-08 01:09:47,619 - DEBUG - No faces detected in frame
+2025-05-08 01:09:47,652 - DEBUG - Processing new frame
+2025-05-08 01:09:47,665 - DEBUG - No faces detected in frame
+2025-05-08 01:09:47,742 - DEBUG - Processing new frame
+2025-05-08 01:09:47,754 - DEBUG - No faces detected in frame
+2025-05-08 01:09:47,757 - DEBUG - Processing new frame
+2025-05-08 01:09:47,770 - DEBUG - No faces detected in frame
+2025-05-08 01:09:47,807 - DEBUG - Processing new frame
+2025-05-08 01:09:47,820 - DEBUG - No faces detected in frame
+2025-05-08 01:09:47,864 - DEBUG - Processing new frame
+2025-05-08 01:09:47,941 - DEBUG - No faces detected in frame
+2025-05-08 01:09:47,943 - DEBUG - Processing new frame
+2025-05-08 01:09:47,958 - DEBUG - No faces detected in frame
+2025-05-08 01:09:47,970 - DEBUG - Processing new frame
+2025-05-08 01:09:47,986 - DEBUG - No faces detected in frame
+2025-05-08 01:09:48,024 - DEBUG - Processing new frame
+2025-05-08 01:09:48,038 - DEBUG - No faces detected in frame
+2025-05-08 01:09:48,082 - DEBUG - Processing new frame
+2025-05-08 01:09:48,096 - DEBUG - No faces detected in frame
+2025-05-08 01:09:48,127 - DEBUG - Processing new frame
+2025-05-08 01:09:48,140 - DEBUG - No faces detected in frame
+2025-05-08 01:09:48,179 - DEBUG - Processing new frame
+2025-05-08 01:09:48,192 - DEBUG - No faces detected in frame
+2025-05-08 01:09:48,230 - DEBUG - Processing new frame
+2025-05-08 01:09:48,244 - DEBUG - No faces detected in frame
+2025-05-08 01:09:48,275 - DEBUG - Processing new frame
+2025-05-08 01:09:48,289 - DEBUG - No faces detected in frame
+2025-05-08 01:09:48,332 - DEBUG - Processing new frame
+2025-05-08 01:09:48,345 - DEBUG - No faces detected in frame
+2025-05-08 01:09:48,389 - DEBUG - Processing new frame
+2025-05-08 01:09:48,401 - DEBUG - No faces detected in frame
+2025-05-08 01:09:48,438 - DEBUG - Processing new frame
+2025-05-08 01:09:48,454 - DEBUG - No faces detected in frame
+2025-05-08 01:09:48,490 - DEBUG - Processing new frame
+2025-05-08 01:09:48,505 - DEBUG - No faces detected in frame
+2025-05-08 01:09:48,542 - DEBUG - Processing new frame
+2025-05-08 01:09:48,555 - DEBUG - No faces detected in frame
+2025-05-08 01:09:48,645 - DEBUG - Processing new frame
+2025-05-08 01:09:48,661 - DEBUG - No faces detected in frame
+2025-05-08 01:09:48,663 - DEBUG - Processing new frame
+2025-05-08 01:09:48,679 - DEBUG - No faces detected in frame
+2025-05-08 01:09:48,695 - DEBUG - Processing new frame
+2025-05-08 01:09:48,708 - DEBUG - No faces detected in frame
+2025-05-08 01:09:48,748 - DEBUG - Processing new frame
+2025-05-08 01:09:48,761 - DEBUG - No faces detected in frame
+2025-05-08 01:09:48,802 - DEBUG - Processing new frame
+2025-05-08 01:09:48,815 - DEBUG - No faces detected in frame
+2025-05-08 01:09:48,857 - DEBUG - Processing new frame
+2025-05-08 01:09:48,870 - DEBUG - No faces detected in frame
+2025-05-08 01:09:48,911 - DEBUG - Processing new frame
+2025-05-08 01:09:48,923 - DEBUG - No faces detected in frame
+2025-05-08 01:09:48,975 - DEBUG - Processing new frame
+2025-05-08 01:09:48,988 - DEBUG - No faces detected in frame
+2025-05-08 01:09:49,007 - DEBUG - Processing new frame
+2025-05-08 01:09:49,020 - DEBUG - No faces detected in frame
+2025-05-08 01:09:49,062 - DEBUG - Processing new frame
+2025-05-08 01:09:49,074 - DEBUG - No faces detected in frame
+2025-05-08 01:09:49,114 - DEBUG - Processing new frame
+2025-05-08 01:09:49,127 - DEBUG - No faces detected in frame
+2025-05-08 01:09:49,157 - DEBUG - Processing new frame
+2025-05-08 01:09:49,171 - DEBUG - No faces detected in frame
+2025-05-08 01:09:49,230 - DEBUG - Processing new frame
+2025-05-08 01:09:49,290 - DEBUG - No faces detected in frame
+2025-05-08 01:09:49,292 - DEBUG - Processing new frame
+2025-05-08 01:09:49,305 - DEBUG - No faces detected in frame
+2025-05-08 01:09:49,315 - DEBUG - Processing new frame
+2025-05-08 01:09:49,329 - DEBUG - No faces detected in frame
+2025-05-08 01:09:49,371 - DEBUG - Processing new frame
+2025-05-08 01:09:49,386 - DEBUG - No faces detected in frame
+2025-05-08 01:09:49,421 - DEBUG - Processing new frame
+2025-05-08 01:09:49,434 - DEBUG - No faces detected in frame
+2025-05-08 01:09:49,475 - DEBUG - Processing new frame
+2025-05-08 01:09:49,488 - DEBUG - No faces detected in frame
+2025-05-08 01:09:49,556 - DEBUG - Processing new frame
+2025-05-08 01:09:49,568 - DEBUG - No faces detected in frame
+2025-05-08 01:09:49,578 - DEBUG - Processing new frame
+2025-05-08 01:09:49,591 - DEBUG - No faces detected in frame
+2025-05-08 01:09:49,629 - DEBUG - Processing new frame
+2025-05-08 01:09:49,642 - DEBUG - No faces detected in frame
+2025-05-08 01:09:49,686 - DEBUG - Processing new frame
+2025-05-08 01:09:49,700 - DEBUG - No faces detected in frame
+2025-05-08 01:09:49,734 - DEBUG - Processing new frame
+2025-05-08 01:09:49,748 - DEBUG - No faces detected in frame
+2025-05-08 01:09:49,789 - DEBUG - Processing new frame
+2025-05-08 01:09:49,802 - DEBUG - No faces detected in frame
+2025-05-08 01:09:49,879 - DEBUG - Processing new frame
+2025-05-08 01:09:49,894 - DEBUG - No faces detected in frame
+2025-05-08 01:09:49,897 - DEBUG - Processing new frame
+2025-05-08 01:09:49,917 - DEBUG - No faces detected in frame
+2025-05-08 01:09:49,945 - DEBUG - Processing new frame
+2025-05-08 01:09:49,961 - DEBUG - No faces detected in frame
+2025-05-08 01:09:49,990 - DEBUG - Processing new frame
+2025-05-08 01:09:50,005 - DEBUG - No faces detected in frame
+2025-05-08 01:09:50,043 - DEBUG - Processing new frame
+2025-05-08 01:09:50,057 - DEBUG - No faces detected in frame
+2025-05-08 01:09:50,096 - DEBUG - Processing new frame
+2025-05-08 01:09:50,110 - DEBUG - No faces detected in frame
+2025-05-08 01:09:50,220 - DEBUG - Processing new frame
+2025-05-08 01:09:50,235 - DEBUG - No faces detected in frame
+2025-05-08 01:09:50,238 - DEBUG - Processing new frame
+2025-05-08 01:09:50,252 - DEBUG - No faces detected in frame
+2025-05-08 01:09:50,258 - DEBUG - Processing new frame
+2025-05-08 01:09:50,273 - DEBUG - No faces detected in frame
+2025-05-08 01:09:50,306 - DEBUG - Processing new frame
+2025-05-08 01:09:50,319 - DEBUG - No faces detected in frame
+2025-05-08 01:09:50,351 - DEBUG - Processing new frame
+2025-05-08 01:09:50,363 - DEBUG - No faces detected in frame
+2025-05-08 01:09:50,407 - DEBUG - Processing new frame
+2025-05-08 01:09:50,422 - DEBUG - No faces detected in frame
+2025-05-08 01:09:50,454 - DEBUG - Processing new frame
+2025-05-08 01:09:50,468 - DEBUG - No faces detected in frame
+2025-05-08 01:09:50,535 - DEBUG - Processing new frame
+2025-05-08 01:09:50,550 - DEBUG - No faces detected in frame
+2025-05-08 01:09:50,565 - DEBUG - Processing new frame
+2025-05-08 01:09:50,579 - DEBUG - No faces detected in frame
+2025-05-08 01:09:50,617 - DEBUG - Processing new frame
+2025-05-08 01:09:50,660 - DEBUG - No faces detected in frame
+2025-05-08 01:09:50,674 - DEBUG - Processing new frame
+2025-05-08 01:09:50,690 - DEBUG - No faces detected in frame
+2025-05-08 01:09:50,782 - DEBUG - Processing new frame
+2025-05-08 01:09:50,794 - DEBUG - No faces detected in frame
+2025-05-08 01:09:50,797 - DEBUG - Processing new frame
+2025-05-08 01:09:50,810 - DEBUG - No faces detected in frame
+2025-05-08 01:09:50,828 - DEBUG - Processing new frame
+2025-05-08 01:09:50,841 - DEBUG - No faces detected in frame
+2025-05-08 01:09:50,877 - DEBUG - Processing new frame
+2025-05-08 01:09:50,894 - DEBUG - No faces detected in frame
+2025-05-08 01:09:50,929 - DEBUG - Processing new frame
+2025-05-08 01:09:50,942 - DEBUG - No faces detected in frame
+2025-05-08 01:09:50,982 - DEBUG - Processing new frame
+2025-05-08 01:09:50,995 - DEBUG - No faces detected in frame
+2025-05-08 01:09:51,032 - DEBUG - Processing new frame
+2025-05-08 01:09:51,044 - DEBUG - No faces detected in frame
+2025-05-08 01:09:51,091 - DEBUG - Processing new frame
+2025-05-08 01:09:51,106 - DEBUG - No faces detected in frame
+2025-05-08 01:09:51,195 - DEBUG - Processing new frame
+2025-05-08 01:09:51,209 - DEBUG - No faces detected in frame
+2025-05-08 01:09:51,212 - DEBUG - Processing new frame
+2025-05-08 01:09:51,228 - DEBUG - No faces detected in frame
+2025-05-08 01:09:51,242 - DEBUG - Processing new frame
+2025-05-08 01:09:51,256 - DEBUG - No faces detected in frame
+2025-05-08 01:09:51,297 - DEBUG - Processing new frame
+2025-05-08 01:09:51,310 - DEBUG - No faces detected in frame
+2025-05-08 01:09:51,358 - DEBUG - Processing new frame
+2025-05-08 01:09:51,372 - DEBUG - No faces detected in frame
+2025-05-08 01:09:51,391 - DEBUG - Processing new frame
+2025-05-08 01:09:51,405 - DEBUG - No faces detected in frame
+2025-05-08 01:09:51,444 - DEBUG - Processing new frame
+2025-05-08 01:09:51,457 - DEBUG - No faces detected in frame
+2025-05-08 01:09:51,500 - DEBUG - Processing new frame
+2025-05-08 01:09:51,514 - DEBUG - No faces detected in frame
+2025-05-08 01:09:51,549 - DEBUG - Processing new frame
+2025-05-08 01:09:51,561 - DEBUG - No faces detected in frame
+2025-05-08 01:09:51,609 - DEBUG - Processing new frame
+2025-05-08 01:09:51,621 - DEBUG - No faces detected in frame
+2025-05-08 01:09:51,660 - DEBUG - Processing new frame
+2025-05-08 01:09:51,673 - DEBUG - No faces detected in frame
+2025-05-08 01:09:51,715 - DEBUG - Processing new frame
+2025-05-08 01:09:51,727 - DEBUG - No faces detected in frame
+2025-05-08 01:09:51,762 - DEBUG - Processing new frame
+2025-05-08 01:09:51,775 - DEBUG - No faces detected in frame
+2025-05-08 01:09:51,810 - DEBUG - Processing new frame
+2025-05-08 01:09:51,826 - DEBUG - No faces detected in frame
+2025-05-08 01:09:51,864 - DEBUG - Processing new frame
+2025-05-08 01:09:51,879 - DEBUG - No faces detected in frame
+2025-05-08 01:09:51,916 - DEBUG - Processing new frame
+2025-05-08 01:09:51,928 - DEBUG - No faces detected in frame
+2025-05-08 01:09:52,013 - DEBUG - Processing new frame
+2025-05-08 01:09:52,027 - DEBUG - No faces detected in frame
+2025-05-08 01:09:52,030 - DEBUG - Processing new frame
+2025-05-08 01:09:52,044 - DEBUG - No faces detected in frame
+2025-05-08 01:09:52,065 - DEBUG - Processing new frame
+2025-05-08 01:09:52,079 - DEBUG - No faces detected in frame
+2025-05-08 01:09:52,121 - DEBUG - Processing new frame
+2025-05-08 01:09:52,135 - DEBUG - No faces detected in frame
+2025-05-08 01:09:52,170 - DEBUG - Processing new frame
+2025-05-08 01:09:52,183 - DEBUG - No faces detected in frame
+2025-05-08 01:09:52,222 - DEBUG - Processing new frame
+2025-05-08 01:09:52,235 - DEBUG - No faces detected in frame
+2025-05-08 01:09:52,275 - DEBUG - Processing new frame
+2025-05-08 01:09:52,291 - DEBUG - No faces detected in frame
+2025-05-08 01:09:52,326 - DEBUG - Processing new frame
+2025-05-08 01:09:52,340 - DEBUG - No faces detected in frame
+2025-05-08 01:09:52,377 - DEBUG - Processing new frame
+2025-05-08 01:09:52,389 - DEBUG - No faces detected in frame
+2025-05-08 01:09:52,427 - DEBUG - Processing new frame
+2025-05-08 01:09:52,442 - DEBUG - No faces detected in frame
+2025-05-08 01:09:52,482 - DEBUG - Processing new frame
+2025-05-08 01:09:52,494 - DEBUG - No faces detected in frame
+2025-05-08 01:09:52,593 - DEBUG - Processing new frame
+2025-05-08 01:09:52,607 - DEBUG - No faces detected in frame
+2025-05-08 01:09:52,609 - DEBUG - Processing new frame
+2025-05-08 01:09:52,622 - DEBUG - No faces detected in frame
+2025-05-08 01:09:52,636 - DEBUG - Processing new frame
+2025-05-08 01:09:52,650 - DEBUG - No faces detected in frame
+2025-05-08 01:09:52,688 - DEBUG - Processing new frame
+2025-05-08 01:09:52,702 - DEBUG - No faces detected in frame
+2025-05-08 01:09:52,742 - DEBUG - Processing new frame
+2025-05-08 01:09:52,756 - DEBUG - No faces detected in frame
+2025-05-08 01:09:52,801 - DEBUG - Processing new frame
+2025-05-08 01:09:52,813 - DEBUG - No faces detected in frame
+2025-05-08 01:09:52,848 - DEBUG - Processing new frame
+2025-05-08 01:09:52,861 - DEBUG - No faces detected in frame
+2025-05-08 01:09:52,904 - DEBUG - Processing new frame
+2025-05-08 01:09:52,947 - DEBUG - No faces detected in frame
+2025-05-08 01:09:52,949 - DEBUG - Processing new frame
+2025-05-08 01:09:52,964 - DEBUG - No faces detected in frame
+2025-05-08 01:09:52,999 - DEBUG - Processing new frame
+2025-05-08 01:09:53,012 - DEBUG - No faces detected in frame
+2025-05-08 01:09:53,053 - DEBUG - Processing new frame
+2025-05-08 01:09:53,065 - DEBUG - No faces detected in frame
+2025-05-08 01:09:53,098 - DEBUG - Processing new frame
+2025-05-08 01:09:53,112 - DEBUG - No faces detected in frame
+2025-05-08 01:09:53,167 - DEBUG - Processing new frame
+2025-05-08 01:09:53,180 - DEBUG - No faces detected in frame
+2025-05-08 01:09:53,209 - DEBUG - Processing new frame
+2025-05-08 01:09:53,223 - DEBUG - No faces detected in frame
+2025-05-08 01:09:53,260 - DEBUG - Processing new frame
+2025-05-08 01:09:53,275 - DEBUG - No faces detected in frame
+2025-05-08 01:09:53,330 - DEBUG - Processing new frame
+2025-05-08 01:09:53,343 - DEBUG - No faces detected in frame
+2025-05-08 01:09:53,364 - DEBUG - Processing new frame
+2025-05-08 01:09:53,378 - DEBUG - No faces detected in frame
+2025-05-08 01:09:53,415 - DEBUG - Processing new frame
+2025-05-08 01:09:53,429 - DEBUG - No faces detected in frame
+2025-05-08 01:09:53,471 - DEBUG - Processing new frame
+2025-05-08 01:09:53,485 - DEBUG - No faces detected in frame
+2025-05-08 01:09:53,523 - DEBUG - Processing new frame
+2025-05-08 01:09:53,536 - DEBUG - No faces detected in frame
+2025-05-08 01:09:53,568 - DEBUG - Processing new frame
+2025-05-08 01:09:53,583 - DEBUG - No faces detected in frame
+2025-05-08 01:09:53,620 - DEBUG - Processing new frame
+2025-05-08 01:09:53,634 - DEBUG - No faces detected in frame
+2025-05-08 01:09:53,672 - DEBUG - Processing new frame
+2025-05-08 01:09:53,685 - DEBUG - No faces detected in frame
+2025-05-08 01:09:53,723 - DEBUG - Processing new frame
+2025-05-08 01:09:53,737 - DEBUG - No faces detected in frame
+2025-05-08 01:09:53,826 - DEBUG - Processing new frame
+2025-05-08 01:09:53,840 - DEBUG - No faces detected in frame
+2025-05-08 01:09:53,842 - DEBUG - Processing new frame
+2025-05-08 01:09:53,856 - DEBUG - No faces detected in frame
+2025-05-08 01:09:53,889 - DEBUG - Processing new frame
+2025-05-08 01:09:53,904 - DEBUG - No faces detected in frame
+2025-05-08 01:09:53,934 - DEBUG - Processing new frame
+2025-05-08 01:09:53,947 - DEBUG - No faces detected in frame
+2025-05-08 01:09:53,990 - DEBUG - Processing new frame
+2025-05-08 01:09:54,003 - DEBUG - No faces detected in frame
+2025-05-08 01:09:54,073 - DEBUG - Processing new frame
+2025-05-08 01:09:54,087 - DEBUG - No faces detected in frame
+2025-05-08 01:09:54,090 - DEBUG - Processing new frame
+2025-05-08 01:09:54,104 - DEBUG - No faces detected in frame
+2025-05-08 01:09:54,193 - DEBUG - Processing new frame
+2025-05-08 01:09:54,206 - DEBUG - No faces detected in frame
+2025-05-08 01:09:54,208 - DEBUG - Processing new frame
+2025-05-08 01:09:54,224 - DEBUG - No faces detected in frame
+2025-05-08 01:09:54,413 - DEBUG - Processing new frame
+2025-05-08 01:09:54,425 - DEBUG - No faces detected in frame
+2025-05-08 01:09:54,427 - DEBUG - Processing new frame
+2025-05-08 01:09:54,442 - DEBUG - No faces detected in frame
+2025-05-08 01:09:54,444 - DEBUG - Processing new frame
+2025-05-08 01:09:54,459 - DEBUG - No faces detected in frame
+2025-05-08 01:09:54,461 - DEBUG - Processing new frame
+2025-05-08 01:09:54,474 - DEBUG - No faces detected in frame
+2025-05-08 01:09:54,477 - DEBUG - Processing new frame
+2025-05-08 01:09:54,490 - DEBUG - No faces detected in frame
+2025-05-08 01:09:54,534 - DEBUG - Processing new frame
+2025-05-08 01:09:54,547 - DEBUG - No faces detected in frame
+2025-05-08 01:09:54,550 - DEBUG - Processing new frame
+2025-05-08 01:09:54,562 - DEBUG - No faces detected in frame
+2025-05-08 01:09:54,667 - DEBUG - Processing new frame
+2025-05-08 01:09:54,741 - DEBUG - No faces detected in frame
+2025-05-08 01:09:54,744 - DEBUG - Processing new frame
+2025-05-08 01:09:54,758 - DEBUG - No faces detected in frame
+2025-05-08 01:09:54,760 - DEBUG - Processing new frame
+2025-05-08 01:09:54,773 - DEBUG - No faces detected in frame
+2025-05-08 01:09:54,775 - DEBUG - Processing new frame
+2025-05-08 01:09:54,790 - DEBUG - No faces detected in frame
+2025-05-08 01:09:54,792 - DEBUG - Processing new frame
+2025-05-08 01:09:54,805 - DEBUG - No faces detected in frame
+2025-05-08 01:09:54,814 - DEBUG - Processing new frame
+2025-05-08 01:09:54,827 - DEBUG - No faces detected in frame
+2025-05-08 01:09:54,878 - DEBUG - Processing new frame
+2025-05-08 01:09:54,891 - DEBUG - No faces detected in frame
+2025-05-08 01:09:54,928 - DEBUG - Processing new frame
+2025-05-08 01:09:54,941 - DEBUG - No faces detected in frame
+2025-05-08 01:09:54,993 - DEBUG - Processing new frame
+2025-05-08 01:09:55,007 - DEBUG - No faces detected in frame
+2025-05-08 01:09:55,042 - DEBUG - Processing new frame
+2025-05-08 01:09:55,055 - DEBUG - No faces detected in frame
+2025-05-08 01:09:55,079 - DEBUG - Processing new frame
+2025-05-08 01:09:55,093 - DEBUG - No faces detected in frame
+2025-05-08 01:09:55,127 - DEBUG - Processing new frame
+2025-05-08 01:09:55,140 - DEBUG - No faces detected in frame
+2025-05-08 01:09:55,182 - DEBUG - Processing new frame
+2025-05-08 01:09:55,194 - DEBUG - No faces detected in frame
+2025-05-08 01:09:55,244 - DEBUG - Processing new frame
+2025-05-08 01:09:55,258 - DEBUG - No faces detected in frame
+2025-05-08 01:09:55,307 - DEBUG - Processing new frame
+2025-05-08 01:09:55,320 - DEBUG - No faces detected in frame
+2025-05-08 01:09:55,337 - DEBUG - Processing new frame
+2025-05-08 01:09:55,350 - DEBUG - No faces detected in frame
+2025-05-08 01:09:55,388 - DEBUG - Processing new frame
+2025-05-08 01:09:55,401 - DEBUG - No faces detected in frame
+2025-05-08 01:09:55,444 - DEBUG - Processing new frame
+2025-05-08 01:09:55,457 - DEBUG - No faces detected in frame
+2025-05-08 01:09:55,493 - DEBUG - Processing new frame
+2025-05-08 01:09:55,505 - DEBUG - No faces detected in frame
+2025-05-08 01:09:55,545 - DEBUG - Processing new frame
+2025-05-08 01:09:55,557 - DEBUG - No faces detected in frame
+2025-05-08 01:09:55,633 - DEBUG - Processing new frame
+2025-05-08 01:09:55,647 - DEBUG - No faces detected in frame
+2025-05-08 01:09:55,649 - DEBUG - Processing new frame
+2025-05-08 01:09:55,663 - DEBUG - No faces detected in frame
+2025-05-08 01:09:55,695 - DEBUG - Processing new frame
+2025-05-08 01:09:55,709 - DEBUG - No faces detected in frame
+2025-05-08 01:09:55,750 - DEBUG - Processing new frame
+2025-05-08 01:09:55,763 - DEBUG - No faces detected in frame
+2025-05-08 01:09:55,813 - DEBUG - Processing new frame
+2025-05-08 01:09:55,828 - DEBUG - No faces detected in frame
+2025-05-08 01:09:55,860 - DEBUG - Processing new frame
+2025-05-08 01:09:55,875 - DEBUG - No faces detected in frame
+2025-05-08 01:09:55,906 - DEBUG - Processing new frame
+2025-05-08 01:09:55,919 - DEBUG - No faces detected in frame
+2025-05-08 01:09:55,956 - DEBUG - Processing new frame
+2025-05-08 01:09:55,972 - DEBUG - No faces detected in frame
+2025-05-08 01:09:56,012 - DEBUG - Processing new frame
+2025-05-08 01:09:56,025 - DEBUG - No faces detected in frame
+2025-05-08 01:09:56,066 - DEBUG - Processing new frame
+2025-05-08 01:09:56,078 - DEBUG - No faces detected in frame
+2025-05-08 01:09:56,123 - DEBUG - Processing new frame
+2025-05-08 01:09:56,138 - DEBUG - No faces detected in frame
+2025-05-08 01:09:56,165 - DEBUG - Processing new frame
+2025-05-08 01:09:56,178 - DEBUG - No faces detected in frame
+2025-05-08 01:09:56,210 - DEBUG - Processing new frame
+2025-05-08 01:09:56,225 - DEBUG - No faces detected in frame
+2025-05-08 01:09:56,278 - DEBUG - Processing new frame
+2025-05-08 01:09:56,290 - DEBUG - No faces detected in frame
+2025-05-08 01:09:56,325 - DEBUG - Processing new frame
+2025-05-08 01:09:56,339 - DEBUG - No faces detected in frame
+2025-05-08 01:09:56,371 - DEBUG - Processing new frame
+2025-05-08 01:09:56,384 - DEBUG - No faces detected in frame
+2025-05-08 01:09:56,454 - DEBUG - Processing new frame
+2025-05-08 01:09:56,467 - DEBUG - No faces detected in frame
+2025-05-08 01:09:56,477 - DEBUG - Processing new frame
+2025-05-08 01:09:56,489 - DEBUG - No faces detected in frame
+2025-05-08 01:09:56,526 - DEBUG - Processing new frame
+2025-05-08 01:09:56,540 - DEBUG - No faces detected in frame
+2025-05-08 01:09:56,581 - DEBUG - Processing new frame
+2025-05-08 01:09:56,594 - DEBUG - No faces detected in frame
+2025-05-08 01:09:56,630 - DEBUG - Processing new frame
+2025-05-08 01:09:56,650 - DEBUG - No faces detected in frame
+2025-05-08 01:09:56,686 - DEBUG - Processing new frame
+2025-05-08 01:09:56,699 - DEBUG - No faces detected in frame
+2025-05-08 01:09:56,742 - DEBUG - Processing new frame
+2025-05-08 01:09:56,754 - DEBUG - No faces detected in frame
+2025-05-08 01:09:56,793 - DEBUG - Processing new frame
+2025-05-08 01:09:56,807 - DEBUG - No faces detected in frame
+2025-05-08 01:09:56,845 - DEBUG - Processing new frame
+2025-05-08 01:09:56,857 - DEBUG - No faces detected in frame
+2025-05-08 01:09:56,897 - DEBUG - Processing new frame
+2025-05-08 01:09:56,909 - DEBUG - No faces detected in frame
+2025-05-08 01:09:56,950 - DEBUG - Processing new frame
+2025-05-08 01:09:56,964 - DEBUG - No faces detected in frame
+2025-05-08 01:09:57,034 - DEBUG - Processing new frame
+2025-05-08 01:09:57,047 - DEBUG - No faces detected in frame
+2025-05-08 01:09:57,053 - DEBUG - Processing new frame
+2025-05-08 01:09:57,066 - DEBUG - No faces detected in frame
+2025-05-08 01:09:57,104 - DEBUG - Processing new frame
+2025-05-08 01:09:57,117 - DEBUG - No faces detected in frame
+2025-05-08 01:09:57,156 - DEBUG - Processing new frame
+2025-05-08 01:09:57,170 - DEBUG - No faces detected in frame
+2025-05-08 01:09:57,210 - DEBUG - Processing new frame
+2025-05-08 01:09:57,223 - DEBUG - No faces detected in frame
+2025-05-08 01:09:57,258 - DEBUG - Processing new frame
+2025-05-08 01:09:57,271 - DEBUG - No faces detected in frame
+2025-05-08 01:09:57,309 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverConnectionId": 5630, "serverHost": "cluster0-shard-00-01.5h4nt.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 10000.0, "reply": "{\"topologyVersion\": {\"processId\": {\"$oid\": \"681bb177fc6bf1c7572c5ef0\"}, \"counter\": 3}, \"hosts\": [\"cluster0-shard-00-00.5h4nt.mongodb.net:27017\", \"cluster0-shard-00-01.5h4nt.mongodb.net:27017\", \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\"], \"setName\": \"atlas-3ohfxw-shard-0\", \"setVersion\": 72, \"secondary\": true, \"primary\": \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\", \"tags\": {\"region\": \"ME_SOUTH_1\", \"nodeType\": \"ELECTABLE\", \"workloadType\": \"OPERATIONAL\", \"availabilityZone\": \"mes1-az2\", \"diskState\": \"READY\", \"provider\": \"AWS\"}, \"me\": \"cluster0-shard-00-01.5h4nt.mongodb.net:27017\", \"lastWrite\": {\"opTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746655797, \"i\": 6}}, \"t\": 138}, \"lastWriteDate\": {\"$date\": \"2025-05-07T22:09:57Z\"}, \"majorityOpTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746655797, \"i\": 6}}, \"t\": 138}, \"majorityWriteDate\": {\"$date\": \"2025-05-07T22:09:57Z\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWriteBatchSize\": 100000, \"localTime\": {\"$date\": \"2025-05-07T22:09:57....", "message": "Server heartbeat succeeded"}
+2025-05-08 01:09:57,310 - DEBUG - Processing new frame
+2025-05-08 01:09:57,310 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverConnectionId": 5630, "serverHost": "cluster0-shard-00-01.5h4nt.mongodb.net", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-05-08 01:09:57,324 - DEBUG - No faces detected in frame
+2025-05-08 01:09:57,364 - DEBUG - Processing new frame
+2025-05-08 01:09:57,379 - DEBUG - No faces detected in frame
+2025-05-08 01:09:57,385 - INFO - Stopped watching for target name: ahmed
+2025-05-08 01:09:57,386 - INFO - 127.0.0.1 - - [08/May/2025 01:09:57] "POST /stop_watching?target_name=ahmed HTTP/1.1" 200 -
+2025-05-08 01:09:57,445 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverConnectionId": 5952, "serverHost": "cluster0-shard-00-00.5h4nt.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 10047.00000002049, "reply": "{\"topologyVersion\": {\"processId\": {\"$oid\": \"681baff9dcdc076bc04e6972\"}, \"counter\": 4}, \"hosts\": [\"cluster0-shard-00-00.5h4nt.mongodb.net:27017\", \"cluster0-shard-00-01.5h4nt.mongodb.net:27017\", \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\"], \"setName\": \"atlas-3ohfxw-shard-0\", \"setVersion\": 72, \"secondary\": true, \"primary\": \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\", \"tags\": {\"diskState\": \"READY\", \"region\": \"ME_SOUTH_1\", \"workloadType\": \"OPERATIONAL\", \"provider\": \"AWS\", \"nodeType\": \"ELECTABLE\", \"availabilityZone\": \"mes1-az1\"}, \"me\": \"cluster0-shard-00-00.5h4nt.mongodb.net:27017\", \"lastWrite\": {\"opTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746655797, \"i\": 7}}, \"t\": 138}, \"lastWriteDate\": {\"$date\": \"2025-05-07T22:09:57Z\"}, \"majorityOpTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746655797, \"i\": 7}}, \"t\": 138}, \"majorityWriteDate\": {\"$date\": \"2025-05-07T22:09:57Z\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWriteBatchSize\": 100000, \"localTime\": {\"$date\": \"2025-05-07T22:09:57....", "message": "Server heartbeat succeeded"}
+2025-05-08 01:09:57,446 - DEBUG - Processing new frame
+2025-05-08 01:09:57,446 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverConnectionId": 5952, "serverHost": "cluster0-shard-00-00.5h4nt.mongodb.net", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-05-08 01:09:57,459 - DEBUG - No faces detected in frame
+2025-05-08 01:09:57,466 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverConnectionId": 6249, "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 10000.0, "reply": "{\"topologyVersion\": {\"processId\": {\"$oid\": \"681bae95af98b4f381c7213a\"}, \"counter\": 6}, \"hosts\": [\"cluster0-shard-00-00.5h4nt.mongodb.net:27017\", \"cluster0-shard-00-01.5h4nt.mongodb.net:27017\", \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\"], \"setName\": \"atlas-3ohfxw-shard-0\", \"setVersion\": 72, \"isWritablePrimary\": true, \"primary\": \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\", \"tags\": {\"availabilityZone\": \"mes1-az3\", \"region\": \"ME_SOUTH_1\", \"workloadType\": \"OPERATIONAL\", \"nodeType\": \"ELECTABLE\", \"provider\": \"AWS\", \"diskState\": \"READY\"}, \"me\": \"cluster0-shard-00-02.5h4nt.mongodb.net:27017\", \"electionId\": {\"$oid\": \"7fffffff000000000000008a\"}, \"lastWrite\": {\"opTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746655797, \"i\": 7}}, \"t\": 138}, \"lastWriteDate\": {\"$date\": \"2025-05-07T22:09:57Z\"}, \"majorityOpTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746655797, \"i\": 7}}, \"t\": 138}, \"majorityWriteDate\": {\"$date\": \"2025-05-07T22:09:57Z\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWriteBatc...", "message": "Server heartbeat succeeded"}
+2025-05-08 01:09:57,467 - DEBUG - {"topologyId": {"$oid": "681bda168f8fe3dc1bf7956a"}, "driverConnectionId": 1, "serverConnectionId": 6249, "serverHost": "cluster0-shard-00-02.5h4nt.mongodb.net", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-05-08 01:09:57,476 - INFO - System cleanup completed
+2025-05-08 01:09:57,476 - INFO - Returning to standby mode

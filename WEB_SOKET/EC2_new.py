@@ -11,6 +11,7 @@ import sys
 from datetime import datetime
 from flask import Flask, Response, request
 from HLS import generate_hls_url
+
 stream_name = 'Camer_121' 
 # Hardcoded configuration
 ##RTSP_URL = generate_hls_url(stream_name)
@@ -27,9 +28,8 @@ app = Flask(__name__)
 # Face data structure
 @dataclass
 class FaceData:
-    embedding: np.ndarray
+    encoding: np.ndarray  # Changed from 'embedding' to 'encoding'
     name: str
-
 
 class FaceRecognitionSystem:
     def __init__(self, target_name: str):
@@ -46,13 +46,11 @@ class FaceRecognitionSystem:
         self.known_faces: List[FaceData] = []
         self.target_name = target_name.lower()  # Case-insensitive matching
         self.setup_logging()
-        
         # Attempt to connect to MongoDB during initialization
         if self.connect_to_mongodb():
             self.load_face_data()
         else:
             logging.warning("Proceeding without MongoDB data")
-
 
     def setup_logging(self):
         """Configure logging with immediate flush"""
@@ -87,14 +85,14 @@ class FaceRecognitionSystem:
         return False
 
     def load_face_data(self) -> bool:
-        """Load face embeddings from MongoDB synchronously"""
+        """Load face encodings from MongoDB synchronously"""
         if self.collection is None:
             logging.error("No MongoDB collection available")
             return False
         try:
-            data = list(self.collection.find({}, {"embedding": 1, "name": 1, "_id": 0}))
-            self.known_faces = [FaceData(np.array(d["embedding"]), d["name"]) for d in data]
-            logging.info(f"Loaded {len(self.known_faces)} face embeddings")
+            data = list(self.collection.find({}, {"encoding": 1, "name": 1, "_id": 0}))
+            self.known_faces = [FaceData(np.array(d["encoding"]), d["name"]) for d in data]
+            logging.info(f"Loaded {len(self.known_faces)} face encodings")
             return bool(self.known_faces)
         except Exception as e:
             logging.error(f"Error loading face data: {e}")
@@ -156,13 +154,13 @@ class FaceRecognitionSystem:
                     face_tensor = torch.tensor(face_resized.transpose(2, 0, 1)).float() / 255.0
                     face_tensor = face_tensor.unsqueeze(0).to(self.device)
                     with torch.no_grad():
-                        embedding = self.facenet(face_tensor).cpu().numpy()[0]
+                        encoding = self.facenet(face_tensor).cpu().numpy()[0]
                     name = "Unknown"
                     min_distance = float('inf')
                     closest_name = None
                     if self.known_faces:
                         for known_face in self.known_faces:
-                            distance = np.linalg.norm(embedding - known_face.embedding)
+                            distance = np.linalg.norm(encoding - known_face.encoding)
                             logging.debug(f"Distance to {known_face.name}: {distance}")
                             if distance < min_distance:
                                 min_distance = distance
@@ -170,9 +168,15 @@ class FaceRecognitionSystem:
                         if min_distance < THRESHOLD:
                             name = closest_name
                     face_names.append(name)
-                    logging.debug(f"Assigned name: {name} (min_distance: {min_distance})")
-                    # Zoom in if the name matches the target_name
-                    if name.lower() == self.target_name:
+
+                    # Draw bounding box with red color for unknown faces
+                    box_color = (0, 0, 255) if name == "Unknown" else (0, 255, 0)
+                    cv2.rectangle(frame, (left, top), (right, bottom), box_color, 2)
+                    cv2.putText(frame, name, (left, bottom + 20), 
+                              cv2.FONT_HERSHEY_SIMPLEX, 0.5, box_color, 1)
+
+                    # Zoom in only for recognized faces
+                    if name.lower() == self.target_name and name != "Unknown":
                         padding = int((right - left) * 0.5)  # 50% padding around face
                         zoom_left = max(0, left - padding)
                         zoom_right = min(w, right + padding)
@@ -206,11 +210,7 @@ class FaceRecognitionSystem:
                         logging.error("Reconnection failed - exiting")
                         break
                     continue
-                face_locations, face_names = self.process_frame(frame)
-                for (top, right, bottom, left), name in zip(face_locations, face_names):
-                    cv2.rectangle(frame, (left, top), (right, bottom), (0, 255, 0), 2)
-                    cv2.putText(frame, name, (left, bottom + 20), 
-                              cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
+                _, _ = self.process_frame(frame)
                 # Encode the frame as JPEG
                 _, buffer = cv2.imencode('.jpg', frame)
                 frame_bytes = buffer.tobytes()
@@ -231,7 +231,6 @@ class FaceRecognitionSystem:
         for handler in logging.getLogger().handlers:
             handler.flush()
 
-
 @app.route('/video_feed')
 def video_feed():
     target_name = request.args.get('target_name', 'Unknown')  # Default to 'Unknown' if not provided
@@ -239,7 +238,6 @@ def video_feed():
     system = FaceRecognitionSystem(target_name)
     return Response(system.generate_frames(),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
-
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)

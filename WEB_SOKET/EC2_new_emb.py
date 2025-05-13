@@ -8,21 +8,27 @@ from typing import List, Tuple
 from dataclasses import dataclass
 import logging
 import sys
-from datetime import datetime
-from flask import Flask, Response, request
-from HLS import generate_hls_url
-stream_name = 'Camer_121' 
+from datetime import datetime, timedelta
+from flask import Flask, Response, request, jsonify
+from flask_cors import CORS  # Import CORS
+
 # Hardcoded configuration
-##RTSP_URL = generate_hls_url(stream_name)
 RTSP_URL = "rtsp://admin:admin@192.168.1.57:1935"
 MONGO_URI = "mongodb+srv://mina23:01555758130@cluster0.22ogf.mongodb.net/?retryWrites=true&w=majority"
 FRAME_WIDTH = 640
 FRAME_HEIGHT = 480
 DETECTION_CONFIDENCE = 0.5
 ZOOM_SIZE = 150  # Size of the zoomed-in face area within the main window
+STANDBY_TIMEOUT = 30  # Time in seconds before entering standby mode
 
 # Flask app
 app = Flask(__name__)
+
+# Enable CORS for all routes
+CORS(app)
+
+# Dictionary to track active streams
+active_streams = {}
 
 # Face data structure
 @dataclass
@@ -46,13 +52,12 @@ class FaceRecognitionSystem:
         self.known_faces: List[FaceData] = []
         self.target_name = target_name.lower()  # Case-insensitive matching
         self.setup_logging()
-        
+
         # Attempt to connect to MongoDB during initialization
         if self.connect_to_mongodb():
             self.load_face_data()
         else:
             logging.warning("Proceeding without MongoDB data")
-
 
     def setup_logging(self):
         """Configure logging with immediate flush"""
@@ -132,14 +137,18 @@ class FaceRecognitionSystem:
             if frame is None or frame.size == 0:
                 logging.error("Received invalid frame")
                 return [], []
+
             rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             results = self.face_detection.process(rgb_frame)
+
             if not results.detections:
                 logging.debug("No faces detected in frame")
                 return [], []
+
             face_locations = []
             face_names = []
             THRESHOLD = 1.2
+
             for detection in results.detections:
                 bbox = detection.location_data.relative_bounding_box
                 h, w = frame.shape[:2]
@@ -149,17 +158,22 @@ class FaceRecognitionSystem:
                 height = int(bbox.height * h)
                 right = min(w, left + width)
                 bottom = min(h, top + height)
+
                 face_locations.append((top, right, bottom, left))
                 face_crop = frame[top:bottom, left:right]
+
                 if face_crop.size > 0:
                     face_resized = cv2.resize(face_crop, (160, 160))
                     face_tensor = torch.tensor(face_resized.transpose(2, 0, 1)).float() / 255.0
                     face_tensor = face_tensor.unsqueeze(0).to(self.device)
+
                     with torch.no_grad():
                         embedding = self.facenet(face_tensor).cpu().numpy()[0]
+
                     name = "Unknown"
                     min_distance = float('inf')
                     closest_name = None
+
                     if self.known_faces:
                         for known_face in self.known_faces:
                             distance = np.linalg.norm(embedding - known_face.embedding)
@@ -169,10 +183,17 @@ class FaceRecognitionSystem:
                                 closest_name = known_face.name
                         if min_distance < THRESHOLD:
                             name = closest_name
+
                     face_names.append(name)
-                    logging.debug(f"Assigned name: {name} (min_distance: {min_distance})")
-                    # Zoom in if the name matches the target_name
-                    if name.lower() == self.target_name:
+
+                    # Draw bounding box with red color for unknown faces
+                    box_color = (0, 0, 255) if name == "Unknown" else (0, 255, 0)
+                    cv2.rectangle(frame, (left, top), (right, bottom), box_color, 2)
+                    cv2.putText(frame, name, (left, bottom + 20),
+                                cv2.FONT_HERSHEY_SIMPLEX, 0.5, box_color, 1)
+
+                    # Zoom in only for recognized faces
+                    if name.lower() == self.target_name and name != "Unknown":
                         padding = int((right - left) * 0.5)  # 50% padding around face
                         zoom_left = max(0, left - padding)
                         zoom_right = min(w, right + padding)
@@ -181,10 +202,11 @@ class FaceRecognitionSystem:
                         zoomed_face = frame[zoom_top:zoom_bottom, zoom_left:zoom_right]
                         if zoomed_face.size > 0:
                             zoomed_face = cv2.resize(zoomed_face, (ZOOM_SIZE, ZOOM_SIZE))
-                            frame[0:ZOOM_SIZE, FRAME_WIDTH-ZOOM_SIZE:FRAME_WIDTH] = zoomed_face
-                            cv2.putText(frame, f"Zoom: {name}", 
-                                        (FRAME_WIDTH-ZOOM_SIZE, 20), 
+                            frame[0:ZOOM_SIZE, FRAME_WIDTH - ZOOM_SIZE:FRAME_WIDTH] = zoomed_face
+                            cv2.putText(frame, f"Zoom: {name}",
+                                        (FRAME_WIDTH - ZOOM_SIZE, 20),
                                         cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 1)
+
             logging.debug(f"Detected {len(face_locations)} faces")
             return face_locations, face_names
         except Exception as e:
@@ -196,8 +218,22 @@ class FaceRecognitionSystem:
         if not self.initialize_video():
             logging.error("Failed to initialize video - exiting")
             return
+
+        start_time = datetime.now()  # Track when the stream started
+
         try:
             while True:
+                # Check if the stream is still active
+                if self.target_name in active_streams and not active_streams[self.target_name]:
+                    logging.info(f"Terminating video feed for target name: {self.target_name}")
+                    break
+
+                # Check if the standby timeout has been reached
+                elapsed_time = (datetime.now() - start_time).total_seconds()
+                if elapsed_time >= STANDBY_TIMEOUT:
+                    logging.info("Entering standby mode due to timeout")
+                    break
+
                 ret, frame = self.cap.read()
                 if not ret:
                     logging.warning("Failed to capture frame, attempting to reconnect...")
@@ -206,11 +242,9 @@ class FaceRecognitionSystem:
                         logging.error("Reconnection failed - exiting")
                         break
                     continue
-                face_locations, face_names = self.process_frame(frame)
-                for (top, right, bottom, left), name in zip(face_locations, face_names):
-                    cv2.rectangle(frame, (left, top), (right, bottom), (0, 255, 0), 2)
-                    cv2.putText(frame, name, (left, bottom + 20), 
-                              cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
+
+                _, _ = self.process_frame(frame)
+
                 # Encode the frame as JPEG
                 _, buffer = cv2.imencode('.jpg', frame)
                 frame_bytes = buffer.tobytes()
@@ -220,6 +254,7 @@ class FaceRecognitionSystem:
             logging.error(f"Runtime error: {e}")
         finally:
             self.cleanup()
+            logging.info("Returning to standby mode")
 
     def cleanup(self):
         """Clean up resources"""
@@ -236,9 +271,26 @@ class FaceRecognitionSystem:
 def video_feed():
     target_name = request.args.get('target_name', 'Unknown')  # Default to 'Unknown' if not provided
     logging.info(f"Starting face recognition system with target name: {target_name}")
+
+    # Mark the stream as active
+    active_streams[target_name] = True
+
     system = FaceRecognitionSystem(target_name)
     return Response(system.generate_frames(),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
+
+
+@app.route('/stop_watching', methods=['POST'])
+def stop_watching():
+    target_name = request.args.get('target_name', None)
+    if target_name and target_name in active_streams:
+        # Mark the stream as inactive
+        active_streams[target_name] = False
+        logging.info(f"Stopped watching for target name: {target_name}")
+        return jsonify({"status": "success", "message": f"Session terminated for {target_name}"}), 200
+    else:
+        logging.warning(f"No active session found for target name: {target_name}")
+        return jsonify({"status": "error", "message": "No active session found"}), 404
 
 
 if __name__ == "__main__":

@@ -10,14 +10,36 @@
     <label for="target-name">Enter the name to zoom in on:</label>
     <input type="text" id="target-name" placeholder="Target Name">
     <button onclick="updateVideoFeed()">Update</button>
+    <button onclick="stopWatching()">Stop Watching</button>
     <br><br>
     <img id="video-feed" src="" alt="Live Video Feed">
 
     <script>
+        let targetName = '';
+        let videoFeed = document.getElementById('video-feed');
+
         function updateVideoFeed() {
-            const targetName = document.getElementById('target-name').value;
-            const videoFeed = document.getElementById('video-feed');
-            videoFeed.src = ` http://127.0.0.1:5000/video_feed?target_name=${encodeURIComponent(targetName)}`;
+            targetName = document.getElementById('target-name').value;
+            videoFeed.src = `http://127.0.0.1:5000/video_feed?target_name=${encodeURIComponent(targetName)}`;
+        }
+
+        function stopWatching() {
+            if (targetName) {
+                fetch(`http://127.0.0.1:5000/stop_watching?target_name=${encodeURIComponent(targetName)}`, {
+                    method: 'POST'
+                }).then(response => {
+                    if (response.ok) {
+                        console.log("Session terminated successfully");
+                        videoFeed.src = ''; // Clear the video feed
+                    } else {
+                        console.error("Failed to terminate session");
+                    }
+                }).catch(error => {
+                    console.error("Error terminating session:", error);
+                });
+            } else {
+                console.warn("No active session to terminate");
+            }
         }
 
         // Load the default video feed on page load

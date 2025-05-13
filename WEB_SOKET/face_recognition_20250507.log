@@ -1,0 +1,491 @@
+2025-05-07 23:59:42,600 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "message": "Starting topology monitoring"}
+2025-05-07 23:59:42,601 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "previousDescription": "<TopologyDescription id: 681bc9be46555b8ea1e5b2e3, topology_type: Unknown, servers: []>", "newDescription": "<TopologyDescription id: 681bc9be46555b8ea1e5b2e3, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-02.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "message": "Topology description changed"}
+2025-05-07 23:59:42,601 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "serverHost": "cluster0-shard-00-02.22ogf.mongodb.net", "serverPort": 27017, "message": "Starting server monitoring"}
+2025-05-07 23:59:42,602 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "serverHost": "cluster0-shard-00-00.22ogf.mongodb.net", "serverPort": 27017, "message": "Starting server monitoring"}
+2025-05-07 23:59:42,603 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "message": "Starting server monitoring"}
+2025-05-07 23:59:42,604 - DEBUG - {"clientId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "message": "Connection pool created", "serverHost": "cluster0-shard-00-02.22ogf.mongodb.net", "serverPort": 27017}
+2025-05-07 23:59:42,605 - DEBUG - {"clientId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "message": "Connection pool created", "serverHost": "cluster0-shard-00-00.22ogf.mongodb.net", "serverPort": 27017}
+2025-05-07 23:59:42,607 - DEBUG - {"clientId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "message": "Connection pool created", "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017}
+2025-05-07 23:59:42,608 - DEBUG - {"message": "Server selection started", "selector": "Primary()", "operation": "buildinfo", "topologyDescription": "<TopologyDescription id: 681bc9be46555b8ea1e5b2e3, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-02.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "681bc9be46555b8ea1e5b2e3"}}
+2025-05-07 23:59:42,609 - DEBUG - {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "buildinfo", "topologyDescription": "<TopologyDescription id: 681bc9be46555b8ea1e5b2e3, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-02.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "remainingTimeMS": 5}
+2025-05-07 23:59:43,033 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "driverConnectionId": 1, "serverHost": "cluster0-shard-00-02.22ogf.mongodb.net", "serverPort": 27017, "awaited": false, "message": "Server heartbeat started"}
+2025-05-07 23:59:43,171 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "driverConnectionId": 1, "serverConnectionId": 40628, "serverHost": "cluster0-shard-00-02.22ogf.mongodb.net", "serverPort": 27017, "awaited": false, "durationMS": 140.00000001396984, "reply": "{\"helloOk\": true, \"topologyVersion\": {\"processId\": {\"$oid\": \"681a63b780ce7dee80fe3ceb\"}, \"counter\": 3}, \"hosts\": [\"cluster0-shard-00-00.22ogf.mongodb.net:27017\", \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"cluster0-shard-00-02.22ogf.mongodb.net:27017\"], \"setName\": \"atlas-1b7lne-shard-0\", \"setVersion\": 172, \"secondary\": true, \"primary\": \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"tags\": {\"region\": \"US_EAST_1\", \"availabilityZone\": \"use1-az4\", \"diskState\": \"READY\", \"provider\": \"AWS\", \"workloadType\": \"OPERATIONAL\", \"nodeType\": \"ELECTABLE\"}, \"me\": \"cluster0-shard-00-02.22ogf.mongodb.net:27017\", \"lastWrite\": {\"opTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746651583, \"i\": 111}}, \"t\": 463}, \"lastWriteDate\": {\"$date\": \"2025-05-07T20:59:43Z\"}, \"majorityOpTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746651583, \"i\": 111}}, \"t\": 463}, \"majorityWriteDate\": {\"$date\": \"2025-05-07T20:59:43Z\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWriteBatchSize\": 100000, \"localTime\": {\"$date\": ...", "message": "Server heartbeat succeeded"}
+2025-05-07 23:59:43,172 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "driverConnectionId": 1, "serverHost": "cluster0-shard-00-00.22ogf.mongodb.net", "serverPort": 27017, "awaited": false, "message": "Server heartbeat started"}
+2025-05-07 23:59:43,173 - DEBUG - {"clientId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "message": "Connection pool ready", "serverHost": "cluster0-shard-00-02.22ogf.mongodb.net", "serverPort": 27017}
+2025-05-07 23:59:43,173 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "previousDescription": "<TopologyDescription id: 681bc9be46555b8ea1e5b2e3, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-02.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "newDescription": "<TopologyDescription id: 681bc9be46555b8ea1e5b2e3, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-02.22ogf.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.14000000001396984>]>", "message": "Topology description changed"}
+2025-05-07 23:59:43,175 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "driverConnectionId": 1, "serverConnectionId": 40628, "serverHost": "cluster0-shard-00-02.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-05-07 23:59:43,264 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "driverConnectionId": 1, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "awaited": false, "message": "Server heartbeat started"}
+2025-05-07 23:59:43,310 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "driverConnectionId": 1, "serverConnectionId": 41147, "serverHost": "cluster0-shard-00-00.22ogf.mongodb.net", "serverPort": 27017, "awaited": false, "durationMS": 141.0000000614673, "reply": "{\"helloOk\": true, \"topologyVersion\": {\"processId\": {\"$oid\": \"681a6262ad44fdb5056ab738\"}, \"counter\": 4}, \"hosts\": [\"cluster0-shard-00-00.22ogf.mongodb.net:27017\", \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"cluster0-shard-00-02.22ogf.mongodb.net:27017\"], \"setName\": \"atlas-1b7lne-shard-0\", \"setVersion\": 172, \"secondary\": true, \"primary\": \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"tags\": {\"availabilityZone\": \"use1-az1\", \"region\": \"US_EAST_1\", \"diskState\": \"READY\", \"workloadType\": \"OPERATIONAL\", \"nodeType\": \"ELECTABLE\", \"provider\": \"AWS\"}, \"me\": \"cluster0-shard-00-00.22ogf.mongodb.net:27017\", \"lastWrite\": {\"opTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746651583, \"i\": 118}}, \"t\": 463}, \"lastWriteDate\": {\"$date\": \"2025-05-07T20:59:43Z\"}, \"majorityOpTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746651583, \"i\": 118}}, \"t\": 463}, \"majorityWriteDate\": {\"$date\": \"2025-05-07T20:59:43Z\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWriteBatchSize\": 100000, \"localTime\": {\"$date\": ...", "message": "Server heartbeat succeeded"}
+2025-05-07 23:59:43,312 - DEBUG - {"clientId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "message": "Connection pool ready", "serverHost": "cluster0-shard-00-00.22ogf.mongodb.net", "serverPort": 27017}
+2025-05-07 23:59:43,312 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "previousDescription": "<TopologyDescription id: 681bc9be46555b8ea1e5b2e3, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-01.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-02.22ogf.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.14000000001396984>]>", "newDescription": "<TopologyDescription id: 681bc9be46555b8ea1e5b2e3, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.22ogf.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.1410000000614673>, <ServerDescription ('cluster0-shard-00-01.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-02.22ogf.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.14000000001396984>]>", "message": "Topology description changed"}
+2025-05-07 23:59:43,315 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "driverConnectionId": 1, "serverConnectionId": 41147, "serverHost": "cluster0-shard-00-00.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-05-07 23:59:43,445 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "driverConnectionId": 1, "serverConnectionId": 42967, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "awaited": false, "durationMS": 187.99999996554106, "reply": "{\"helloOk\": true, \"topologyVersion\": {\"processId\": {\"$oid\": \"681a616b86253053e6d87103\"}, \"counter\": 6}, \"hosts\": [\"cluster0-shard-00-00.22ogf.mongodb.net:27017\", \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"cluster0-shard-00-02.22ogf.mongodb.net:27017\"], \"setName\": \"atlas-1b7lne-shard-0\", \"setVersion\": 172, \"ismaster\": true, \"primary\": \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"tags\": {\"provider\": \"AWS\", \"diskState\": \"READY\", \"nodeType\": \"ELECTABLE\", \"region\": \"US_EAST_1\", \"availabilityZone\": \"use1-az2\", \"workloadType\": \"OPERATIONAL\"}, \"me\": \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"electionId\": {\"$oid\": \"7fffffff00000000000001cf\"}, \"lastWrite\": {\"opTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746651583, \"i\": 121}}, \"t\": 463}, \"lastWriteDate\": {\"$date\": \"2025-05-07T20:59:43Z\"}, \"majorityOpTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746651583, \"i\": 121}}, \"t\": 463}, \"majorityWriteDate\": {\"$date\": \"2025-05-07T20:59:43Z\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"...", "message": "Server heartbeat succeeded"}
+2025-05-07 23:59:43,447 - DEBUG - {"clientId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "message": "Connection pool ready", "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017}
+2025-05-07 23:59:43,447 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "previousDescription": "<TopologyDescription id: 681bc9be46555b8ea1e5b2e3, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.22ogf.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.1410000000614673>, <ServerDescription ('cluster0-shard-00-01.22ogf.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('cluster0-shard-00-02.22ogf.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.14000000001396984>]>", "newDescription": "<TopologyDescription id: 681bc9be46555b8ea1e5b2e3, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.22ogf.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.1410000000614673>, <ServerDescription ('cluster0-shard-00-01.22ogf.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.18799999996554106>, <ServerDescription ('cluster0-shard-00-02.22ogf.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.14000000001396984>]>", "message": "Topology description changed"}
+2025-05-07 23:59:43,448 - DEBUG - {"message": "Server selection succeeded", "selector": "Primary()", "operation": "buildinfo", "topologyDescription": "<TopologyDescription id: 681bc9be46555b8ea1e5b2e3, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.22ogf.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.1410000000614673>, <ServerDescription ('cluster0-shard-00-01.22ogf.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.18799999996554106>, <ServerDescription ('cluster0-shard-00-02.22ogf.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.14000000001396984>]>", "clientId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017}
+2025-05-07 23:59:43,449 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "driverConnectionId": 1, "serverConnectionId": 42967, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-05-07 23:59:43,449 - DEBUG - {"clientId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "message": "Connection checkout started", "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017}
+2025-05-07 23:59:43,451 - DEBUG - {"clientId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "message": "Connection created", "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "driverConnectionId": 1}
+2025-05-07 23:59:44,192 - DEBUG - {"clientId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "message": "Connection ready", "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "driverConnectionId": 1, "durationMS": 0.43799999996554106}
+2025-05-07 23:59:44,192 - DEBUG - {"clientId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "message": "Connection checked out", "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "driverConnectionId": 1, "durationMS": 0.75}
+2025-05-07 23:59:44,193 - DEBUG - {"clientId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "message": "Command started", "command": "{\"buildinfo\": 1, \"lsid\": {\"id\": {\"$binary\": {\"base64\": \"Q5hiOp/aQvKAzqHuihcIhw==\", \"subType\": \"04\"}}}, \"$clusterTime\": {\"clusterTime\": {\"$timestamp\": {\"t\": 1746651583, \"i\": 121}}, \"signature\": {\"hash\": {\"$binary\": {\"base64\": \"VonjMRmkP/ZPeWHGtargySqLKJE=\", \"subType\": \"00\"}}, \"keyId\": 7457716444667576322}}, \"$db\": \"admin\"}", "commandName": "buildinfo", "databaseName": "admin", "requestId": 26500, "operationId": 26500, "driverConnectionId": 1, "serverConnectionId": 44238, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017}
+2025-05-07 23:59:44,326 - DEBUG - {"clientId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "message": "Command succeeded", "durationMS": 133.208, "reply": "{\"version\": \"8.0.8\", \"gitVersion\": \"7f52660c14217ed2c8d3240f823a2291a4fe6abd\", \"modules\": [\"enterprise\"], \"allocator\": \"tcmalloc-google\", \"javascriptEngine\": \"mozjs\", \"sysInfo\": \"deprecated\", \"versionArray\": [8, 8], \"bits\": 64, \"maxBsonObjectSize\": 16777216, \"storageEngines\": [\"devnull\", \"inMemory\", \"queryable_wt\", \"wiredTiger\"], \"ok\": 1.0, \"$clusterTime\": {\"clusterTime\": {\"$timestamp\": {\"t\": 1746651584, \"i\": 118}}, \"signature\": {\"hash\": {\"$binary\": {\"base64\": \"DiGdQrhAbgiauNhcHVXaMXUwOHY=\", \"subType\": \"00\"}}, \"keyId\": 7457716444667576322}}, \"operationTime\": {\"$timestamp\": {\"t\": 1746651584, \"i\": 118}}}", "commandName": "buildinfo", "databaseName": "admin", "requestId": 26500, "operationId": 26500, "driverConnectionId": 1, "serverConnectionId": 44238, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017}
+2025-05-07 23:59:44,328 - DEBUG - {"clientId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "message": "Connection checked in", "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "driverConnectionId": 1}
+2025-05-07 23:59:44,329 - INFO - Connected to MongoDB
+2025-05-07 23:59:44,329 - DEBUG - {"message": "Server selection started", "selector": "Primary()", "operation": "find", "topologyDescription": "<TopologyDescription id: 681bc9be46555b8ea1e5b2e3, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.22ogf.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.1410000000614673>, <ServerDescription ('cluster0-shard-00-01.22ogf.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.18799999996554106>, <ServerDescription ('cluster0-shard-00-02.22ogf.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.14000000001396984>]>", "clientId": {"$oid": "681bc9be46555b8ea1e5b2e3"}}
+2025-05-07 23:59:44,330 - DEBUG - {"message": "Server selection succeeded", "selector": "Primary()", "operation": "find", "topologyDescription": "<TopologyDescription id: 681bc9be46555b8ea1e5b2e3, topology_type: ReplicaSetWithPrimary, servers: [<ServerDescription ('cluster0-shard-00-00.22ogf.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.1410000000614673>, <ServerDescription ('cluster0-shard-00-01.22ogf.mongodb.net', 27017) server_type: RSPrimary, rtt: 0.18799999996554106>, <ServerDescription ('cluster0-shard-00-02.22ogf.mongodb.net', 27017) server_type: RSSecondary, rtt: 0.14000000001396984>]>", "clientId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017}
+2025-05-07 23:59:44,331 - DEBUG - {"clientId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "message": "Connection checkout started", "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017}
+2025-05-07 23:59:44,331 - DEBUG - {"clientId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "message": "Connection checked out", "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "driverConnectionId": 1, "durationMS": 0.0}
+2025-05-07 23:59:44,332 - DEBUG - {"clientId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "message": "Command started", "command": "{\"find\": \"Users\", \"projection\": {\"encoding\": 1, \"name\": 1}, \"lsid\": {\"id\": {\"$binary\": {\"base64\": \"Q5hiOp/aQvKAzqHuihcIhw==\", \"subType\": \"04\"}}}, \"$clusterTime\": {\"clusterTime\": {\"$timestamp\": {\"t\": 1746651584, \"i\": 118}}, \"signature\": {\"hash\": {\"$binary\": {\"base64\": \"DiGdQrhAbgiauNhcHVXaMXUwOHY=\", \"subType\": \"00\"}}, \"keyId\": 7457716444667576322}}, \"$db\": \"Face\"}", "commandName": "find", "databaseName": "Face", "requestId": 19169, "operationId": 19169, "driverConnectionId": 1, "serverConnectionId": 44238, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017}
+2025-05-07 23:59:44,466 - DEBUG - {"clientId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "message": "Command succeeded", "durationMS": 133.22899999999998, "reply": "{\"cursor\": {\"firstBatch\": [{\"name\": \"Mariam\"}, {\"name\": \"Mina\"}, {\"name\": \"Motasem\"}, {\"name\": \"Shymaa\"}, {\"name\": \"Mari\"}, {\"name\": \"mariam\"}, {\"name\": \"kola\"}, {\"name\": \"test\"}, {\"name\": \"test\"}, {\"name\": \"test4\"}, {\"name\": \"ahmedyasser\"}, {\"name\": \"mariammm\"}, {\"name\": \"mariam george\"}], \"ns\": \"Face.Users\"}, \"ok\": 1.0, \"$clusterTime\": {\"clusterTime\": {\"$timestamp\": {\"t\": 1746651584, \"i\": 123}}, \"signature\": {\"hash\": {\"$binary\": {\"base64\": \"DiGdQrhAbgiauNhcHVXaMXUwOHY=\", \"subType\": \"00\"}}, \"keyId\": 7457716444667576322}}, \"operationTime\": {\"$timestamp\": {\"t\": 1746651584, \"i\": 123}}}", "commandName": "find", "databaseName": "Face", "requestId": 19169, "operationId": 19169, "driverConnectionId": 1, "serverConnectionId": 44238, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017}
+2025-05-07 23:59:44,467 - DEBUG - {"clientId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "message": "Connection checked in", "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "driverConnectionId": 1}
+2025-05-07 23:59:44,468 - ERROR - Error loading face data: 'encoding'
+2025-05-07 23:59:44,468 - DEBUG - Attempting to open RTSP stream: rtsp://admin:admin@192.168.1.57:1935
+2025-05-07 23:59:48,614 - INFO - Video capture initialized successfully
+2025-05-07 23:59:48,615 - DEBUG - Processing new frame
+2025-05-07 23:59:48,638 - DEBUG - No faces detected in frame
+2025-05-07 23:59:48,639 - INFO - 127.0.0.1 - - [07/May/2025 23:59:48] "GET /video_feed?target_name=Mina HTTP/1.1" 200 -
+2025-05-07 23:59:48,641 - DEBUG - Processing new frame
+2025-05-07 23:59:48,655 - DEBUG - No faces detected in frame
+2025-05-07 23:59:48,659 - DEBUG - Processing new frame
+2025-05-07 23:59:48,674 - DEBUG - No faces detected in frame
+2025-05-07 23:59:48,677 - DEBUG - Processing new frame
+2025-05-07 23:59:48,693 - DEBUG - No faces detected in frame
+2025-05-07 23:59:48,695 - DEBUG - Processing new frame
+2025-05-07 23:59:48,708 - DEBUG - No faces detected in frame
+2025-05-07 23:59:48,710 - DEBUG - Processing new frame
+2025-05-07 23:59:48,723 - DEBUG - No faces detected in frame
+2025-05-07 23:59:48,726 - DEBUG - Processing new frame
+2025-05-07 23:59:48,740 - DEBUG - No faces detected in frame
+2025-05-07 23:59:48,742 - DEBUG - Processing new frame
+2025-05-07 23:59:48,755 - DEBUG - No faces detected in frame
+2025-05-07 23:59:48,758 - DEBUG - Processing new frame
+2025-05-07 23:59:48,773 - DEBUG - No faces detected in frame
+2025-05-07 23:59:48,776 - DEBUG - Processing new frame
+2025-05-07 23:59:48,789 - DEBUG - No faces detected in frame
+2025-05-07 23:59:48,793 - DEBUG - Processing new frame
+2025-05-07 23:59:48,806 - DEBUG - No faces detected in frame
+2025-05-07 23:59:48,809 - DEBUG - Processing new frame
+2025-05-07 23:59:48,822 - DEBUG - No faces detected in frame
+2025-05-07 23:59:48,824 - DEBUG - Processing new frame
+2025-05-07 23:59:48,838 - DEBUG - No faces detected in frame
+2025-05-07 23:59:48,841 - DEBUG - Processing new frame
+2025-05-07 23:59:48,854 - DEBUG - No faces detected in frame
+2025-05-07 23:59:48,856 - DEBUG - Processing new frame
+2025-05-07 23:59:48,870 - DEBUG - No faces detected in frame
+2025-05-07 23:59:48,873 - DEBUG - Processing new frame
+2025-05-07 23:59:48,888 - DEBUG - No faces detected in frame
+2025-05-07 23:59:48,890 - DEBUG - Processing new frame
+2025-05-07 23:59:48,902 - DEBUG - No faces detected in frame
+2025-05-07 23:59:48,908 - DEBUG - Processing new frame
+2025-05-07 23:59:48,923 - DEBUG - No faces detected in frame
+2025-05-07 23:59:48,960 - DEBUG - Processing new frame
+2025-05-07 23:59:48,973 - DEBUG - No faces detected in frame
+2025-05-07 23:59:49,012 - DEBUG - Processing new frame
+2025-05-07 23:59:49,026 - DEBUG - No faces detected in frame
+2025-05-07 23:59:49,086 - DEBUG - Processing new frame
+2025-05-07 23:59:49,100 - DEBUG - No faces detected in frame
+2025-05-07 23:59:49,118 - DEBUG - Processing new frame
+2025-05-07 23:59:49,131 - DEBUG - No faces detected in frame
+2025-05-07 23:59:49,180 - DEBUG - Processing new frame
+2025-05-07 23:59:49,192 - DEBUG - No faces detected in frame
+2025-05-07 23:59:49,223 - DEBUG - Processing new frame
+2025-05-07 23:59:49,237 - DEBUG - No faces detected in frame
+2025-05-07 23:59:49,279 - DEBUG - Processing new frame
+2025-05-07 23:59:49,293 - DEBUG - No faces detected in frame
+2025-05-07 23:59:49,339 - DEBUG - Processing new frame
+2025-05-07 23:59:49,353 - DEBUG - No faces detected in frame
+2025-05-07 23:59:49,384 - DEBUG - Processing new frame
+2025-05-07 23:59:49,399 - DEBUG - No faces detected in frame
+2025-05-07 23:59:49,501 - DEBUG - Processing new frame
+2025-05-07 23:59:49,515 - DEBUG - No faces detected in frame
+2025-05-07 23:59:49,519 - DEBUG - Processing new frame
+2025-05-07 23:59:49,534 - DEBUG - No faces detected in frame
+2025-05-07 23:59:49,538 - DEBUG - Processing new frame
+2025-05-07 23:59:49,552 - DEBUG - No faces detected in frame
+2025-05-07 23:59:49,595 - DEBUG - Processing new frame
+2025-05-07 23:59:49,610 - DEBUG - No faces detected in frame
+2025-05-07 23:59:49,797 - DEBUG - Processing new frame
+2025-05-07 23:59:49,810 - DEBUG - No faces detected in frame
+2025-05-07 23:59:49,813 - DEBUG - Processing new frame
+2025-05-07 23:59:49,826 - DEBUG - No faces detected in frame
+2025-05-07 23:59:49,830 - DEBUG - Processing new frame
+2025-05-07 23:59:49,842 - DEBUG - No faces detected in frame
+2025-05-07 23:59:49,861 - DEBUG - Processing new frame
+2025-05-07 23:59:49,882 - DEBUG - No faces detected in frame
+2025-05-07 23:59:49,912 - DEBUG - Processing new frame
+2025-05-07 23:59:49,924 - DEBUG - No faces detected in frame
+2025-05-07 23:59:49,953 - DEBUG - Processing new frame
+2025-05-07 23:59:49,967 - DEBUG - No faces detected in frame
+2025-05-07 23:59:50,003 - DEBUG - Processing new frame
+2025-05-07 23:59:50,016 - DEBUG - No faces detected in frame
+2025-05-07 23:59:50,080 - DEBUG - Processing new frame
+2025-05-07 23:59:50,094 - DEBUG - No faces detected in frame
+2025-05-07 23:59:50,116 - DEBUG - Processing new frame
+2025-05-07 23:59:50,131 - DEBUG - No faces detected in frame
+2025-05-07 23:59:50,160 - DEBUG - Processing new frame
+2025-05-07 23:59:50,173 - DEBUG - No faces detected in frame
+2025-05-07 23:59:50,214 - DEBUG - Processing new frame
+2025-05-07 23:59:50,226 - DEBUG - No faces detected in frame
+2025-05-07 23:59:50,253 - DEBUG - Processing new frame
+2025-05-07 23:59:50,267 - DEBUG - No faces detected in frame
+2025-05-07 23:59:50,323 - DEBUG - Processing new frame
+2025-05-07 23:59:50,337 - DEBUG - No faces detected in frame
+2025-05-07 23:59:50,367 - DEBUG - Processing new frame
+2025-05-07 23:59:50,382 - DEBUG - No faces detected in frame
+2025-05-07 23:59:50,421 - DEBUG - Processing new frame
+2025-05-07 23:59:50,436 - DEBUG - No faces detected in frame
+2025-05-07 23:59:50,477 - DEBUG - Processing new frame
+2025-05-07 23:59:50,491 - DEBUG - No faces detected in frame
+2025-05-07 23:59:51,104 - DEBUG - Processing new frame
+2025-05-07 23:59:51,138 - DEBUG - No faces detected in frame
+2025-05-07 23:59:51,157 - DEBUG - Processing new frame
+2025-05-07 23:59:51,313 - DEBUG - Detected 1 faces
+2025-05-07 23:59:51,318 - DEBUG - Processing new frame
+2025-05-07 23:59:51,335 - DEBUG - No faces detected in frame
+2025-05-07 23:59:51,338 - DEBUG - Processing new frame
+2025-05-07 23:59:51,430 - DEBUG - Detected 1 faces
+2025-05-07 23:59:51,433 - DEBUG - Processing new frame
+2025-05-07 23:59:51,515 - DEBUG - Detected 1 faces
+2025-05-07 23:59:51,518 - DEBUG - Processing new frame
+2025-05-07 23:59:51,594 - DEBUG - Detected 1 faces
+2025-05-07 23:59:51,598 - DEBUG - Processing new frame
+2025-05-07 23:59:51,675 - DEBUG - Detected 1 faces
+2025-05-07 23:59:51,678 - DEBUG - Processing new frame
+2025-05-07 23:59:51,754 - DEBUG - Detected 1 faces
+2025-05-07 23:59:51,757 - DEBUG - Processing new frame
+2025-05-07 23:59:51,834 - DEBUG - Detected 1 faces
+2025-05-07 23:59:51,837 - DEBUG - Processing new frame
+2025-05-07 23:59:51,917 - DEBUG - Detected 1 faces
+2025-05-07 23:59:51,919 - DEBUG - Processing new frame
+2025-05-07 23:59:51,999 - DEBUG - Detected 1 faces
+2025-05-07 23:59:52,001 - DEBUG - Processing new frame
+2025-05-07 23:59:52,077 - DEBUG - Detected 1 faces
+2025-05-07 23:59:52,080 - DEBUG - Processing new frame
+2025-05-07 23:59:52,154 - DEBUG - Detected 1 faces
+2025-05-07 23:59:52,157 - DEBUG - Processing new frame
+2025-05-07 23:59:52,234 - DEBUG - Detected 1 faces
+2025-05-07 23:59:52,237 - DEBUG - Processing new frame
+2025-05-07 23:59:52,313 - DEBUG - Detected 1 faces
+2025-05-07 23:59:52,316 - DEBUG - Processing new frame
+2025-05-07 23:59:52,395 - DEBUG - Detected 1 faces
+2025-05-07 23:59:52,398 - DEBUG - Processing new frame
+2025-05-07 23:59:52,477 - DEBUG - Detected 1 faces
+2025-05-07 23:59:52,480 - DEBUG - Processing new frame
+2025-05-07 23:59:52,559 - DEBUG - Detected 1 faces
+2025-05-07 23:59:52,562 - DEBUG - Processing new frame
+2025-05-07 23:59:52,636 - DEBUG - Detected 1 faces
+2025-05-07 23:59:52,639 - DEBUG - Processing new frame
+2025-05-07 23:59:52,717 - DEBUG - Detected 1 faces
+2025-05-07 23:59:52,720 - DEBUG - Processing new frame
+2025-05-07 23:59:52,796 - DEBUG - Detected 1 faces
+2025-05-07 23:59:52,799 - DEBUG - Processing new frame
+2025-05-07 23:59:52,877 - DEBUG - Detected 1 faces
+2025-05-07 23:59:52,879 - DEBUG - Processing new frame
+2025-05-07 23:59:52,956 - DEBUG - Detected 1 faces
+2025-05-07 23:59:52,959 - DEBUG - Processing new frame
+2025-05-07 23:59:53,097 - DEBUG - Detected 2 faces
+2025-05-07 23:59:53,100 - DEBUG - Processing new frame
+2025-05-07 23:59:53,241 - DEBUG - Detected 2 faces
+2025-05-07 23:59:53,243 - DEBUG - Processing new frame
+2025-05-07 23:59:53,321 - DEBUG - Detected 1 faces
+2025-05-07 23:59:53,322 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "driverConnectionId": 1, "serverConnectionId": 40628, "serverHost": "cluster0-shard-00-02.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 10157.00000000652, "reply": "{\"topologyVersion\": {\"processId\": {\"$oid\": \"681a63b780ce7dee80fe3ceb\"}, \"counter\": 3}, \"hosts\": [\"cluster0-shard-00-00.22ogf.mongodb.net:27017\", \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"cluster0-shard-00-02.22ogf.mongodb.net:27017\"], \"setName\": \"atlas-1b7lne-shard-0\", \"setVersion\": 172, \"secondary\": true, \"primary\": \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"tags\": {\"nodeType\": \"ELECTABLE\", \"region\": \"US_EAST_1\", \"provider\": \"AWS\", \"diskState\": \"READY\", \"workloadType\": \"OPERATIONAL\", \"availabilityZone\": \"use1-az4\"}, \"me\": \"cluster0-shard-00-02.22ogf.mongodb.net:27017\", \"lastWrite\": {\"opTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746651593, \"i\": 121}}, \"t\": 463}, \"lastWriteDate\": {\"$date\": \"2025-05-07T20:59:53Z\"}, \"majorityOpTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746651593, \"i\": 121}}, \"t\": 463}, \"majorityWriteDate\": {\"$date\": \"2025-05-07T20:59:53Z\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWriteBatchSize\": 100000, \"localTime\": {\"$date\": \"2025-05-07T20:59...", "message": "Server heartbeat succeeded"}
+2025-05-07 23:59:53,324 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "driverConnectionId": 1, "serverConnectionId": 40628, "serverHost": "cluster0-shard-00-02.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-05-07 23:59:53,325 - DEBUG - Processing new frame
+2025-05-07 23:59:53,405 - DEBUG - Detected 1 faces
+2025-05-07 23:59:53,407 - DEBUG - Processing new frame
+2025-05-07 23:59:53,459 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "driverConnectionId": 1, "serverConnectionId": 41147, "serverHost": "cluster0-shard-00-00.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 10155.999999959022, "reply": "{\"topologyVersion\": {\"processId\": {\"$oid\": \"681a6262ad44fdb5056ab738\"}, \"counter\": 4}, \"hosts\": [\"cluster0-shard-00-00.22ogf.mongodb.net:27017\", \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"cluster0-shard-00-02.22ogf.mongodb.net:27017\"], \"setName\": \"atlas-1b7lne-shard-0\", \"setVersion\": 172, \"secondary\": true, \"primary\": \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"tags\": {\"availabilityZone\": \"use1-az1\", \"diskState\": \"READY\", \"nodeType\": \"ELECTABLE\", \"provider\": \"AWS\", \"workloadType\": \"OPERATIONAL\", \"region\": \"US_EAST_1\"}, \"me\": \"cluster0-shard-00-00.22ogf.mongodb.net:27017\", \"lastWrite\": {\"opTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746651593, \"i\": 123}}, \"t\": 463}, \"lastWriteDate\": {\"$date\": \"2025-05-07T20:59:53Z\"}, \"majorityOpTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746651593, \"i\": 123}}, \"t\": 463}, \"majorityWriteDate\": {\"$date\": \"2025-05-07T20:59:53Z\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWriteBatchSize\": 100000, \"localTime\": {\"$date\": \"2025-05-07T20:59...", "message": "Server heartbeat succeeded"}
+2025-05-07 23:59:53,461 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "driverConnectionId": 1, "serverConnectionId": 41147, "serverHost": "cluster0-shard-00-00.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-05-07 23:59:53,485 - DEBUG - Detected 1 faces
+2025-05-07 23:59:53,488 - DEBUG - Processing new frame
+2025-05-07 23:59:53,567 - DEBUG - Detected 1 faces
+2025-05-07 23:59:53,570 - DEBUG - Processing new frame
+2025-05-07 23:59:53,592 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "driverConnectionId": 1, "serverConnectionId": 43877, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 10140.00000001397, "reply": "{\"topologyVersion\": {\"processId\": {\"$oid\": \"681a616b86253053e6d87103\"}, \"counter\": 6}, \"hosts\": [\"cluster0-shard-00-00.22ogf.mongodb.net:27017\", \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"cluster0-shard-00-02.22ogf.mongodb.net:27017\"], \"setName\": \"atlas-1b7lne-shard-0\", \"setVersion\": 172, \"isWritablePrimary\": true, \"primary\": \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"tags\": {\"provider\": \"AWS\", \"diskState\": \"READY\", \"region\": \"US_EAST_1\", \"workloadType\": \"OPERATIONAL\", \"availabilityZone\": \"use1-az2\", \"nodeType\": \"ELECTABLE\"}, \"me\": \"cluster0-shard-00-01.22ogf.mongodb.net:27017\", \"electionId\": {\"$oid\": \"7fffffff00000000000001cf\"}, \"lastWrite\": {\"opTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746651593, \"i\": 135}}, \"t\": 463}, \"lastWriteDate\": {\"$date\": \"2025-05-07T20:59:53Z\"}, \"majorityOpTime\": {\"ts\": {\"$timestamp\": {\"t\": 1746651593, \"i\": 135}}, \"t\": 463}, \"majorityWriteDate\": {\"$date\": \"2025-05-07T20:59:53Z\"}}, \"maxBsonObjectSize\": 16777216, \"maxMessageSizeBytes\": 48000000, \"maxWrite...", "message": "Server heartbeat succeeded"}
+2025-05-07 23:59:53,593 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "driverConnectionId": 1, "serverConnectionId": 43877, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "message": "Server heartbeat started"}
+2025-05-07 23:59:53,652 - DEBUG - Detected 1 faces
+2025-05-07 23:59:53,655 - DEBUG - Processing new frame
+2025-05-07 23:59:53,732 - DEBUG - Detected 1 faces
+2025-05-07 23:59:53,735 - DEBUG - Processing new frame
+2025-05-07 23:59:53,815 - DEBUG - Detected 1 faces
+2025-05-07 23:59:53,851 - DEBUG - Processing new frame
+2025-05-07 23:59:53,929 - DEBUG - Detected 1 faces
+2025-05-07 23:59:53,932 - DEBUG - Processing new frame
+2025-05-07 23:59:54,011 - DEBUG - Detected 1 faces
+2025-05-07 23:59:54,014 - DEBUG - Processing new frame
+2025-05-07 23:59:54,093 - DEBUG - Detected 1 faces
+2025-05-07 23:59:54,095 - DEBUG - Processing new frame
+2025-05-07 23:59:54,173 - DEBUG - Detected 1 faces
+2025-05-07 23:59:54,176 - DEBUG - Processing new frame
+2025-05-07 23:59:54,252 - DEBUG - Detected 1 faces
+2025-05-07 23:59:54,255 - DEBUG - Processing new frame
+2025-05-07 23:59:54,334 - DEBUG - Detected 1 faces
+2025-05-07 23:59:54,337 - DEBUG - Processing new frame
+2025-05-07 23:59:54,415 - DEBUG - Detected 1 faces
+2025-05-07 23:59:54,417 - DEBUG - Processing new frame
+2025-05-07 23:59:54,495 - DEBUG - Detected 1 faces
+2025-05-07 23:59:54,497 - DEBUG - Processing new frame
+2025-05-07 23:59:54,573 - DEBUG - Detected 1 faces
+2025-05-07 23:59:54,576 - DEBUG - Processing new frame
+2025-05-07 23:59:54,650 - DEBUG - Detected 1 faces
+2025-05-07 23:59:54,653 - DEBUG - Processing new frame
+2025-05-07 23:59:54,727 - DEBUG - Detected 1 faces
+2025-05-07 23:59:54,731 - DEBUG - Processing new frame
+2025-05-07 23:59:54,835 - DEBUG - Detected 1 faces
+2025-05-07 23:59:54,838 - DEBUG - Processing new frame
+2025-05-07 23:59:54,914 - DEBUG - Detected 1 faces
+2025-05-07 23:59:54,917 - DEBUG - Processing new frame
+2025-05-07 23:59:54,992 - DEBUG - Detected 1 faces
+2025-05-07 23:59:54,995 - DEBUG - Processing new frame
+2025-05-07 23:59:55,070 - DEBUG - Detected 1 faces
+2025-05-07 23:59:55,072 - DEBUG - Processing new frame
+2025-05-07 23:59:55,153 - DEBUG - Detected 1 faces
+2025-05-07 23:59:55,217 - DEBUG - Processing new frame
+2025-05-07 23:59:55,300 - DEBUG - Detected 1 faces
+2025-05-07 23:59:55,303 - DEBUG - Processing new frame
+2025-05-07 23:59:55,386 - DEBUG - Detected 1 faces
+2025-05-07 23:59:55,389 - DEBUG - Processing new frame
+2025-05-07 23:59:55,469 - DEBUG - Detected 1 faces
+2025-05-07 23:59:55,471 - DEBUG - Processing new frame
+2025-05-07 23:59:55,550 - DEBUG - Detected 1 faces
+2025-05-07 23:59:55,553 - DEBUG - Processing new frame
+2025-05-07 23:59:55,631 - DEBUG - Detected 1 faces
+2025-05-07 23:59:55,634 - DEBUG - Processing new frame
+2025-05-07 23:59:55,709 - DEBUG - Detected 1 faces
+2025-05-07 23:59:55,711 - DEBUG - Processing new frame
+2025-05-07 23:59:55,791 - DEBUG - Detected 1 faces
+2025-05-07 23:59:55,793 - DEBUG - Processing new frame
+2025-05-07 23:59:55,875 - DEBUG - Detected 1 faces
+2025-05-07 23:59:55,878 - DEBUG - Processing new frame
+2025-05-07 23:59:55,956 - DEBUG - Detected 1 faces
+2025-05-07 23:59:55,959 - DEBUG - Processing new frame
+2025-05-07 23:59:56,037 - DEBUG - Detected 1 faces
+2025-05-07 23:59:56,040 - DEBUG - Processing new frame
+2025-05-07 23:59:56,119 - DEBUG - Detected 1 faces
+2025-05-07 23:59:56,122 - DEBUG - Processing new frame
+2025-05-07 23:59:56,202 - DEBUG - Detected 1 faces
+2025-05-07 23:59:56,205 - DEBUG - Processing new frame
+2025-05-07 23:59:56,279 - DEBUG - Detected 1 faces
+2025-05-07 23:59:56,282 - DEBUG - Processing new frame
+2025-05-07 23:59:56,360 - DEBUG - Detected 1 faces
+2025-05-07 23:59:56,362 - DEBUG - Processing new frame
+2025-05-07 23:59:56,440 - DEBUG - Detected 1 faces
+2025-05-07 23:59:56,443 - DEBUG - Processing new frame
+2025-05-07 23:59:56,520 - DEBUG - Detected 1 faces
+2025-05-07 23:59:56,523 - DEBUG - Processing new frame
+2025-05-07 23:59:56,597 - DEBUG - Detected 1 faces
+2025-05-07 23:59:56,599 - DEBUG - Processing new frame
+2025-05-07 23:59:56,675 - DEBUG - Detected 1 faces
+2025-05-07 23:59:56,677 - DEBUG - Processing new frame
+2025-05-07 23:59:56,753 - DEBUG - Detected 1 faces
+2025-05-07 23:59:56,755 - DEBUG - Processing new frame
+2025-05-07 23:59:56,832 - DEBUG - Detected 1 faces
+2025-05-07 23:59:56,834 - DEBUG - Processing new frame
+2025-05-07 23:59:56,910 - DEBUG - Detected 1 faces
+2025-05-07 23:59:56,912 - DEBUG - Processing new frame
+2025-05-07 23:59:56,991 - DEBUG - Detected 1 faces
+2025-05-07 23:59:56,993 - DEBUG - Processing new frame
+2025-05-07 23:59:57,070 - DEBUG - Detected 1 faces
+2025-05-07 23:59:57,073 - DEBUG - Processing new frame
+2025-05-07 23:59:57,151 - DEBUG - Detected 1 faces
+2025-05-07 23:59:57,153 - DEBUG - Processing new frame
+2025-05-07 23:59:57,232 - DEBUG - Detected 1 faces
+2025-05-07 23:59:57,235 - DEBUG - Processing new frame
+2025-05-07 23:59:57,309 - DEBUG - Detected 1 faces
+2025-05-07 23:59:57,312 - DEBUG - Processing new frame
+2025-05-07 23:59:57,388 - DEBUG - Detected 1 faces
+2025-05-07 23:59:57,391 - DEBUG - Processing new frame
+2025-05-07 23:59:57,471 - DEBUG - Detected 1 faces
+2025-05-07 23:59:57,473 - DEBUG - Processing new frame
+2025-05-07 23:59:57,551 - DEBUG - Detected 1 faces
+2025-05-07 23:59:57,553 - DEBUG - Processing new frame
+2025-05-07 23:59:57,627 - DEBUG - Detected 1 faces
+2025-05-07 23:59:57,630 - DEBUG - Processing new frame
+2025-05-07 23:59:57,706 - DEBUG - Detected 1 faces
+2025-05-07 23:59:57,709 - DEBUG - Processing new frame
+2025-05-07 23:59:57,786 - DEBUG - Detected 1 faces
+2025-05-07 23:59:57,789 - DEBUG - Processing new frame
+2025-05-07 23:59:57,868 - DEBUG - Detected 1 faces
+2025-05-07 23:59:57,871 - DEBUG - Processing new frame
+2025-05-07 23:59:57,950 - DEBUG - Detected 1 faces
+2025-05-07 23:59:57,953 - DEBUG - Processing new frame
+2025-05-07 23:59:58,030 - DEBUG - Detected 1 faces
+2025-05-07 23:59:58,033 - DEBUG - Processing new frame
+2025-05-07 23:59:58,112 - DEBUG - Detected 1 faces
+2025-05-07 23:59:58,114 - DEBUG - Processing new frame
+2025-05-07 23:59:58,194 - DEBUG - Detected 1 faces
+2025-05-07 23:59:58,197 - DEBUG - Processing new frame
+2025-05-07 23:59:58,278 - DEBUG - Detected 1 faces
+2025-05-07 23:59:58,281 - DEBUG - Processing new frame
+2025-05-07 23:59:58,360 - DEBUG - Detected 1 faces
+2025-05-07 23:59:58,364 - DEBUG - Processing new frame
+2025-05-07 23:59:58,444 - DEBUG - Detected 1 faces
+2025-05-07 23:59:58,446 - DEBUG - Processing new frame
+2025-05-07 23:59:58,525 - DEBUG - Detected 1 faces
+2025-05-07 23:59:58,528 - DEBUG - Processing new frame
+2025-05-07 23:59:58,606 - DEBUG - Detected 1 faces
+2025-05-07 23:59:58,610 - DEBUG - Processing new frame
+2025-05-07 23:59:58,692 - DEBUG - Detected 1 faces
+2025-05-07 23:59:58,695 - DEBUG - Processing new frame
+2025-05-07 23:59:58,780 - DEBUG - Detected 1 faces
+2025-05-07 23:59:58,783 - DEBUG - Processing new frame
+2025-05-07 23:59:58,859 - DEBUG - Detected 1 faces
+2025-05-07 23:59:58,861 - DEBUG - Processing new frame
+2025-05-07 23:59:58,938 - DEBUG - Detected 1 faces
+2025-05-07 23:59:58,940 - DEBUG - Processing new frame
+2025-05-07 23:59:59,020 - DEBUG - Detected 1 faces
+2025-05-07 23:59:59,023 - DEBUG - Processing new frame
+2025-05-07 23:59:59,100 - DEBUG - Detected 1 faces
+2025-05-07 23:59:59,102 - DEBUG - Processing new frame
+2025-05-07 23:59:59,178 - DEBUG - Detected 1 faces
+2025-05-07 23:59:59,181 - DEBUG - Processing new frame
+2025-05-07 23:59:59,258 - DEBUG - Detected 1 faces
+2025-05-07 23:59:59,301 - DEBUG - Processing new frame
+2025-05-07 23:59:59,380 - DEBUG - Detected 1 faces
+2025-05-07 23:59:59,383 - DEBUG - Processing new frame
+2025-05-07 23:59:59,485 - DEBUG - Detected 1 faces
+2025-05-07 23:59:59,488 - DEBUG - Processing new frame
+2025-05-07 23:59:59,564 - DEBUG - Detected 1 faces
+2025-05-07 23:59:59,567 - DEBUG - Processing new frame
+2025-05-07 23:59:59,642 - DEBUG - Detected 1 faces
+2025-05-07 23:59:59,645 - DEBUG - Processing new frame
+2025-05-07 23:59:59,722 - DEBUG - Detected 1 faces
+2025-05-07 23:59:59,725 - DEBUG - Processing new frame
+2025-05-07 23:59:59,802 - DEBUG - Detected 1 faces
+2025-05-07 23:59:59,805 - DEBUG - Processing new frame
+2025-05-07 23:59:59,881 - DEBUG - Detected 1 faces
+2025-05-07 23:59:59,883 - DEBUG - Processing new frame
+2025-05-07 23:59:59,959 - DEBUG - Detected 1 faces
+2025-05-07 23:59:59,962 - DEBUG - Processing new frame
+2025-05-08 00:00:00,047 - DEBUG - Detected 1 faces
+2025-05-08 00:00:00,050 - DEBUG - Processing new frame
+2025-05-08 00:00:00,130 - DEBUG - Detected 1 faces
+2025-05-08 00:00:00,132 - DEBUG - Processing new frame
+2025-05-08 00:00:00,208 - DEBUG - Detected 1 faces
+2025-05-08 00:00:00,211 - DEBUG - Processing new frame
+2025-05-08 00:00:00,290 - DEBUG - Detected 1 faces
+2025-05-08 00:00:00,294 - DEBUG - Processing new frame
+2025-05-08 00:00:00,374 - DEBUG - Detected 1 faces
+2025-05-08 00:00:00,377 - DEBUG - Processing new frame
+2025-05-08 00:00:00,458 - DEBUG - Detected 1 faces
+2025-05-08 00:00:00,461 - DEBUG - Processing new frame
+2025-05-08 00:00:00,539 - DEBUG - Detected 1 faces
+2025-05-08 00:00:00,542 - DEBUG - Processing new frame
+2025-05-08 00:00:00,619 - DEBUG - Detected 1 faces
+2025-05-08 00:00:00,622 - DEBUG - Processing new frame
+2025-05-08 00:00:00,699 - DEBUG - Detected 1 faces
+2025-05-08 00:00:00,702 - DEBUG - Processing new frame
+2025-05-08 00:00:00,779 - DEBUG - Detected 1 faces
+2025-05-08 00:00:00,782 - DEBUG - Processing new frame
+2025-05-08 00:00:00,858 - DEBUG - Detected 1 faces
+2025-05-08 00:00:00,861 - DEBUG - Processing new frame
+2025-05-08 00:00:00,935 - DEBUG - Detected 1 faces
+2025-05-08 00:00:00,938 - DEBUG - Processing new frame
+2025-05-08 00:00:01,014 - DEBUG - Detected 1 faces
+2025-05-08 00:00:01,017 - DEBUG - Processing new frame
+2025-05-08 00:00:01,092 - DEBUG - Detected 1 faces
+2025-05-08 00:00:01,095 - DEBUG - Processing new frame
+2025-05-08 00:00:01,173 - DEBUG - Detected 1 faces
+2025-05-08 00:00:01,175 - DEBUG - Processing new frame
+2025-05-08 00:00:01,252 - DEBUG - Detected 1 faces
+2025-05-08 00:00:01,255 - DEBUG - Processing new frame
+2025-05-08 00:00:01,336 - DEBUG - Detected 1 faces
+2025-05-08 00:00:01,339 - DEBUG - Processing new frame
+2025-05-08 00:00:01,418 - DEBUG - Detected 1 faces
+2025-05-08 00:00:01,421 - DEBUG - Processing new frame
+2025-05-08 00:00:01,499 - DEBUG - Detected 1 faces
+2025-05-08 00:00:01,502 - DEBUG - Processing new frame
+2025-05-08 00:00:01,579 - DEBUG - Detected 1 faces
+2025-05-08 00:00:01,581 - DEBUG - Processing new frame
+2025-05-08 00:00:01,658 - DEBUG - Detected 1 faces
+2025-05-08 00:00:01,660 - DEBUG - Processing new frame
+2025-05-08 00:00:01,742 - DEBUG - Detected 1 faces
+2025-05-08 00:00:01,745 - DEBUG - Processing new frame
+2025-05-08 00:00:01,823 - DEBUG - Detected 1 faces
+2025-05-08 00:00:01,826 - DEBUG - Processing new frame
+2025-05-08 00:00:01,903 - DEBUG - Detected 1 faces
+2025-05-08 00:00:01,906 - DEBUG - Processing new frame
+2025-05-08 00:00:01,985 - DEBUG - Detected 1 faces
+2025-05-08 00:00:01,987 - DEBUG - Processing new frame
+2025-05-08 00:00:02,066 - DEBUG - Detected 1 faces
+2025-05-08 00:00:02,068 - DEBUG - Processing new frame
+2025-05-08 00:00:02,145 - DEBUG - Detected 1 faces
+2025-05-08 00:00:02,148 - DEBUG - Processing new frame
+2025-05-08 00:00:02,225 - DEBUG - Detected 1 faces
+2025-05-08 00:00:02,228 - DEBUG - Processing new frame
+2025-05-08 00:00:02,302 - DEBUG - Detected 1 faces
+2025-05-08 00:00:02,305 - DEBUG - Processing new frame
+2025-05-08 00:00:02,376 - DEBUG - Detected 1 faces
+2025-05-08 00:00:02,379 - DEBUG - Processing new frame
+2025-05-08 00:00:02,391 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,394 - DEBUG - Processing new frame
+2025-05-08 00:00:02,472 - DEBUG - Detected 1 faces
+2025-05-08 00:00:02,475 - DEBUG - Processing new frame
+2025-05-08 00:00:02,487 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,490 - DEBUG - Processing new frame
+2025-05-08 00:00:02,502 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,504 - DEBUG - Processing new frame
+2025-05-08 00:00:02,518 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,521 - DEBUG - Processing new frame
+2025-05-08 00:00:02,535 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,537 - DEBUG - Processing new frame
+2025-05-08 00:00:02,551 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,554 - DEBUG - Processing new frame
+2025-05-08 00:00:02,568 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,570 - DEBUG - Processing new frame
+2025-05-08 00:00:02,580 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "serverHost": "cluster0-shard-00-00.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 9109.99999998603, "failure": "\"_OperationCancelled('operation cancelled')\"", "message": "Server heartbeat failed"}
+2025-05-08 00:00:02,583 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,585 - DEBUG - Processing new frame
+2025-05-08 00:00:02,599 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,601 - DEBUG - Processing new frame
+2025-05-08 00:00:02,614 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,616 - DEBUG - Processing new frame
+2025-05-08 00:00:02,630 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,633 - DEBUG - Processing new frame
+2025-05-08 00:00:02,645 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,648 - DEBUG - Processing new frame
+2025-05-08 00:00:02,661 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,664 - DEBUG - Processing new frame
+2025-05-08 00:00:02,676 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,679 - DEBUG - Processing new frame
+2025-05-08 00:00:02,691 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,694 - DEBUG - Processing new frame
+2025-05-08 00:00:02,707 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,709 - DEBUG - Processing new frame
+2025-05-08 00:00:02,723 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,724 - DEBUG - Processing new frame
+2025-05-08 00:00:02,737 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,739 - DEBUG - Processing new frame
+2025-05-08 00:00:02,752 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,753 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "serverHost": "cluster0-shard-00-01.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 9157.00000000652, "failure": "\"_OperationCancelled('operation cancelled')\"", "message": "Server heartbeat failed"}
+2025-05-08 00:00:02,755 - DEBUG - Processing new frame
+2025-05-08 00:00:02,767 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,770 - DEBUG - Processing new frame
+2025-05-08 00:00:02,782 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,784 - DEBUG - Processing new frame
+2025-05-08 00:00:02,799 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,801 - DEBUG - Processing new frame
+2025-05-08 00:00:02,814 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,817 - DEBUG - Processing new frame
+2025-05-08 00:00:02,829 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,832 - DEBUG - Processing new frame
+2025-05-08 00:00:02,844 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,847 - DEBUG - Processing new frame
+2025-05-08 00:00:02,862 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,864 - DEBUG - Processing new frame
+2025-05-08 00:00:02,878 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,880 - DEBUG - Processing new frame
+2025-05-08 00:00:02,893 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,895 - DEBUG - Processing new frame
+2025-05-08 00:00:02,910 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,912 - DEBUG - Processing new frame
+2025-05-08 00:00:02,927 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,930 - DEBUG - Processing new frame
+2025-05-08 00:00:02,945 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,948 - DEBUG - Processing new frame
+2025-05-08 00:00:02,960 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,963 - DEBUG - Processing new frame
+2025-05-08 00:00:02,976 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,979 - DEBUG - Processing new frame
+2025-05-08 00:00:02,992 - DEBUG - No faces detected in frame
+2025-05-08 00:00:02,994 - DEBUG - Processing new frame
+2025-05-08 00:00:03,002 - DEBUG - {"topologyId": {"$oid": "681bc9be46555b8ea1e5b2e3"}, "serverHost": "cluster0-shard-00-02.22ogf.mongodb.net", "serverPort": 27017, "awaited": true, "durationMS": 9672.00000002049, "failure": "\"_OperationCancelled('operation cancelled')\"", "message": "Server heartbeat failed"}
